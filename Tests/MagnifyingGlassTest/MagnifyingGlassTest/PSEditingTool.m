@@ -34,18 +34,18 @@ static CGFloat const kDefaultScale = 1.5;
     _viewToEdit = nil;
     
     // first button
-    UIButton *firstButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    firstButton.frame = CGRectMake(0, frame.size.height - 44, 44, 44);
-    [firstButton setTitle:@"Foo" forState:UIControlStateNormal];
-    [firstButton addTarget:self action:@selector(firstButtonClicked) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:firstButton];
+    UIButton *poiButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    poiButton.frame = CGRectMake(0, frame.size.height - 44, 44, 44);
+    [poiButton setTitle:@"POI" forState:UIControlStateNormal];
+    [poiButton addTarget:self action:@selector(poiButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:poiButton];
     
     // second button
-    UIButton *secondButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    secondButton.frame = CGRectMake(frame.size.width - 44, frame.size.height - 44, 44, 44);
-    [secondButton setTitle:@"Bar" forState:UIControlStateNormal];
-    [secondButton addTarget:self action:@selector(secondButtonClicked) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:secondButton];
+    UIButton *lineButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    lineButton.frame = CGRectMake(frame.size.width - 44, frame.size.height - 44, 44, 44);
+    [lineButton setTitle:@"Line" forState:UIControlStateNormal];
+    [lineButton addTarget:self action:@selector(lineButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:lineButton];
     
     // crosshair
     UIImage *crossHairImage = [UIImage imageNamed:@"crosshair"];
@@ -97,14 +97,14 @@ static CGFloat const kDefaultScale = 1.5;
 
 #pragma - button methods
 
-- (void)firstButtonClicked
+- (void)poiButtonClicked
 {
-    NSLog(@"DBG: First Button clicked.");
+    NSLog(@"DBG: POI Button clicked.");
 }
 
-- (void)secondButtonClicked
+- (void)lineButtonClicked
 {
-    NSLog(@"DBG: Second Button clicked.");
+    NSLog(@"DBG: Line Button clicked.");
 }
 
 

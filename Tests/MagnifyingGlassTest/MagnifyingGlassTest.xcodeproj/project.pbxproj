@@ -27,7 +27,8 @@
 		CDA0185D1774609A0009B3DF /* 45360.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA0185B1774609A0009B3DF /* 45360.png */; };
 		CDA01860177471D50009B3DF /* PSEditingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA0185F177471D50009B3DF /* PSEditingTool.m */; };
 		CDA01863177473190009B3DF /* PSEditingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA01862177473190009B3DF /* PSEditingView.m */; };
-		CDA01866177485EB0009B3DF /* PSOSMEditingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA01865177485EB0009B3DF /* PSOSMEditingTool.m */; };
+		CDD542741774B4D500314C59 /* LineButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD542721774B4D500314C59 /* LineButton.png */; };
+		CDD542751774B4D500314C59 /* POIButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD542731774B4D500314C59 /* POIButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +62,8 @@
 		CDA0185F177471D50009B3DF /* PSEditingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSEditingTool.m; sourceTree = "<group>"; };
 		CDA01861177473190009B3DF /* PSEditingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSEditingView.h; sourceTree = "<group>"; };
 		CDA01862177473190009B3DF /* PSEditingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSEditingView.m; sourceTree = "<group>"; };
-		CDA01864177485EA0009B3DF /* PSOSMEditingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSOSMEditingTool.h; sourceTree = "<group>"; };
-		CDA01865177485EB0009B3DF /* PSOSMEditingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSOSMEditingTool.m; sourceTree = "<group>"; };
+		CDD542721774B4D500314C59 /* LineButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LineButton.png; sourceTree = "<group>"; };
+		CDD542731774B4D500314C59 /* POIButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = POIButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +112,8 @@
 			children = (
 				CDA0185A1774609A0009B3DF /* 45361.png */,
 				CDA0185B1774609A0009B3DF /* 45360.png */,
+				CDD542721774B4D500314C59 /* LineButton.png */,
+				CDD542731774B4D500314C59 /* POIButton.png */,
 				CD8508C817745D13005C25E1 /* ACLoupe.h */,
 				CD8508C917745D13005C25E1 /* ACLoupe.m */,
 				CD8508CA17745D13005C25E1 /* ACMagnifyingGlass.h */,
@@ -128,8 +131,6 @@
 				CDA01862177473190009B3DF /* PSEditingView.m */,
 				CDA0185E177471D50009B3DF /* PSEditingTool.h */,
 				CDA0185F177471D50009B3DF /* PSEditingTool.m */,
-				CDA01864177485EA0009B3DF /* PSOSMEditingTool.h */,
-				CDA01865177485EB0009B3DF /* PSOSMEditingTool.m */,
 			);
 			path = MagnifyingGlassTest;
 			sourceTree = "<group>";
@@ -217,6 +218,8 @@
 				CDA0185C1774609A0009B3DF /* 45361.png in Resources */,
 				CDA0185D1774609A0009B3DF /* 45360.png in Resources */,
 				CD8782401774934700211C75 /* crosshair.png in Resources */,
+				CDD542741774B4D500314C59 /* LineButton.png in Resources */,
+				CDD542751774B4D500314C59 /* POIButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +238,6 @@
 				CD8508D217745D13005C25E1 /* ACMagnifyingView.m in Sources */,
 				CDA01860177471D50009B3DF /* PSEditingTool.m in Sources */,
 				CDA01863177473190009B3DF /* PSEditingView.m in Sources */,
-				CDA01866177485EB0009B3DF /* PSOSMEditingTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

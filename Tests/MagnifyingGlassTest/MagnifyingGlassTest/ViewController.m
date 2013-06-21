@@ -10,7 +10,6 @@
 #import "ACMagnifyingGlass.h"
 #import "ACLoupe.h"
 #import "PSEditingTool.h"
-#import "PSOSMEditingTool.h"
 
 @interface ViewController ()
 
@@ -30,16 +29,6 @@
     PSEditingTool *editingTool = [[PSEditingTool alloc] initWithFrame:CGRectMake(0, 0, 120, 120)];
     editingTool.scale = 2;
     _editingView.editingTool = editingTool;
-
-    /*
-    PSOSMEditingTool *osmEditingTool = [[PSOSMEditingTool alloc] init];
-    _editingView.editingTool = osmEditingTool;
-    */
-
-    /*
-    ACLoupe *loupe = [[ACLoupe alloc] init];
-    _magnifyingView.magnifyingGlass = loupe;
-     */
 }
 
 - (void)didReceiveMemoryWarning
