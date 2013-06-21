@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RMTileCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RMTileCache</TokenIdentifier>
+			<Abstract type="html">The RMTileCache protocol describes behaviors that tile caches should implement.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileCache/cachedImage:withCacheKey:</TokenIdentifier>
+			<Abstract type="html">Returns an image from the cache if it exists.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>- (UIImage *)cachedImage:(RMTile)tile withCacheKey:(NSString *)cacheKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tile</Name>
+					<Abstract type="html">A desired RMTile.</Abstract>
+				</Parameter><Parameter>
+					<Name>cacheKey</Name>
+					<Abstract type="html">The key representing a certain cache.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An image of the tile that can be used to draw a portion of the map.</Abstract></ReturnValue>
+			<Anchor>//api/name/cachedImage:withCacheKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileCache/addImage:forTile:withCacheKey:</TokenIdentifier>
+			<Abstract type="html">Adds a tile image to specified cache.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)addImage:(UIImage *)image forTile:(RMTile)tile withCacheKey:(NSString *)cacheKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">A tile image to be cached.</Abstract>
+				</Parameter><Parameter>
+					<Name>tile</Name>
+					<Abstract type="html">The RMTile describing the map location of the image.</Abstract>
+				</Parameter><Parameter>
+					<Name>cacheKey</Name>
+					<Abstract type="html">The key representing a certain cache.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addImage:forTile:withCacheKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileCache/removeAllCachedImages</TokenIdentifier>
+			<Abstract type="html">Removes all tile images from a cache.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllCachedImages</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllCachedImages</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

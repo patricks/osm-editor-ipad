@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMTileMillSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMTileMillSource</TokenIdentifier>
+			<Abstract type="html">An RMTileMillSource is used to display map tiles from a live, running instance of TileMill. All instances of TileMill automatically include an HTTP server, allowing network access outside of the application. This tile source allows for an easier development cycle between map editing and testing in an iOS application.</Abstract>
+			<DeclaredIn>RMTileMillSource.h</DeclaredIn>
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMTileMillSource/initWithMapName:tileCacheKey:minZoom:maxZoom:</TokenIdentifier>
+			<Abstract type="html">Initialize and return a newly allocated TileMill tile source based on a given map name. This assumes that TileMill is running on the local development computer (e.g., localhost), which will not work from an iOS device but will work in the iOS Simulator.</Abstract>
+			<DeclaredIn>RMTileMillSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapName:(NSString *)mapName tileCacheKey:(NSString *)tileCacheKey minZoom:(float)minZoom maxZoom:(float)maxZoom</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapName</Name>
+					<Abstract type="html">The name of the map in TileMill, substituting dashes for spaces.</Abstract>
+				</Parameter><Parameter>
+					<Name>tileCacheKey</Name>
+					<Abstract type="html">A unique cache string to use for this tile source&apos;s tiles in the tile cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>minZoom</Name>
+					<Abstract type="html">The minimum zoom level supported by the map.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxZoom</Name>
+					<Abstract type="html">The maximum zoom level supported by the map.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized TileMill tile source.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapName:tileCacheKey:minZoom:maxZoom:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMTileMillSource/initWithHost:mapName:tileCacheKey:minZoom:maxZoom:</TokenIdentifier>
+			<Abstract type="html">Initialize and return a newly allocated TileMill tile source based on a given host and map name. This is ideal for testing on an actual iOS device if the network name or address of the computer running TileMill is passed as the host parameter.</Abstract>
+			<DeclaredIn>RMTileMillSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithHost:(NSString *)host mapName:(NSString *)mapName tileCacheKey:(NSString *)tileCacheKey minZoom:(float)minZoom maxZoom:(float)maxZoom</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>host</Name>
+					<Abstract type="html">The hostname or IP address of the computer running TileMill.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapName</Name>
+					<Abstract type="html">The name of the map in TileMill, substituting dashes for spaces.</Abstract>
+				</Parameter><Parameter>
+					<Name>tileCacheKey</Name>
+					<Abstract type="html">A unique cache string to use for this tile source&apos;s tiles in the tile cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>minZoom</Name>
+					<Abstract type="html">The minimum zoom level supported by the map.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxZoom</Name>
+					<Abstract type="html">The maximum zoom level supported by the map.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized TileMill tile source.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithHost:mapName:tileCacheKey:minZoom:maxZoom:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMAbstractMercatorTileSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMAbstractMercatorTileSource</TokenIdentifier>
+			<Abstract type="html">Abstract class representing a Mercator projection for the display of map tiles. Developers wanting to provide custom network-based tiles should subclass RMAbstractWebMapSource.</Abstract>
+			<DeclaredIn>RMAbstractMercatorTileSource.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

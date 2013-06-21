@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RMMapViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RMMapViewDelegate</TokenIdentifier>
+			<Abstract type="html">The RMMapViewDelegate protocol defines a set of optional methods that you can use to receive map-related update messages. Because many map operations require the RMMapView class to load data asynchronously, the map view calls these methods to notify your application when specific operations complete. The map view also uses these methods to request annotation layers and to manage interactions with those layers.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapView:layerForAnnotation:</TokenIdentifier>
+			<Abstract type="html">Returns (after creating or reusing) the layer associated with the specified annotation object.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view that requested the annotation layer.</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The object representing the annotation that is about to be displayed. In addition to your custom annotations, this object could be an RMUserLocation object representing the user’s current location.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The annotation layer to display for the specified annotation or nil if you do not want to display a layer.</Abstract></ReturnValue>
+			<Anchor>//api/name/mapView:layerForAnnotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapView:willHideLayerForAnnotation:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the visible layer for an annotation is about to be hidden from view due to scrolling or zooming the map.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapView:(RMMapView *)mapView willHideLayerForAnnotation:(RMAnnotation *)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view whose annotation alyer will be hidden.</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation whose layer will be hidden.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mapView:willHideLayerForAnnotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapView:didHideLayerForAnnotation:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the visible layer for an annotation has been hidden from view due to scrolling or zooming the map.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapView:(RMMapView *)mapView didHideLayerForAnnotation:(RMAnnotation *)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view whose annotation layer was hidden.</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation whose layer was hidden.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mapView:didHideLayerForAnnotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapView:didSelectAnnotation:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that one of its annotations was selected.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapView:(RMMapView *)mapView didSelectAnnotation:(RMAnnotation *)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view containing the annotation.</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation that was selected.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mapView:didSelectAnnotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapView:didDeselectAnnotation:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that one of its annotations was deselected.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapView:(RMMapView *)mapView didDeselectAnnotation:(RMAnnotation *)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view containing the annotation.</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation that was deselected.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mapView:didDeselectAnnotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/beforeMapMove:byUser:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when a map is about to move.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)beforeMapMove:(RMMapView *)map byUser:(BOOL)wasUserAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view that is about to move.</Abstract>
+				</Parameter><Parameter>
+					<Name>wasUserAction</Name>
+					<Abstract type="html">A Boolean indicating whether the map move is in response to a user action or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beforeMapMove:byUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/afterMapMove:byUser:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when a map has finished moving.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)afterMapMove:(RMMapView *)map byUser:(BOOL)wasUserAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view that has finished moving.</Abstract>
+				</Parameter><Parameter>
+					<Name>wasUserAction</Name>
+					<Abstract type="html">A Boolean indicating whether the map move was in response to a user action or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/afterMapMove:byUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/beforeMapZoom:byUser:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when a map is about to zoom.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)beforeMapZoom:(RMMapView *)map byUser:(BOOL)wasUserAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view that is about to zoom.</Abstract>
+				</Parameter><Parameter>
+					<Name>wasUserAction</Name>
+					<Abstract type="html">A Boolean indicating whether the map zoom is in response to a user action or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beforeMapZoom:byUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/afterMapZoom:byUser:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when a map has finished zooming.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)afterMapZoom:(RMMapView *)map byUser:(BOOL)wasUserAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view that has finished zooming.</Abstract>
+				</Parameter><Parameter>
+					<Name>wasUserAction</Name>
+					<Abstract type="html">A Boolean indicating whether the map zoom was in response to a user action or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/afterMapZoom:byUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapViewRegionDidChange:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the region displayed by the map view just changed.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapViewRegionDidChange:(RMMapView *)mapView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view whose visible region changed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mapViewRegionDidChange:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/doubleTapOnMap:at:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when the user double-taps a map view.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)doubleTapOnMap:(RMMapView *)map at:(CGPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map that was double-tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The point at which the map was double-tapped.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/doubleTapOnMap:at:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/singleTapOnMap:at:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when the user taps a map view.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)singleTapOnMap:(RMMapView *)map at:(CGPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map that was tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The point at which the map was tapped.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/singleTapOnMap:at:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/singleTapTwoFingersOnMap:at:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when the user taps a map view with two fingers.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)singleTapTwoFingersOnMap:(RMMapView *)map at:(CGPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map that was tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The center point at which the map was tapped.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/singleTapTwoFingersOnMap:at:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/longPressOnMap:at:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when the user long-presses a map view.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)longPressOnMap:(RMMapView *)map at:(CGPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map that was long-pressed.</Abstract>
+				</Parameter><Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The point at which the map was long-pressed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/longPressOnMap:at:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/tapOnAnnotation:onMap:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when the user taps the layer for an annotation.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)tapOnAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation that was tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tapOnAnnotation:onMap:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/doubleTapOnAnnotation:onMap:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when the user double-taps the layer for an annotation.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)doubleTapOnAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation that was double-tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/doubleTapOnAnnotation:onMap:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/longPressOnAnnotation:onMap:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when the user long-presses the layer for an annotation.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)longPressOnAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation that was long-pressed.</Abstract>
+				</Parameter><Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/longPressOnAnnotation:onMap:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/tapOnLabelForAnnotation:onMap:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when the user taps the label for an annotation.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)tapOnLabelForAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation whose label was was tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tapOnLabelForAnnotation:onMap:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/doubleTapOnLabelForAnnotation:onMap:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when the user double-taps the label for an annotation.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)doubleTapOnLabelForAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation whose label was was double-tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/doubleTapOnLabelForAnnotation:onMap:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/tapOnCalloutAccessoryControl:forAnnotation:onMap:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the user tapped one of the annotation layer&apos;s accessory buttons.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)tapOnCalloutAccessoryControl:(UIControl *)control forAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>control</Name>
+					<Abstract type="html">The control that was tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation whose callout control was tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view containing the specified annotation.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tapOnCalloutAccessoryControl:forAnnotation:onMap:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapView:shouldDragAnnotation:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate whether the user should be allowed to drag the layer for an annotation.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)mapView:(RMMapView *)map shouldDragAnnotation:(RMAnnotation *)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view.</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation the user is attempting to drag.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A Boolean value indicating whether the user should be allowed to drag the annotation layer.</Abstract></ReturnValue>
+			<Anchor>//api/name/mapView:shouldDragAnnotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapView:didDragAnnotation:withDelta:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the user is dragging an annotation layer.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapView:(RMMapView *)map didDragAnnotation:(RMAnnotation *)annotation withDelta:(CGPoint)delta</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view.</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation being dragged.</Abstract>
+				</Parameter><Parameter>
+					<Name>delta</Name>
+					<Abstract type="html">The delta of movement since the last drag notification.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mapView:didDragAnnotation:withDelta:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapView:didEndDragAnnotation:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the user has finished dragging an annotation layer.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapView:(RMMapView *)map didEndDragAnnotation:(RMAnnotation *)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map view.</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation that was dragged.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mapView:didEndDragAnnotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapViewWillStartLocatingUser:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the map view will start tracking the user’s position.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapViewWillStartLocatingUser:(RMMapView *)mapView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view that is tracking the user’s location.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mapViewWillStartLocatingUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapViewDidStopLocatingUser:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the map view stopped tracking the user’s location.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapViewDidStopLocatingUser:(RMMapView *)mapView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view that stopped tracking the user’s location.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mapViewDidStopLocatingUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapView:didUpdateUserLocation:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the location of the user was updated.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapView:(RMMapView *)mapView didUpdateUserLocation:(RMUserLocation *)userLocation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view that is tracking the user’s location.</Abstract>
+				</Parameter><Parameter>
+					<Name>userLocation</Name>
+					<Abstract type="html">The location object representing the user’s latest location.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mapView:didUpdateUserLocation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapView:didFailToLocateUserWithError:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that an attempt to locate the user’s position failed.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapView:(RMMapView *)mapView didFailToLocateUserWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view that is tracking the user’s location.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">An error object containing the reason why location tracking failed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mapView:didFailToLocateUserWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMMapViewDelegate/mapView:didChangeUserTrackingMode:animated:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the user tracking mode changed.</Abstract>
+			<DeclaredIn>RMMapViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapView:(RMMapView *)mapView didChangeUserTrackingMode:(RMUserTrackingMode)mode animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view whose user tracking mode changed.</Abstract>
+				</Parameter><Parameter>
+					<Name>mode</Name>
+					<Abstract type="html">The mode used to track the user’s location.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the change from the current mode to the new mode is animated; otherwise, it is not. This parameter affects only tracking mode changes. Changes to the user location or heading are always animated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mapView:didChangeUserTrackingMode:animated:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

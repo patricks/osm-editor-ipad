@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMMemoryCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMMemoryCache</TokenIdentifier>
+			<Abstract type="html">An RMMemoryCache object represents memory-based caching of map tile images. Since memory is constrained in the iOS environment, this cache is relatively small, but useful for increasing performance.</Abstract>
+			<DeclaredIn>RMMemoryCache.h</DeclaredIn>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMemoryCache/initWithCapacity:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated memory cache object with the specified tile count capacity.</Abstract>
+			<DeclaredIn>RMMemoryCache.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCapacity:(NSUInteger)aCapacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aCapacity</Name>
+					<Abstract type="html">The maximum number of tiles to be held in the cache.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized memory cache object or nil if the object couldn&apos;t be created.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCapacity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMemoryCache/setCapacity:</TokenIdentifier>
+			<Abstract type="html">The capacity, in number of tiles, that the memory cache can hold.</Abstract>
+			<DeclaredIn>RMMemoryCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSUInteger capacity</Declaration>
+			
+			
+			<Anchor>//api/name/capacity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMemoryCache/capacity</TokenIdentifier>
+			<Abstract type="html">The capacity, in number of tiles, that the memory cache can hold.</Abstract>
+			<DeclaredIn>RMMemoryCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSUInteger capacity</Declaration>
+			
+			
+			<Anchor>//api/name/capacity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMemoryCache/makeSpaceInCache</TokenIdentifier>
+			<Abstract type="html">Remove the least-recently used image from the cache if the cache is at or over capacity. This removes a single image from the cache.</Abstract>
+			<DeclaredIn>RMMemoryCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)makeSpaceInCache</Declaration>
+			
+			
+			<Anchor>//api/name/makeSpaceInCache</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

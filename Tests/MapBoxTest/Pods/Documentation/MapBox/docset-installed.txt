@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/patrick/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.MapBox-1.0.2.docset
+Time: 2013-04-09 16:57:31 +0000

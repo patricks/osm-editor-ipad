@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>SMCalloutView 1.1 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">SMCalloutView 1.1 </a></h1>
+				<a id="developerHome" href="index.html">Nick Farina</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SMCalloutView 1.1 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SMCalloutView 1.1 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<p>!<a href="http://cl.ly/image/2a2j1p3U243P/Image%202012.09.02%2010:04:58%20AM.png">Example Screenshot</a></p>
+
+<h1>Overview</h1>
+
+<p><a href="Classes/SMCalloutView.html">SMCalloutView</a> aims to be an exact replica of the private UICalloutView system control.</p>
+
+<p>We all love those &ldquo;bubbles&rdquo; you get when clicking pins in MKMapView. But sadly, it&rsquo;s impossible to present this bubble-style &ldquo;Callout&rdquo; UI anywhere outside MKMapView. Phooey! So this class <em>painstakingly</em> recreates this handy control for your pleasure.</p>
+
+<h1>Usage</h1>
+
+<p>To use <a href="Classes/SMCalloutView.html">SMCalloutView</a> in your own projects, simply copy the files <code></code>SMCalloutView<code>.h</code> and <code></code>SMCalloutView<code>.m</code>.</p>
+
+<p>The comments in <code></code>SMCalloutView<code>.h</code> do a lot of explaining on how to use the class, but the main function you&rsquo;ll need is <code>presentCalloutFromRect:</code>. You&rsquo;ll specify the view you&rsquo;d like to add the callout to, as well as the rect defining the &ldquo;target&rdquo; that the popup should point at. The target rect should be <em>in the coordinate system of the target view</em> (just like the similarly-named <code>UIPopover</code> method). Most likely this will be <code>target.frame</code> if you&rsquo;re adding the callout view as a sibling of the target view, or it would be <code>target.bounds</code> if you&rsquo;re adding the callout view to the target itself.</p>
+
+<p>You can study the included project&rsquo;s <code>AppDelegate.m</code> for a working example.</p>
+
+<h1>Questions</h1>
+
+<h4>How do I change the height of the callout?</h4>
+
+<p>If you use only the <code>title/titleView/subtitle/subtitleView</code> properties, the callout will always be the &ldquo;system standard&rdquo; height. If you assign the <code>contentView</code> property however, then the callout will size to fit the <code>contentView</code> and the other properties are ignored.</p>
+
+<h4>Can I customize the background graphics?</h4>
+
+<p>Yes, the callout background is an instance of <a href="Classes/SMCalloutBackgroundView.html"><code>SMCalloutBackgroundView</code></a>. You can set your own custom <code>View</code> subclass to be the background, or you can use one of the built-in subclasses:</p>
+
+<ul>
+<li><a href="Classes/SMCalloutImageBackgroundView.html"><code>SMCalloutImageBackgroundView</code></a> lets you specify each of the image &ldquo;fragments&rdquo; that make up a horizontally-stretchable background.</li>
+<li><a href="Classes/SMCalloutDrawnBackgroundView.html"><code>SMCalloutDrawnBackgroundView</code></a> draws the background at any size using CoreGraphics methods. You can copy the <code>-drawRect</code> method and change the parameters to suit your needs.</li>
+</ul>
+
+
+<h4>Can I use the callout with the Google Maps iOS SDK?</h4>
+
+<p>Check out <a href="[https://github.com/ryanmaxwell/GoogleMapsCalloutView](https://github.com/ryanmaxwell/GoogleMapsCalloutView)">ryanmaxwell&rsquo;s demo project</a> for an example of one way to do this. (<a href="[https://github.com/nfarina/calloutview/issues/25](https://github.com/nfarina/calloutview/issues/25)">More discussion on this topic</a>)</p>
+
+<h4>Have you recreated more of MapKit?</h4>
+
+<p>Nope, but you might be interested in <a href="[https://github.com/mapbox/mapbox-ios-sdk](https://github.com/mapbox/mapbox-ios-sdk)">MapBox&rsquo;s iOS SDK</a>, which uses <a href="Classes/SMCalloutView.html"><code>SMCalloutView</code></a> as part of its custom open-source variation of MapKit.</p>
+
+<h1>More Info</h1>
+
+<p>You can read more info if you wish in the <a href="[http://nfarina.com/post/29883229869/callout-view](http://nfarina.com/post/29883229869/callout-view)">blog post</a>.</p>
+
+<h1>ARC Support</h1>
+
+<p>This class requires LLVM 4.0 with <a href="http://clang.llvm.org/docs/AutomaticReferenceCounting.html">Automatic Reference Counting (ARC)</a>, enabled by default in modern Xcode projects.</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/SMCalloutBackgroundView.html">SMCalloutBackgroundView</a></li>
+							
+							<li><a href="Classes/SMCalloutDrawnBackgroundView.html">SMCalloutDrawnBackgroundView</a></li>
+							
+							<li><a href="Classes/SMCalloutImageBackgroundView.html">SMCalloutImageBackgroundView</a></li>
+							
+							<li><a href="Classes/SMCalloutView.html">SMCalloutView</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/SMCalloutViewDelegate.html">SMCalloutViewDelegate</a></li>
+							
+						</ul>
+						
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Nick Farina. All rights reserved. (Last updated: 2013-03-28)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

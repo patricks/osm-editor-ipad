@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMUserTrackingBarButtonItem.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMUserTrackingBarButtonItem</TokenIdentifier>
+			<Abstract type="html">An RMUserTrackingBarButtonItem object is a specialized bar button item that allows the user to toggle through the user tracking modes. For example, when the user taps the button, the map view toggles between tracking the user with and without heading. The button also reflects the current user tracking mode if set elsewhere. This bar button item is associated to a single map view.</Abstract>
+			<DeclaredIn>RMUserTrackingBarButtonItem.h</DeclaredIn>
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMUserTrackingBarButtonItem/initWithMapView:</TokenIdentifier>
+			<Abstract type="html">Initializes a newly created bar button item with the specified map view.</Abstract>
+			<DeclaredIn>RMUserTrackingBarButtonItem.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapView:(RMMapView *)mapView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view used by this bar button item.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized bar button item.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMUserTrackingBarButtonItem/setMapView:</TokenIdentifier>
+			<Abstract type="html">The map view associated with this bar button item.</Abstract>
+			<DeclaredIn>RMUserTrackingBarButtonItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet RMMapView *mapView</Declaration>
+			
+			
+			<Anchor>//api/name/mapView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMUserTrackingBarButtonItem/mapView</TokenIdentifier>
+			<Abstract type="html">The map view associated with this bar button item.</Abstract>
+			<DeclaredIn>RMUserTrackingBarButtonItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet RMMapView *mapView</Declaration>
+			
+			
+			<Anchor>//api/name/mapView</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMStaticMapView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMStaticMapView</TokenIdentifier>
+			<Abstract type="html">An RMStaticMapView object provides an embeddable, static map image view. You use this class to display map information in your application that does not need to change or provide user interaction. You can center the map on a given coordinate and zoom level, specify the size of the area you want to display, and optionally provide a completion handler that can be performed upon map load. The map can also automatically have markers added to it if they were provided as simplestyle data when the map was created.</Abstract>
+			<DeclaredIn>RMStaticMapView.h</DeclaredIn>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMStaticMapView/initWithFrame:mapID:</TokenIdentifier>
+			<Abstract type="html">Initialize a static map view with a given frame and mapID.</Abstract>
+			<DeclaredIn>RMStaticMapView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame mapID:(NSString *)mapID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">The frame with which to initialize the map view.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapID</Name>
+					<Abstract type="html">The MapBox map ID string, typically in the format &lt;username&gt;.map-&lt;mapname&gt;.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized map view, or nil if the map view was unable to be initialized.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFrame:mapID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMStaticMapView/initWithFrame:mapID:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Initialize a static map view with a given frame and mapID, performing a block upon completion of the map load.</Abstract>
+			<DeclaredIn>RMStaticMapView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame mapID:(NSString *)mapID completionHandler:(void ( ^ ) ( UIImage *))handler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">The frame with which to initialize the map view.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapID</Name>
+					<Abstract type="html">The MapBox map ID string, typically in the format &lt;username&gt;.map-&lt;mapname&gt;.</Abstract>
+				</Parameter><Parameter>
+					<Name>handler</Name>
+					<Abstract type="html">A block to be performed upon map and marker load completion. An image of the map, including markers, is passed as an argument to the block in the event that you wish to use it elsewhere. The handler will be called on the main dispatch queue.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized map view, or nil if the map view was unable to be initialized.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFrame:mapID:completionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMStaticMapView/initWithFrame:mapID:centerCoordinate:zoomLevel:</TokenIdentifier>
+			<Abstract type="html">Initialize a static map view with a given frame, mapID, center coordinate, and zoom level.</Abstract>
+			<DeclaredIn>RMStaticMapView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame mapID:(NSString *)mapID centerCoordinate:(CLLocationCoordinate2D)centerCoordinate zoomLevel:(CGFloat)zoomLevel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">The frame with which to initialize the map view.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapID</Name>
+					<Abstract type="html">The MapBox map ID string, typically in the format &lt;username&gt;.map-&lt;mapname&gt;.</Abstract>
+				</Parameter><Parameter>
+					<Name>centerCoordinate</Name>
+					<Abstract type="html">The map center coordinate.</Abstract>
+				</Parameter><Parameter>
+					<Name>zoomLevel</Name>
+					<Abstract type="html">The map zoom level.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized map view, or nil if the map view was unable to be initialized.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFrame:mapID:centerCoordinate:zoomLevel:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMStaticMapView/initWithFrame:mapID:centerCoordinate:zoomLevel:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Designated initializer. Initialize a static map view with a given frame, mapID, center coordinate, and zoom level, performing a block upon completion of the map load.</Abstract>
+			<DeclaredIn>RMStaticMapView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame mapID:(NSString *)mapID centerCoordinate:(CLLocationCoordinate2D)centerCoordinate zoomLevel:(CGFloat)zoomLevel completionHandler:(void ( ^ ) ( UIImage *))handler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">The frame with which to initialize the map view.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapID</Name>
+					<Abstract type="html">The MapBox map ID string, typically in the format &lt;username&gt;.map-&lt;mapname&gt;.</Abstract>
+				</Parameter><Parameter>
+					<Name>centerCoordinate</Name>
+					<Abstract type="html">The map center coordinate.</Abstract>
+				</Parameter><Parameter>
+					<Name>zoomLevel</Name>
+					<Abstract type="html">The map zoom level.</Abstract>
+				</Parameter><Parameter>
+					<Name>handler</Name>
+					<Abstract type="html">A block to be performed upon map load completion. An image of the map, including markers, is passed as an argument to the block in the event that you wish to use it elsewhere. The handler will be called on the main dispatch queue.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized map view, or nil if the map view was unable to be initialized.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFrame:mapID:centerCoordinate:zoomLevel:completionHandler:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

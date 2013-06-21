@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMMarker.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMMarker</TokenIdentifier>
+			<Abstract type="html">An RMMarker object is used for simple point annotations on a map view, represented as a single image. RMMarker objects do not change in size when the map view zooms in or out, but instead stay the same size to consistently represent a point on the map view.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/setLabel:</TokenIdentifier>
+			<Abstract type="html">A custom label for the marker. The label is shown when first set.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIView *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMarker/label</TokenIdentifier>
+			<Abstract type="html">A custom label for the marker. The label is shown when first set.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIView *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/setTextForegroundColor:</TokenIdentifier>
+			<Abstract type="html">The marker object&apos;s label text foreground color. Defaults to black.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *textForegroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/textForegroundColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMarker/textForegroundColor</TokenIdentifier>
+			<Abstract type="html">The marker object&apos;s label text foreground color. Defaults to black.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *textForegroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/textForegroundColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/setTextBackgroundColor:</TokenIdentifier>
+			<Abstract type="html">The marker object&apos;s label text background color. Defaults to clear.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *textBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/textBackgroundColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMarker/textBackgroundColor</TokenIdentifier>
+			<Abstract type="html">The marker object&apos;s label text background color. Defaults to clear.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *textBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/textBackgroundColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RMMarker/defaultFont</TokenIdentifier>
+			<Abstract type="html">The font used for labels when another font is not explicitly requested. The default is the system font with size 15.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>+ (UIFont *)defaultFont</Declaration>
+			
+			
+			<Anchor>//api/name/defaultFont</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/initWithUIImage:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated marker object using the specified image.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithUIImage:(UIImage *)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">An image to use for the marker.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithUIImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/initWithUIImage:anchorPoint:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated marker object using the specified image and anchor point.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithUIImage:(UIImage *)image anchorPoint:(CGPoint)anchorPoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">An image to use for the marker.</Abstract>
+				</Parameter><Parameter>
+					<Name>anchorPoint</Name>
+					<Abstract type="html">A point representing a range from 0 to 1 in each of the height and width coordinate space, normalized to the size of the image, at which to place the image.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized marker object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithUIImage:anchorPoint:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/initWithMapBoxMarkerImage</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated marker object using a red, medium-sized star pin image.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapBoxMarkerImage</Declaration>
+			
+			
+			<Anchor>//api/name/initWithMapBoxMarkerImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/initWithMapBoxMarkerImage:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated marker object using a red, medium-sized pin image and a given symbol name, e.g., bus.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapBoxMarkerImage:(NSString *)symbolName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>symbolName</Name>
+					<Abstract type="html">A symbol name from the Maki icon set.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized RMMarker layer.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapBoxMarkerImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/initWithMapBoxMarkerImage:tintColor:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated marker object using a medium-sized pin image, a given symbol name, e.g., bus, and a given color.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapBoxMarkerImage:(NSString *)symbolName tintColor:(UIColor *)color</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>symbolName</Name>
+					<Abstract type="html">A symbol name from the Maki icon set.</Abstract>
+				</Parameter><Parameter>
+					<Name>color</Name>
+					<Abstract type="html">A color for the marker.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized RMMarker layer.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapBoxMarkerImage:tintColor:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/initWithMapBoxMarkerImage:tintColor:size:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated marker object using a pin image, a given symbol name, e.g., bus, a given color, and a given size.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapBoxMarkerImage:(NSString *)symbolName tintColor:(UIColor *)color size:(RMMarkerMapBoxImageSize)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>symbolName</Name>
+					<Abstract type="html">A symbol name from the Maki icon set.</Abstract>
+				</Parameter><Parameter>
+					<Name>color</Name>
+					<Abstract type="html">A color for the marker.</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">A size for the marker.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized RMMarker layer.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapBoxMarkerImage:tintColor:size:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/initWithMapBoxMarkerImage:tintColorHex:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated marker object using a medium-sized pin image, a given symbol name, e.g., bus, and a given HTML hex color, e.g., ff0000.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapBoxMarkerImage:(NSString *)symbolName tintColorHex:(NSString *)colorHex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>symbolName</Name>
+					<Abstract type="html">A symbol name from the Maki icon set.</Abstract>
+				</Parameter><Parameter>
+					<Name>colorHex</Name>
+					<Abstract type="html">A color for the marker specified as an HTML hex code.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized RMMarker layer.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapBoxMarkerImage:tintColorHex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/initWithMapBoxMarkerImage:tintColorHex:sizeString:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated marker object using a pin image, a given symbol name, e.g., bus, a given HTML hex color, e.g., ff0000, and a given size, e.g., large.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapBoxMarkerImage:(NSString *)symbolName tintColorHex:(NSString *)colorHex sizeString:(NSString *)sizeString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>symbolName</Name>
+					<Abstract type="html">A symbol name from the Maki icon set.</Abstract>
+				</Parameter><Parameter>
+					<Name>colorHex</Name>
+					<Abstract type="html">A color for the marker specified as an HTML hex code.</Abstract>
+				</Parameter><Parameter>
+					<Name>sizeString</Name>
+					<Abstract type="html">A size such as small, medium, or large.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized RMMarker layer.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapBoxMarkerImage:tintColorHex:sizeString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RMMarker/clearCachedMapBoxMarkers</TokenIdentifier>
+			<Abstract type="html">Clears the local cache of Mapbox Marker images. Images are cached locally upon first use so that if the application goes offline, markers can still be used.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>+ (void)clearCachedMapBoxMarkers</Declaration>
+			
+			
+			<Anchor>//api/name/clearCachedMapBoxMarkers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/changeLabelUsingText:</TokenIdentifier>
+			<Abstract type="html">Changes the label to a UILabel with the supplied text and default marker font and using the existing text foreground and background colors.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (void)changeLabelUsingText:(NSString *)text</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>text</Name>
+					<Abstract type="html">The text for the label.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/changeLabelUsingText:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/changeLabelUsingText:font:foregroundColor:backgroundColor:</TokenIdentifier>
+			<Abstract type="html">Changes the label to a UILabel with the supplied text and font and using the given text foreground and background colors.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (void)changeLabelUsingText:(NSString *)text font:(UIFont *)font foregroundColor:(UIColor *)textColor backgroundColor:(UIColor *)backgroundColor</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>text</Name>
+					<Abstract type="html">The text for the label.</Abstract>
+				</Parameter><Parameter>
+					<Name>font</Name>
+					<Abstract type="html">A font to use for the label text.</Abstract>
+				</Parameter><Parameter>
+					<Name>textColor</Name>
+					<Abstract type="html">The color for the label text.</Abstract>
+				</Parameter><Parameter>
+					<Name>backgroundColor</Name>
+					<Abstract type="html">The color for the label background.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/changeLabelUsingText:font:foregroundColor:backgroundColor:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/toggleLabel</TokenIdentifier>
+			<Abstract type="html">Toggle the display of the marker&apos;s label, if any. If hidden, show and if shown, hide.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (void)toggleLabel</Declaration>
+			
+			
+			<Anchor>//api/name/toggleLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/showLabel</TokenIdentifier>
+			<Abstract type="html">Show the marker&apos;s label, if any.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (void)showLabel</Declaration>
+			
+			
+			<Anchor>//api/name/showLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/hideLabel</TokenIdentifier>
+			<Abstract type="html">Hide the marker&apos;s label, if any.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (void)hideLabel</Declaration>
+			
+			
+			<Anchor>//api/name/hideLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/replaceUIImage:</TokenIdentifier>
+			<Abstract type="html">Replace the image for a marker.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (void)replaceUIImage:(UIImage *)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">An image to use for the marker.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/replaceUIImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMarker/replaceUIImage:anchorPoint:</TokenIdentifier>
+			<Abstract type="html">Replace the image for a marker using a custom anchor point.</Abstract>
+			<DeclaredIn>RMMarker.h</DeclaredIn>			
+			
+			<Declaration>- (void)replaceUIImage:(UIImage *)image anchorPoint:(CGPoint)anchorPoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">An image to use for the marker.</Abstract>
+				</Parameter><Parameter>
+					<Name>anchorPoint</Name>
+					<Abstract type="html">A point representing a range from 0 to 1 in each of the height and width coordinate space, normalized to the size of the image, at which to place the image.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/replaceUIImage:anchorPoint:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

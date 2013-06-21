@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/patrick/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.GRMustache-5.4.3.docset
+Time: 2013-03-28 10:45:53 +0000

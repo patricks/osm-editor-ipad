@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>FMDB 2.0</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="6"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>FMDatabase</Name>
+			<Path>Classes/FMDatabase.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>FMDatabasePool</Name>
+			<Path>Classes/FMDatabasePool.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>FMDatabaseQueue</Name>
+			<Path>Classes/FMDatabaseQueue.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>FMResultSet</Name>
+			<Path>Classes/FMResultSet.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>FMStatement</Name>
+			<Path>Classes/FMStatement.html</Path>
+		</Node>
+		
+		<Node id="6">
+			<Name>NSObject(FMDatabasePoolDelegate)</Name>
+			<Path>Categories/NSObject+FMDatabasePoolDelegate.html</Path>
+		</Node>
+		
+		
+	</Library>
+</DocSetNodes>

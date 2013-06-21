@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SMCalloutView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SMCalloutView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutView/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) id&lt;SMCalloutViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMCalloutView/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) id&lt;SMCalloutViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutView/setSubtitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *, *subtitle</Declaration>
+			
+			
+			<Anchor>//api/name/subtitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMCalloutView/subtitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *, *subtitle</Declaration>
+			
+			
+			<Anchor>//api/name/subtitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutView/setRightAccessoryView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *, *rightAccessoryView</Declaration>
+			
+			
+			<Anchor>//api/name/rightAccessoryView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMCalloutView/rightAccessoryView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *, *rightAccessoryView</Declaration>
+			
+			
+			<Anchor>//api/name/rightAccessoryView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutView/setCurrentArrowDirection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SMCalloutArrowDirection currentArrowDirection</Declaration>
+			
+			
+			<Anchor>//api/name/currentArrowDirection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMCalloutView/currentArrowDirection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SMCalloutArrowDirection currentArrowDirection</Declaration>
+			
+			
+			<Anchor>//api/name/currentArrowDirection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutView/setBackgroundView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SMCalloutBackgroundView *backgroundView</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMCalloutView/backgroundView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SMCalloutBackgroundView *backgroundView</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutView/setSubtitleView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *, *subtitleView</Declaration>
+			
+			
+			<Anchor>//api/name/subtitleView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMCalloutView/subtitleView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *, *subtitleView</Declaration>
+			
+			
+			<Anchor>//api/name/subtitleView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutView/setContentView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *contentView</Declaration>
+			
+			
+			<Anchor>//api/name/contentView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMCalloutView/contentView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *contentView</Declaration>
+			
+			
+			<Anchor>//api/name/contentView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutView/setCalloutOffset:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGPoint calloutOffset</Declaration>
+			
+			
+			<Anchor>//api/name/calloutOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMCalloutView/calloutOffset</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGPoint calloutOffset</Declaration>
+			
+			
+			<Anchor>//api/name/calloutOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutView/setDismissAnimation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) SMCalloutAnimation presentAnimation , dismissAnimation</Declaration>
+			
+			
+			<Anchor>//api/name/dismissAnimation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMCalloutView/dismissAnimation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) SMCalloutAnimation presentAnimation , dismissAnimation</Declaration>
+			
+			
+			<Anchor>//api/name/dismissAnimation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutView/presentCalloutFromRect:inView:constrainedToView:permittedArrowDirections:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>- (void)presentCalloutFromRect:(CGRect)rect inView:(UIView *)view constrainedToView:(UIView *)constrainedView permittedArrowDirections:(SMCalloutArrowDirection)arrowDirections animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/presentCalloutFromRect:inView:constrainedToView:permittedArrowDirections:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutView/presentCalloutFromRect:inLayer:constrainedToLayer:permittedArrowDirections:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>- (void)presentCalloutFromRect:(CGRect)rect inLayer:(CALayer *)layer constrainedToLayer:(CALayer *)constrainedLayer permittedArrowDirections:(SMCalloutArrowDirection)arrowDirections animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/presentCalloutFromRect:inLayer:constrainedToLayer:permittedArrowDirections:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutView/dismissCalloutAnimated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>- (void)dismissCalloutAnimated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/dismissCalloutAnimated:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,1 @@
+/Users/patrick/Documents/tmp/MapBoxTest/Pods/Resources/MapBox.bundle

@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>FMDB 2.0 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">FMDB 2.0 </a></h1>
+				<a id="developerHome" href="index.html">August Mueller</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">FMDB 2.0 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">FMDB 2.0 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1>FMDB</h1>
+
+<p>This is an Objective-C wrapper around SQLite: <a href="http://sqlite.org/">http://sqlite.org/</a></p>
+
+<h2>The FMDB Mailing List:</h2>
+
+<p><a href="http://groups.google.com/group/fmdb">http://groups.google.com/group/fmdb</a></p>
+
+<h2>Read the SQLite FAQ:</h2>
+
+<p><a href="http://www.sqlite.org/faq.html">http://www.sqlite.org/faq.html</a></p>
+
+<p>Since FMDB is built on top of SQLite, you&rsquo;re going to want to read this page top to bottom at least once.  And while you&rsquo;re there, make sure to bookmark the SQLite Documentation page: <a href="http://www.sqlite.org/docs.html">http://www.sqlite.org/docs.html</a></p>
+
+<h2>Automatic Reference Counting (ARC) or Manual Memory Management?</h2>
+
+<p>You can use either style in your Cocoa project.  FMDB Will figure out which you are using at compile time and do the right thing.</p>
+
+<h2>Usage</h2>
+
+<p>There are three main classes in FMDB:</p>
+
+<ol>
+<li><a href="Classes/FMDatabase.html"><code>FMDatabase</code></a> &ndash; Represents a single SQLite database.  Used for executing SQL statements.</li>
+<li><a href="Classes/FMResultSet.html"><code>FMResultSet</code></a> &ndash; Represents the results of executing a query on an <a href="Classes/FMDatabase.html"><code>FMDatabase</code></a>.</li>
+<li><a href="Classes/FMDatabaseQueue.html"><code>FMDatabaseQueue</code></a> &ndash; If you&rsquo;re wanting to perform queries and updates on multiple threads, you&rsquo;ll want to use this class.  It&rsquo;s described in the &ldquo;Thread Safety&rdquo; section below.</li>
+</ol>
+
+
+<h3>Database Creation</h3>
+
+<p>An <a href="Classes/FMDatabase.html"><code>FMDatabase</code></a> is created with a path to a SQLite database file.  This path can be one of these three:</p>
+
+<ol>
+<li>A file system path.  The file does not have to exist on disk.  If it does not exist, it is created for you.</li>
+<li>An empty string (<code>@""</code>).  An empty database is created at a temporary location.  This database is deleted with the <a href="Classes/FMDatabase.html"><code>FMDatabase</code></a> connection is closed.</li>
+<li><p><code>NULL</code>.  An in-memory database is created.  This database will be destroyed with the <a href="Classes/FMDatabase.html"><code>FMDatabase</code></a> connection is closed.</p>
+
+<p> <a href="Classes/FMDatabase.html">FMDatabase</a> *db = [FMDatabase databaseWithPath:@&ldquo;/tmp/tmp.db&rdquo;];</p></li>
+</ol>
+
+
+<h3>Opening</h3>
+
+<p>Before you can interact with the database, it must be opened.  Opening fails if there are insufficient resources or permissions to open and/or create the database.</p>
+
+<pre><code>if (![db open]) {
+    [db release];
+    return;
+}
+</code></pre>
+
+<h3>Executing Updates</h3>
+
+<p>Any sort of SQL statement which is not a <code>SELECT</code> statement qualifies as an update.  This includes <code>CREATE</code>, <code>PRAGMA</code>, <code>UPDATE</code>, <code>INSERT</code>, <code>ALTER</code>, <code>COMMIT</code>, <code>BEGIN</code>, <code>DETACH</code>, <code>DELETE</code>, <code>DROP</code>, <code>END</code>, <code>EXPLAIN</code>, <code>VACUUM</code>, and <code>REPLACE</code> statements (plus many more).  Basically, if your SQL statement does not begin with <code>SELECT</code>, it is an update statement.</p>
+
+<p>Executing updates returns a single value, a <code>BOOL</code>.  A return value of <code>YES</code> means the update was successfully executed, and a return value of <code>NO</code> means that some error was encountered.  If you use the <code>[FMDatabase executeUpdate:error:withArgumentsInArray:orVAList:]</code> method to execute an update, you may supply an <code>NSError **</code> that will be filled in if execution fails.  Otherwise you may invoke the <code>-lastErrorMessage</code> and <code>-lastErrorCode</code> methods to retrieve more information.</p>
+
+<h3>Executing Queries</h3>
+
+<p>A <code>SELECT</code> statement is a query and is executed via one of the <code>-executeQuery...</code> methods.</p>
+
+<p>Executing queries returns an <code>FMResultSet</code> object if successful, and <code>nil</code> upon failure.  Like executing updates, there is a variant that accepts an <code>NSError **</code> parameter.  Otherwise you should use the <code>-lastErrorMessage</code> and <code>-lastErrorCode</code> methods to determine why a query failed.</p>
+
+<p>In order to iterate through the results of your query, you use a <code>while()</code> loop.  You also need to &ldquo;step&rdquo; from one record to the other.  With FMDB, the easiest way to do that is like this:</p>
+
+<pre><code>FMResultSet *s = [db executeQuery:@"SELECT * FROM myTable"];
+while ([s next]) {
+    //retrieve values for each record
+}
+</code></pre>
+
+<p>You must always invoke <code>[FMResultSet next]</code> before attempting to access the values returned in a query, even if you&rsquo;re only expecting one:</p>
+
+<pre><code>FMResultSet *s = [db executeQuery:@"SELECT COUNT(*) FROM myTable"];
+if ([s next]) {
+    int totalCount = [s intForColumnIndex:0];
+}
+</code></pre>
+
+<p><code>FMResultSet</code> has many methods to retrieve data in an appropriate format:</p>
+
+<ul>
+<li><code>intForColumn:</code></li>
+<li><code>longForColumn:</code></li>
+<li><code>longLongIntForColumn:</code></li>
+<li><code>boolForColumn:</code></li>
+<li><code>doubleForColumn:</code></li>
+<li><code>stringForColumn:</code></li>
+<li><code>dateForColumn:</code></li>
+<li><code>dataForColumn:</code></li>
+<li><code>dataNoCopyForColumn:</code></li>
+<li><code>UTF8StringForColumnIndex:</code></li>
+<li><code>objectForColumn:</code></li>
+</ul>
+
+
+<p>Each of these methods also has a <code>{type}ForColumnIndex:</code> variant that is used to retrieve the data based on the position of the column in the results, as opposed to the column&rsquo;s name.</p>
+
+<p>Typically, there&rsquo;s no need to <code>-close</code> an <code>FMResultSet</code> yourself, since that happens when either the result set is deallocated, or the parent database is closed.</p>
+
+<h3>Closing</h3>
+
+<p>When you have finished executing queries and updates on the database, you should <code>-close</code> the <code>FMDatabase</code> connection so that SQLite will relinquish any resources it has acquired during the course of its operation.</p>
+
+<pre><code>[db close];
+</code></pre>
+
+<h3>Transactions</h3>
+
+<p><code>FMDatabase</code> can begin and commit a transaction by invoking one of the appropriate methods or executing a begin/end transaction statement.</p>
+
+<h3>Data Sanitization</h3>
+
+<p>When providing a SQL statement to FMDB, you should not attempt to &ldquo;sanitize&rdquo; any values before insertion.  Instead, you should use the standard SQLite binding syntax:</p>
+
+<pre><code>INSERT INTO myTable VALUES (?, ?, ?)
+</code></pre>
+
+<p>The <code>?</code> character is recognized by SQLite as a placeholder for a value to be inserted.  The execution methods all accept a variable number of arguments (or a representation of those arguments, such as an <code>NSArray</code>, <code>NSDictionary</code>, or a <code>va_list</code>), which are properly escaped for you.</p>
+
+<p>Alternatively, you may use named parameters syntax:</p>
+
+<pre><code>INSERT INTO myTable VALUES (:id, :name, :value)
+</code></pre>
+
+<p>The parameters <em>must</em> start with a colon. SQLite itself supports other characters, but internally the Dictionary keys are prefixed with a colon, do <strong>not</strong> include the colon in your dictionary keys.</p>
+
+<pre><code>NSDictionary *argsDict = [NSDictionary dictionaryWithObjectsAndKeys:@"My Name", @"name", nil];
+[db executeUpdate:@"INSERT INTO myTable (name) VALUES (:name)" withArgumentsInDictionary:argsDict];
+</code></pre>
+
+<p>Thus, you SHOULD NOT do this (or anything like this):</p>
+
+<pre><code>[db executeUpdate:[NSString stringWithFormat:@"INSERT INTO myTable VALUES (%@)", @"this has \" lots of ' bizarre \" quotes '"]];
+</code></pre>
+
+<p>Instead, you SHOULD do:</p>
+
+<pre><code>[db executeUpdate:@"INSERT INTO myTable VALUES (?)", @"this has \" lots of ' bizarre \" quotes '"];
+</code></pre>
+
+<p>All arguments provided to the <code>-executeUpdate:</code> method (or any of the variants that accept a <code>va_list</code> as a parameter) must be objects.  The following will not work (and will result in a crash):</p>
+
+<pre><code>[db executeUpdate:@"INSERT INTO myTable VALUES (?)", 42];
+</code></pre>
+
+<p>The proper way to insert a number is to box it in an <code>NSNumber</code> object:</p>
+
+<pre><code>[db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:42]];
+</code></pre>
+
+<p>Alternatively, you can use the <code>-execute*WithFormat:</code> variant to use <code>NSString</code>-style substitution:</p>
+
+<pre><code>[db executeUpdateWithFormat:@"INSERT INTO myTable VALUES (%d)", 42];
+</code></pre>
+
+<p>Internally, the <code>-execute*WithFormat:</code> methods are properly boxing things for you.  The following percent modifiers are recognized:  <code>%@</code>, <code>%c</code>, <code>%s</code>, <code>%d</code>, <code>%D</code>, <code>%i</code>, <code>%u</code>, <code>%U</code>, <code>%hi</code>, <code>%hu</code>, <code>%qi</code>, <code>%qu</code>, <code>%f</code>, <code>%g</code>, <code>%ld</code>, <code>%lu</code>, <code>%lld</code>, and <code>%llu</code>.  Using a modifier other than those will have unpredictable results.  If, for some reason, you need the <code>%</code> character to appear in your SQL statement, you should use <code>%%</code>.</p>
+
+<h2 id="threads">Using [FMDatabaseQueue](Classes/FMDatabaseQueue.html) and Thread Safety.</h2>
+
+
+<p>Using a single instance of <a href="Classes/FMDatabase.html">FMDatabase</a> from multiple threads at once is a bad idea.  It has always been OK to make a <a href="Classes/FMDatabase.html">FMDatabase</a> object <em>per thread</em>.  Just don&rsquo;t share a single instance across threads, and definitely not across multiple threads at the same time.  Bad things will eventually happen and you&rsquo;ll eventually get something to crash, or maybe get an exception, or maybe meteorites will fall out of the sky and hit your Mac Pro.  <em>This would suck</em>.</p>
+
+<p><strong>So don&rsquo;t instantiate a single <a href="Classes/FMDatabase.html">FMDatabase</a> object and use it across multiple threads.</strong></p>
+
+<p>Instead, use <a href="Classes/FMDatabaseQueue.html">FMDatabaseQueue</a>.  It&rsquo;s your friend and it&rsquo;s here to help.  Here&rsquo;s how to use it:</p>
+
+<p>First, make your queue.</p>
+
+<pre><code>FMDatabaseQueue *queue = [FMDatabaseQueue databaseQueueWithPath:aPath];
+</code></pre>
+
+<p>Then use it like so:</p>
+
+<pre><code>[queue inDatabase:^(FMDatabase *db) {
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:1]];
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:2]];
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:3]];
+
+    FMResultSet *rs = [db executeQuery:@"select * from foo"];
+    while ([rs next]) {
+        …
+    }
+}];
+</code></pre>
+
+<p>An easy way to wrap things up in a transaction can be done like this:</p>
+
+<pre><code>[queue inTransaction:^(FMDatabase *db, BOOL *rollback) {
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:1]];
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:2]];
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:3]];
+
+    if (whoopsSomethingWrongHappened) {
+        *rollback = YES;
+        return;
+    }
+    // etc…
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:4]];
+}];
+</code></pre>
+
+<p><a href="Classes/FMDatabaseQueue.html">FMDatabaseQueue</a> will make a serialized GCD queue in the background and execute the blocks you pass to the GCD queue.  This means if you call your FMDatabaseQueue&rsquo;s methods from multiple threads at the same time GDC will execute them in the order they are received.  This means queries and updates won&rsquo;t step on each other&rsquo;s toes, and every one is happy.</p>
+
+<h2>Making custom sqlite functions, based on blocks.</h2>
+
+<p>You can do this!  For an example, look for &ldquo;makeFunctionNamed:&rdquo; in main.m</p>
+
+<h2>History</h2>
+
+<p>The history and changes are availbe on its <a href="https://github.com/ccgus/fmdb">GitHub page</a> and are summarized in the &ldquo;CHANGES_AND_TODO_LIST.txt&rdquo; file.</p>
+
+<h2>Contributors</h2>
+
+<p>The contributors to FMDB are contained in the &ldquo;Contributors.txt&rdquo; file.</p>
+
+<h2>License</h2>
+
+<p>The license for FMDB is contained in the &ldquo;License.txt&rdquo; file.</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/FMDatabase.html">FMDatabase</a></li>
+							
+							<li><a href="Classes/FMDatabasePool.html">FMDatabasePool</a></li>
+							
+							<li><a href="Classes/FMDatabaseQueue.html">FMDatabaseQueue</a></li>
+							
+							<li><a href="Classes/FMResultSet.html">FMResultSet</a></li>
+							
+							<li><a href="Classes/FMStatement.html">FMStatement</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/NSObject+FMDatabasePoolDelegate.html">NSObject(FMDatabasePoolDelegate)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 August Mueller. All rights reserved. (Last updated: 2013-03-28)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMAnnotation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMAnnotation</TokenIdentifier>
+			<Abstract type="html">An RMAnnotation defines a container for annotation data to be placed on a map. At a future point in time, depending on map use, a visible layer may be requested and displayed for the annotation. The layer can be set ahead of time using the annotation&apos;s layer property, or, in the recommended approach, can be provided by an RMMapView&apos;s delegate when first needed for display.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setCoordinate:</TokenIdentifier>
+			<Abstract type="html">The annotation&apos;s location on the map.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D coordinate</Declaration>
+			
+			
+			<Anchor>//api/name/coordinate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/coordinate</TokenIdentifier>
+			<Abstract type="html">The annotation&apos;s location on the map.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D coordinate</Declaration>
+			
+			
+			<Anchor>//api/name/coordinate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setTitle:</TokenIdentifier>
+			<Abstract type="html">The annotation&apos;s title.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/title</TokenIdentifier>
+			<Abstract type="html">The annotation&apos;s title.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setSubtitle:</TokenIdentifier>
+			<Abstract type="html">The annotation&apos;s subtitle.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *subtitle</Declaration>
+			
+			
+			<Anchor>//api/name/subtitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/subtitle</TokenIdentifier>
+			<Abstract type="html">The annotation&apos;s subtitle.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *subtitle</Declaration>
+			
+			
+			<Anchor>//api/name/subtitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setUserInfo:</TokenIdentifier>
+			<Abstract type="html">Storage for arbitrary data.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) id userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/userInfo</TokenIdentifier>
+			<Abstract type="html">Storage for arbitrary data.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) id userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setAnnotationType:</TokenIdentifier>
+			<Abstract type="html">An arbitrary string representing the type of annotation. Useful for determining which layer to draw for the annotation when requested in the delegate. Cluster annotations, which are automatically created by a map view, will automatically have an annotationType of RMClusterAnnotation.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *annotationType</Declaration>
+			
+			
+			<Anchor>//api/name/annotationType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/annotationType</TokenIdentifier>
+			<Abstract type="html">An arbitrary string representing the type of annotation. Useful for determining which layer to draw for the annotation when requested in the delegate. Cluster annotations, which are automatically created by a map view, will automatically have an annotationType of RMClusterAnnotation.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *annotationType</Declaration>
+			
+			
+			<Anchor>//api/name/annotationType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setAnnotationIcon:</TokenIdentifier>
+			<Abstract type="html">An arbitrary icon image for the annotation. Useful to pass an image at annotation creation time for use in the layer at a later time.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *annotationIcon</Declaration>
+			
+			
+			<Anchor>//api/name/annotationIcon</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/annotationIcon</TokenIdentifier>
+			<Abstract type="html">An arbitrary icon image for the annotation. Useful to pass an image at annotation creation time for use in the layer at a later time.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *annotationIcon</Declaration>
+			
+			
+			<Anchor>//api/name/annotationIcon</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setPosition:</TokenIdentifier>
+			<Abstract type="html">The annotation&apos;s current location on screen. Do not set this directly unless during temporary operations like annotation drags, but rather use the coordinate property to permanently change the annotation&apos;s location on the map.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/position</TokenIdentifier>
+			<Abstract type="html">The annotation&apos;s current location on screen. Do not set this directly unless during temporary operations like annotation drags, but rather use the coordinate property to permanently change the annotation&apos;s location on the map.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setEnabled:</TokenIdentifier>
+			<Abstract type="html">Whether touch events for the annotation&apos;s layer are recognized. Defaults to YES.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isEnabled) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/enabled</TokenIdentifier>
+			<Abstract type="html">Whether touch events for the annotation&apos;s layer are recognized. Defaults to YES.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isEnabled) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setLayer:</TokenIdentifier>
+			<Abstract type="html">An object representing the annotation&apos;s visual appearance.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RMMarker</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RMShape</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RMCircle</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, strong) RMMapLayer *layer</Declaration>
+			
+			
+			<Anchor>//api/name/layer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/layer</TokenIdentifier>
+			<Abstract type="html">An object representing the annotation&apos;s visual appearance.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/RMMarker</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RMShape</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/RMCircle</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, strong) RMMapLayer *layer</Declaration>
+			
+			
+			<Anchor>//api/name/layer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setClusteringEnabled:</TokenIdentifier>
+			<Abstract type="html">Whether the annotation should be clustered when map view clustering is enabled. Defaults to YES.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL clusteringEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/clusteringEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/clusteringEnabled</TokenIdentifier>
+			<Abstract type="html">Whether the annotation should be clustered when map view clustering is enabled. Defaults to YES.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL clusteringEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/clusteringEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setIsClusterAnnotation:</TokenIdentifier>
+			<Abstract type="html">Whether an annotation is an automatically-managed cluster annotation.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) BOOL isClusterAnnotation</Declaration>
+			
+			
+			<Anchor>//api/name/isClusterAnnotation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/isClusterAnnotation</TokenIdentifier>
+			<Abstract type="html">Whether an annotation is an automatically-managed cluster annotation.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) BOOL isClusterAnnotation</Declaration>
+			
+			
+			<Anchor>//api/name/isClusterAnnotation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setClusteredAnnotations:</TokenIdentifier>
+			<Abstract type="html">If the annotation is a cluster annotation, returns an array containing the annotations in the cluster. Returns nil if the annotation is not a cluster annotation.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSArray *clusteredAnnotations</Declaration>
+			
+			
+			<Anchor>//api/name/clusteredAnnotations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/clusteredAnnotations</TokenIdentifier>
+			<Abstract type="html">If the annotation is a cluster annotation, returns an array containing the annotations in the cluster. Returns nil if the annotation is not a cluster annotation.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSArray *clusteredAnnotations</Declaration>
+			
+			
+			<Anchor>//api/name/clusteredAnnotations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setIsUserLocationAnnotation:</TokenIdentifier>
+			<Abstract type="html">Whether the annotation is related to display of the user&apos;s location. Useful for filtering purposes when providing annotation layers in the delegate.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isUserLocationAnnotation</Declaration>
+			
+			
+			<Anchor>//api/name/isUserLocationAnnotation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/isUserLocationAnnotation</TokenIdentifier>
+			<Abstract type="html">Whether the annotation is related to display of the user&apos;s location. Useful for filtering purposes when providing annotation layers in the delegate.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isUserLocationAnnotation</Declaration>
+			
+			
+			<Anchor>//api/name/isUserLocationAnnotation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/annotationWithMapView:coordinate:andTitle:</TokenIdentifier>
+			<Abstract type="html">Create and initialize an annotation.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>- (id)annotationWithMapView:(RMMapView *)aMapView coordinate:(CLLocationCoordinate2D)aCoordinate andTitle:(NSString *)aTitle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aMapView</Name>
+					<Abstract type="html">The map view on which to place the annotation.</Abstract>
+				</Parameter><Parameter>
+					<Name>aCoordinate</Name>
+					<Abstract type="html">The location for the annotation.</Abstract>
+				</Parameter><Parameter>
+					<Name>aTitle</Name>
+					<Abstract type="html">The annotation&apos;s title.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An annotation object, or nil if an annotation was unable to be created.</Abstract></ReturnValue>
+			<Anchor>//api/name/annotationWithMapView:coordinate:andTitle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/initWithMapView:coordinate:andTitle:</TokenIdentifier>
+			<Abstract type="html">Initialize an annotation.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapView:(RMMapView *)aMapView coordinate:(CLLocationCoordinate2D)aCoordinate andTitle:(NSString *)aTitle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aMapView</Name>
+					<Abstract type="html">The map view on which to place the annotation.</Abstract>
+				</Parameter><Parameter>
+					<Name>aCoordinate</Name>
+					<Abstract type="html">The location for the annotation.</Abstract>
+				</Parameter><Parameter>
+					<Name>aTitle</Name>
+					<Abstract type="html">The annotation&apos;s title.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized annotation object, or nil if an annotation was unable to be initialized.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapView:coordinate:andTitle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setIsAnnotationOnScreen:</TokenIdentifier>
+			<Abstract type="html">Whether the annotation is currently on the screen, regardless if clustered or not.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isAnnotationOnScreen</Declaration>
+			
+			
+			<Anchor>//api/name/isAnnotationOnScreen</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/isAnnotationOnScreen</TokenIdentifier>
+			<Abstract type="html">Whether the annotation is currently on the screen, regardless if clustered or not.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isAnnotationOnScreen</Declaration>
+			
+			
+			<Anchor>//api/name/isAnnotationOnScreen</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/isAnnotationWithinBounds:</TokenIdentifier>
+			<Abstract type="html">Whether the annotation is within a certain screen bounds.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isAnnotationWithinBounds:(CGRect)bounds</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>bounds</Name>
+					<Abstract type="html">A given screen bounds.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/isAnnotationWithinBounds:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAnnotation/setIsAnnotationVisibleOnScreen:</TokenIdentifier>
+			<Abstract type="html">Whether the annotation is currently visible on the screen. An annotation is not visible if it is either offscreen or currently in a cluster.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isAnnotationVisibleOnScreen</Declaration>
+			
+			
+			<Anchor>//api/name/isAnnotationVisibleOnScreen</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAnnotation/isAnnotationVisibleOnScreen</TokenIdentifier>
+			<Abstract type="html">Whether the annotation is currently visible on the screen. An annotation is not visible if it is either offscreen or currently in a cluster.</Abstract>
+			<DeclaredIn>RMAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isAnnotationVisibleOnScreen</Declaration>
+			
+			
+			<Anchor>//api/name/isAnnotationVisibleOnScreen</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

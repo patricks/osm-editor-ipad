@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMPointAnnotation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMPointAnnotation</TokenIdentifier>
+			<Abstract type="html">An RMPointAnnotation is used to represent a single point on a map. The annotation will automatically have a layer created when needed that displays an RMMarker with a default point icon.</Abstract>
+			<DeclaredIn>RMPointAnnotation.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

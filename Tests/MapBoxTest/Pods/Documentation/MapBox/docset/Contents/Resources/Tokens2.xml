@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMAbstractWebMapSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMAbstractWebMapSource</TokenIdentifier>
+			<Abstract type="html">Abstract class representing a network-based location for retrieving map tiles for display. Developers can create subclasses in order to provide custom web addresses for tile downloads.</Abstract>
+			<DeclaredIn>RMAbstractWebMapSource.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAbstractWebMapSource/setRetryCount:</TokenIdentifier>
+			<Abstract type="html">The number of times to retry downloads of a given tile image.</Abstract>
+			<DeclaredIn>RMAbstractWebMapSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger retryCount</Declaration>
+			
+			
+			<Anchor>//api/name/retryCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAbstractWebMapSource/retryCount</TokenIdentifier>
+			<Abstract type="html">The number of times to retry downloads of a given tile image.</Abstract>
+			<DeclaredIn>RMAbstractWebMapSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger retryCount</Declaration>
+			
+			
+			<Anchor>//api/name/retryCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAbstractWebMapSource/setRequestTimeoutSeconds:</TokenIdentifier>
+			<Abstract type="html">The network timeout for each attempt to download a tile image.</Abstract>
+			<DeclaredIn>RMAbstractWebMapSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval requestTimeoutSeconds</Declaration>
+			
+			
+			<Anchor>//api/name/requestTimeoutSeconds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMAbstractWebMapSource/requestTimeoutSeconds</TokenIdentifier>
+			<Abstract type="html">The network timeout for each attempt to download a tile image.</Abstract>
+			<DeclaredIn>RMAbstractWebMapSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval requestTimeoutSeconds</Declaration>
+			
+			
+			<Anchor>//api/name/requestTimeoutSeconds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAbstractWebMapSource/URLForTile:</TokenIdentifier>
+			<Abstract type="html">Provide the URL for a given tile.</Abstract>
+			<DeclaredIn>RMAbstractWebMapSource.h</DeclaredIn>			
+			
+			<Declaration>- (NSURL *)URLForTile:(RMTile)tile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tile</Name>
+					<Abstract type="html">A specific map tile.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A URL to a tile image to download. </Abstract></ReturnValue>
+			<Anchor>//api/name/URLForTile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMAbstractWebMapSource/URLsForTile:</TokenIdentifier>
+			<Abstract type="html">Provide multiple URLs for a given tile. Each URL is fetched in turn and composited together before placement on the map. URLs are ordered from the bottom layer to the top layer.</Abstract>
+			<DeclaredIn>RMAbstractWebMapSource.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)URLsForTile:(RMTile)tile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tile</Name>
+					<Abstract type="html">A specific map tile.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array of tile URLs to download, listed bottom to top. </Abstract></ReturnValue>
+			<Anchor>//api/name/URLsForTile:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

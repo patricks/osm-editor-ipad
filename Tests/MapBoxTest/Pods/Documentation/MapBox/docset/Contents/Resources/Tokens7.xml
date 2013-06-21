@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMDatabaseCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMDatabaseCache</TokenIdentifier>
+			<Abstract type="html">An RMDatabaseCache object represents disk-based caching of map tile images. This cache is meant for longer-term storage than RMMemoryCache, potentially for long periods of time, allowing completely offline use of map view.</Abstract>
+			<DeclaredIn>RMDatabaseCache.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMDatabaseCache/setDatabasePath:</TokenIdentifier>
+			<Abstract type="html">The path to the SQLite database on disk that backs the cache.</Abstract>
+			<DeclaredIn>RMDatabaseCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *databasePath</Declaration>
+			
+			
+			<Anchor>//api/name/databasePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMDatabaseCache/databasePath</TokenIdentifier>
+			<Abstract type="html">The path to the SQLite database on disk that backs the cache.</Abstract>
+			<DeclaredIn>RMDatabaseCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *databasePath</Declaration>
+			
+			
+			<Anchor>//api/name/databasePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMDatabaseCache/initWithDatabase:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated database cache object at the given disk path.</Abstract>
+			<DeclaredIn>RMDatabaseCache.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDatabase:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to use for the database backing.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized cache object or nil if the object couldn&apos;t be created.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDatabase:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMDatabaseCache/initUsingCacheDir:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated database cache object.</Abstract>
+			<DeclaredIn>RMDatabaseCache.h</DeclaredIn>			
+			
+			<Declaration>- (id)initUsingCacheDir:(BOOL)useCacheDir</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>useCacheDir</Name>
+					<Abstract type="html">If YES, use the temporary cache space for the application, meaning that the cache files can be removed when the system deems it necessary to free up space. If NO, use the application&apos;s document storage space, meaning that the cache will not be automatically removed and will be backed up during device backups. The default value is NO.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized cache object or nil if the object couldn&apos;t be created.</Abstract></ReturnValue>
+			<Anchor>//api/name/initUsingCacheDir:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMDatabaseCache/setPurgeStrategy:</TokenIdentifier>
+			<Abstract type="html">Set the cache purge strategy to use for the database.</Abstract>
+			<DeclaredIn>RMDatabaseCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)setPurgeStrategy:(RMCachePurgeStrategy)theStrategy</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theStrategy</Name>
+					<Abstract type="html">The cache strategy to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPurgeStrategy:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMDatabaseCache/setCapacity:</TokenIdentifier>
+			<Abstract type="html">Set the maximum tile count allowed in the database.</Abstract>
+			<DeclaredIn>RMDatabaseCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)setCapacity:(NSUInteger)theCapacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theCapacity</Name>
+					<Abstract type="html">The number of tiles to allow to accumulate in the database before purging begins.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCapacity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMDatabaseCache/setCapacity:</TokenIdentifier>
+			<Abstract type="html">The capacity, in number of tiles, that the database cache can hold.</Abstract>
+			<DeclaredIn>RMDatabaseCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSUInteger capacity</Declaration>
+			
+			
+			<Anchor>//api/name/capacity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMDatabaseCache/capacity</TokenIdentifier>
+			<Abstract type="html">The capacity, in number of tiles, that the database cache can hold.</Abstract>
+			<DeclaredIn>RMDatabaseCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSUInteger capacity</Declaration>
+			
+			
+			<Anchor>//api/name/capacity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMDatabaseCache/setMinimalPurge:</TokenIdentifier>
+			<Abstract type="html">Set the minimum number of tiles to purge when clearing space in the cache.</Abstract>
+			<DeclaredIn>RMDatabaseCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMinimalPurge:(NSUInteger)thePurgeMinimum</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>thePurgeMinimum</Name>
+					<Abstract type="html">The number of tiles to delete at the time the cache is purged.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setMinimalPurge:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMDatabaseCache/setExpiryPeriod:</TokenIdentifier>
+			<Abstract type="html">Set the expiry period for cache purging.</Abstract>
+			<DeclaredIn>RMDatabaseCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)setExpiryPeriod:(NSTimeInterval)theExpiryPeriod</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theExpiryPeriod</Name>
+					<Abstract type="html">The amount of time to elapse before a tile should be removed from the cache. If set to zero, tile count-based purging will be used instead of time-based.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setExpiryPeriod:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

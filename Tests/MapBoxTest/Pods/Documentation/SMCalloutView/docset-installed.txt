@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/patrick/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.SMCalloutView-1.1.docset
+Time: 2013-03-28 10:53:22 +0000

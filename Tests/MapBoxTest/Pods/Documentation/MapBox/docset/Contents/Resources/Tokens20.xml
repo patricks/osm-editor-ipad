@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMTileCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMTileCache</TokenIdentifier>
+			<Abstract type="html">An RMTileCache object manages memory-based and disk-based caches for map tiles that have been retrieved from the network.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/RMDatabaseCache/initUsingCacheDir:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMTileCache/initWithExpiryPeriod:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated cache object with specified expiry period.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithExpiryPeriod:(NSTimeInterval)period</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>period</Name>
+					<Abstract type="html">A period of time after which tiles should be expunged from the cache.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized cache object or nil if the object couldn&apos;t be created.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithExpiryPeriod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RMTileCache/tileHash:</TokenIdentifier>
+			<Abstract type="html">Return an identifying hash number for the specified tile.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)tileHash:(RMTile)tile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tile</Name>
+					<Abstract type="html">A tile image to hash.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A unique number for the specified tile.</Abstract></ReturnValue>
+			<Anchor>//api/name/tileHash:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMTileCache/addCache:</TokenIdentifier>
+			<Abstract type="html">Adds a given cache to the cache management system.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)addCache:(id&lt;RMTileCache&gt;)cache</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cache</Name>
+					<Abstract type="html">A memory-based or disk-based cache.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addCache:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMTileCache/setTileCaches:</TokenIdentifier>
+			<Abstract type="html">The list of caches managed by a cache manager. This could include memory-based, disk-based, or other types of caches.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSArray *tileCaches</Declaration>
+			
+			
+			<Anchor>//api/name/tileCaches</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMTileCache/tileCaches</TokenIdentifier>
+			<Abstract type="html">The list of caches managed by a cache manager. This could include memory-based, disk-based, or other types of caches.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSArray *tileCaches</Declaration>
+			
+			
+			<Anchor>//api/name/tileCaches</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMTileCache/setBackgroundCacheDelegate:</TokenIdentifier>
+			<Abstract type="html">A delegate to notify of background tile cache download operations.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) id&lt;RMTileCacheBackgroundDelegate&gt; backgroundCacheDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundCacheDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMTileCache/backgroundCacheDelegate</TokenIdentifier>
+			<Abstract type="html">A delegate to notify of background tile cache download operations.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) id&lt;RMTileCacheBackgroundDelegate&gt; backgroundCacheDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundCacheDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMTileCache/setIsBackgroundCaching:</TokenIdentifier>
+			<Abstract type="html">Whether or not the tile cache is currently background caching.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) BOOL isBackgroundCaching</Declaration>
+			
+			
+			<Anchor>//api/name/isBackgroundCaching</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMTileCache/isBackgroundCaching</TokenIdentifier>
+			<Abstract type="html">Whether or not the tile cache is currently background caching.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) BOOL isBackgroundCaching</Declaration>
+			
+			
+			<Anchor>//api/name/isBackgroundCaching</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMTileCache/beginBackgroundCacheForTileSource:southWest:northEast:minZoom:maxZoom:</TokenIdentifier>
+			<Abstract type="html">Tells the tile cache to begin background caching. Progress during the caching operation can be observed by implementing the RMTileCacheBackgroundDelegate protocol.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)beginBackgroundCacheForTileSource:(id&lt;RMTileSource&gt;)tileSource southWest:(CLLocationCoordinate2D)southWest northEast:(CLLocationCoordinate2D)northEast minZoom:(float)minZoom maxZoom:(float)maxZoom</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileSource</Name>
+					<Abstract type="html">The tile source from which to retrieve tiles.</Abstract>
+				</Parameter><Parameter>
+					<Name>southWest</Name>
+					<Abstract type="html">The southwest corner of the geographic area to cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>northEast</Name>
+					<Abstract type="html">The northeast corner of the geographic area to cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>minZoom</Name>
+					<Abstract type="html">The minimum zoom level to cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxZoom</Name>
+					<Abstract type="html">The maximum zoom level to cache.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginBackgroundCacheForTileSource:southWest:northEast:minZoom:maxZoom:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMTileCache/cancelBackgroundCache</TokenIdentifier>
+			<Abstract type="html">Cancel any background caching.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancelBackgroundCache</Declaration>
+			
+			
+			<Anchor>//api/name/cancelBackgroundCache</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMConfiguration.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMConfiguration</TokenIdentifier>
+			<Abstract type="html">The RMConfiguration object is a shared instance of the configuration for the library.</Abstract>
+			<DeclaredIn>RMConfiguration.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RMConfiguration/configuration</TokenIdentifier>
+			<Abstract type="html">Access the shared instance of the configuration.</Abstract>
+			<DeclaredIn>RMConfiguration.h</DeclaredIn>			
+			
+			<Declaration>+ (RMConfiguration *)configuration</Declaration>
+			
+			<ReturnValue><Abstract type="html">The shared configuration instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/configuration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMConfiguration/cacheConfiguration</TokenIdentifier>
+			<Abstract type="html">Access the disk- and memory-based cache configuration.</Abstract>
+			<DeclaredIn>RMConfiguration.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)cacheConfiguration</Declaration>
+			
+			<ReturnValue><Abstract type="html">A dictionary containing the cache configuration.</Abstract></ReturnValue>
+			<Anchor>//api/name/cacheConfiguration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMConfiguration/setUserAgent:</TokenIdentifier>
+			<Abstract type="html">Access and change the global user agent for HTTP requests using the library.</Abstract>
+			<DeclaredIn>RMConfiguration.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *userAgent</Declaration>
+			
+			
+			<Anchor>//api/name/userAgent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMConfiguration/userAgent</TokenIdentifier>
+			<Abstract type="html">Access and change the global user agent for HTTP requests using the library.</Abstract>
+			<DeclaredIn>RMConfiguration.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *userAgent</Declaration>
+			
+			
+			<Anchor>//api/name/userAgent</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

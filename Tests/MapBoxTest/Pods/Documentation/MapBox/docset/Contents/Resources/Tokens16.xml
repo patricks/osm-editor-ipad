@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMPolylineAnnotation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMPolylineAnnotation</TokenIdentifier>
+			<Abstract type="html">An RMPolylineAnnotation is a concrete subclass of RMShapeAnnotation that is used to represent a shape consisting of one or more points that define connecting line segments. The points are connected end-to-end in the order they are provided. The first and last points are not connected to each other. The annotation will automatically have a layer created when needed that displays an RMShape.</Abstract>
+			<DeclaredIn>RMPolylineAnnotation.h</DeclaredIn>
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMCircle.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMCircle</TokenIdentifier>
+			<Abstract type="html">An RMCircle is used to represent a perfect circle shape on a map view. An RMCircle changes visible size in response to map zooms in order to consistently represent coverage of the same geographic area.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMCircle/setShapeLayer:</TokenIdentifier>
+			<Abstract type="html">The circle&apos;s underlying shape layer.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) CAShapeLayer *shapeLayer</Declaration>
+			
+			
+			<Anchor>//api/name/shapeLayer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMCircle/shapeLayer</TokenIdentifier>
+			<Abstract type="html">The circle&apos;s underlying shape layer.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) CAShapeLayer *shapeLayer</Declaration>
+			
+			
+			<Anchor>//api/name/shapeLayer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMCircle/setLineColor:</TokenIdentifier>
+			<Abstract type="html">The circle&apos;s line color. Defaults to black.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *lineColor</Declaration>
+			
+			
+			<Anchor>//api/name/lineColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMCircle/lineColor</TokenIdentifier>
+			<Abstract type="html">The circle&apos;s line color. Defaults to black.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *lineColor</Declaration>
+			
+			
+			<Anchor>//api/name/lineColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMCircle/setFillColor:</TokenIdentifier>
+			<Abstract type="html">The circle&apos;s fill color. Defaults to blue.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *fillColor</Declaration>
+			
+			
+			<Anchor>//api/name/fillColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMCircle/fillColor</TokenIdentifier>
+			<Abstract type="html">The circle&apos;s fill color. Defaults to blue.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *fillColor</Declaration>
+			
+			
+			<Anchor>//api/name/fillColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMCircle/setFillPatternImage:</TokenIdentifier>
+			<Abstract type="html">The fill pattern image of the circle. If set, the fillColor is set to nil.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *fillPatternImage</Declaration>
+			
+			
+			<Anchor>//api/name/fillPatternImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMCircle/fillPatternImage</TokenIdentifier>
+			<Abstract type="html">The fill pattern image of the circle. If set, the fillColor is set to nil.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *fillPatternImage</Declaration>
+			
+			
+			<Anchor>//api/name/fillPatternImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMCircle/setRadiusInMeters:</TokenIdentifier>
+			<Abstract type="html">The radius of the circle in projected meters. Regardless of map zoom, the circle will change visible size to continously represent this radius on the map.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat radiusInMeters</Declaration>
+			
+			
+			<Anchor>//api/name/radiusInMeters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMCircle/radiusInMeters</TokenIdentifier>
+			<Abstract type="html">The radius of the circle in projected meters. Regardless of map zoom, the circle will change visible size to continously represent this radius on the map.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat radiusInMeters</Declaration>
+			
+			
+			<Anchor>//api/name/radiusInMeters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMCircle/setLineWidthInPixels:</TokenIdentifier>
+			<Abstract type="html">The circle&apos;s line width. Defaults to 10.0.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat lineWidthInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/lineWidthInPixels</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMCircle/lineWidthInPixels</TokenIdentifier>
+			<Abstract type="html">The circle&apos;s line width. Defaults to 10.0.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat lineWidthInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/lineWidthInPixels</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMCircle/initWithView:radiusInMeters:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated RMCircle for the specified map view.</Abstract>
+			<DeclaredIn>RMCircle.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithView:(RMMapView *)aMapView radiusInMeters:(CGFloat)newRadiusInMeters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aMapView</Name>
+					<Abstract type="html">The map view the shape should be drawn on.</Abstract>
+				</Parameter><Parameter>
+					<Name>newRadiusInMeters</Name>
+					<Abstract type="html">The radius of the circle object in projected meters. Regardless of map zoom, the circle will change visible size to continously represent this radius on the map.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithView:radiusInMeters:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

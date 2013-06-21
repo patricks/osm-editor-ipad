@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMShapeAnnotation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMShapeAnnotation</TokenIdentifier>
+			<Abstract type="html">An RMShapeAnnotation is an abstract subclass of RMAnnotation that is used to represent a shape consisting of one or more points. You should not create instances of this class directly. Instead, you should create instances of the RMPolylineAnnotation or RMPolygonAnnotation classes. However, you can use the properties of this class to access information about the specific points associated with the line or polygon.</Abstract>
+			<DeclaredIn>RMShapeAnnotation.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShapeAnnotation/initWithMapView:points:</TokenIdentifier>
+			<Abstract type="html">Initialize a shape annotation.</Abstract>
+			<DeclaredIn>RMShapeAnnotation.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapView:(RMMapView *)aMapView points:(NSArray *)points</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aMapView</Name>
+					<Abstract type="html">The map view on which to place the annotation.</Abstract>
+				</Parameter><Parameter>
+					<Name>points</Name>
+					<Abstract type="html">An array of CLLocation points defining the shape. The data in this array is copied to the new object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized shape annotation object, or nil if an annotation was unable to be initialized.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapView:points:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShapeAnnotation/setPoints:</TokenIdentifier>
+			<Abstract type="html">The array of points associated with the shape. (read-only)</Abstract>
+			<DeclaredIn>RMShapeAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSArray *points</Declaration>
+			
+			
+			<Anchor>//api/name/points</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMShapeAnnotation/points</TokenIdentifier>
+			<Abstract type="html">The array of points associated with the shape. (read-only)</Abstract>
+			<DeclaredIn>RMShapeAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSArray *points</Declaration>
+			
+			
+			<Anchor>//api/name/points</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

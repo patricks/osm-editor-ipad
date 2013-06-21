@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RMInteractiveSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RMInteractiveSource</TokenIdentifier>
+			<Abstract type="html">Developers can import RMInteractiveSource in order to enable embedded interactivity in their RMMapView, RMMBTilesSource, and RMMapBoxSource objects. Interactivity is based on the UTFGrid specification and is best described by this web demo.</Abstract>
+			<DeclaredIn>RMInteractiveSource.h</DeclaredIn>
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMInteractiveSource/supportsInteractivity</TokenIdentifier>
+			<Abstract type="html">Returns YES if a tile source supports interactivity features.</Abstract>
+			<DeclaredIn>RMInteractiveSource.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)supportsInteractivity</Declaration>
+			
+			
+			<Anchor>//api/name/supportsInteractivity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMInteractiveSource/formattedOutputOfType:forPoint:inMapView:</TokenIdentifier>
+			<Abstract type="html">Returns the HTML-formatted output for a given point on a given map view, considering the currently active interactive tile source.</Abstract>
+			<DeclaredIn>RMInteractiveSource.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)formattedOutputOfType:(RMInteractiveSourceOutputType)outputType forPoint:(CGPoint)point inMapView:(RMMapView *)mapView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>outputType</Name>
+					<Abstract type="html">The type of feature info desired.</Abstract>
+				</Parameter><Parameter>
+					<Name>point</Name>
+					<Abstract type="html">A point in the map view.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view being interacted with.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The formatted feature output.</Abstract></ReturnValue>
+			<Anchor>//api/name/formattedOutputOfType:forPoint:inMapView:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

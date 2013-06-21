@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>MapBox 1.0.2</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>RMAbstractMercatorTileSource</Name>
+			<Path>Classes/RMAbstractMercatorTileSource.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>RMAbstractWebMapSource</Name>
+			<Path>Classes/RMAbstractWebMapSource.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>RMAnnotation</Name>
+			<Path>Classes/RMAnnotation.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>RMCacheObject</Name>
+			<Path>Classes/RMCacheObject.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>RMCircle</Name>
+			<Path>Classes/RMCircle.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>RMConfiguration</Name>
+			<Path>Classes/RMConfiguration.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>RMDatabaseCache</Name>
+			<Path>Classes/RMDatabaseCache.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>RMMBTilesSource</Name>
+			<Path>Classes/RMMBTilesSource.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>RMMapBoxSource</Name>
+			<Path>Classes/RMMapBoxSource.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>RMMapLayer</Name>
+			<Path>Classes/RMMapLayer.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>RMMapView</Name>
+			<Path>Classes/RMMapView.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>RMMarker</Name>
+			<Path>Classes/RMMarker.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>RMMemoryCache</Name>
+			<Path>Classes/RMMemoryCache.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>RMPointAnnotation</Name>
+			<Path>Classes/RMPointAnnotation.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>RMPolygonAnnotation</Name>
+			<Path>Classes/RMPolygonAnnotation.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>RMPolylineAnnotation</Name>
+			<Path>Classes/RMPolylineAnnotation.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>RMShape</Name>
+			<Path>Classes/RMShape.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>RMShapeAnnotation</Name>
+			<Path>Classes/RMShapeAnnotation.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>RMStaticMapView</Name>
+			<Path>Classes/RMStaticMapView.html</Path>
+		</Node>
+		<Node id="20">
+			<Name>RMTileCache</Name>
+			<Path>Classes/RMTileCache.html</Path>
+		</Node>
+		<Node id="21">
+			<Name>RMTileMillSource</Name>
+			<Path>Classes/RMTileMillSource.html</Path>
+		</Node>
+		<Node id="22">
+			<Name>RMUserLocation</Name>
+			<Path>Classes/RMUserLocation.html</Path>
+		</Node>
+		<Node id="23">
+			<Name>RMUserTrackingBarButtonItem</Name>
+			<Path>Classes/RMUserTrackingBarButtonItem.html</Path>
+		</Node>
+		
+		
+		<Node id="24">
+			<Name>RMInteractiveMapView</Name>
+			<Path>Protocols/RMInteractiveMapView.html</Path>
+		</Node>
+		<Node id="25">
+			<Name>RMInteractiveSource</Name>
+			<Path>Protocols/RMInteractiveSource.html</Path>
+		</Node>
+		<Node id="26">
+			<Name>RMMapViewDelegate</Name>
+			<Path>Protocols/RMMapViewDelegate.html</Path>
+		</Node>
+		<Node id="27">
+			<Name>RMTileCache</Name>
+			<Path>Protocols/RMTileCache.html</Path>
+		</Node>
+		<Node id="28">
+			<Name>RMTileCacheBackgroundDelegate</Name>
+			<Path>Protocols/RMTileCacheBackgroundDelegate.html</Path>
+		</Node>
+		<Node id="29">
+			<Name>RMTileSource</Name>
+			<Path>Protocols/RMTileSource.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

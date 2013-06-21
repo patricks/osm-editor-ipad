@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SMCalloutViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SMCalloutViewDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SMCalloutViewDelegate/calloutView:delayForRepositionWithSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>- (NSTimeInterval)calloutView:(SMCalloutView *)calloutView delayForRepositionWithSize:(CGSize)offset</Declaration>
+			
+			
+			<Anchor>//api/name/calloutView:delayForRepositionWithSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SMCalloutViewDelegate/calloutViewDidAppear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>- (void)calloutViewDidAppear:(SMCalloutView *)calloutView</Declaration>
+			
+			
+			<Anchor>//api/name/calloutViewDidAppear:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SMCalloutViewDelegate/calloutViewDidDisappear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>- (void)calloutViewDidDisappear:(SMCalloutView *)calloutView</Declaration>
+			
+			
+			<Anchor>//api/name/calloutViewDidDisappear:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

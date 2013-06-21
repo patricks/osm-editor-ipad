@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RMTileCacheBackgroundDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RMTileCacheBackgroundDelegate</TokenIdentifier>
+			<Abstract type="html">The RMTileCacheBackgroundDelegate protocol is for receiving notifications about background tile cache download operations.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileCacheBackgroundDelegate/tileCache:didBeginBackgroundCacheWithCount:forTileSource:</TokenIdentifier>
+			<Abstract type="html">Sent when the background caching operation begins.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)tileCache:(RMTileCache *)tileCache didBeginBackgroundCacheWithCount:(int)tileCount forTileSource:(id&lt;RMTileSource&gt;)tileSource</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileCache</Name>
+					<Abstract type="html">The tile cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>tileCount</Name>
+					<Abstract type="html">The total number of tiles required for coverage of the desired geographic area.</Abstract>
+				</Parameter><Parameter>
+					<Name>tileSource</Name>
+					<Abstract type="html">The tile source providing the tiles.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tileCache:didBeginBackgroundCacheWithCount:forTileSource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileCacheBackgroundDelegate/tileCache:didBackgroundCacheTile:withIndex:ofTotalTileCount:</TokenIdentifier>
+			<Abstract type="html">Sent upon caching of each tile in a background cache operation.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)tileCache:(RMTileCache *)tileCache didBackgroundCacheTile:(RMTile)tile withIndex:(int)tileIndex ofTotalTileCount:(int)totalTileCount</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileCache</Name>
+					<Abstract type="html">The tile cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>tile</Name>
+					<Abstract type="html">A structure representing the tile in question.</Abstract>
+				</Parameter><Parameter>
+					<Name>tileIndex</Name>
+					<Abstract type="html">The index of the tile in question, beginning with 1 and ending with totalTileCount.</Abstract>
+				</Parameter><Parameter>
+					<Name>totalTileCount</Name>
+					<Abstract type="html">The total number of of tiles required for coverage of the desired geographic area.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tileCache:didBackgroundCacheTile:withIndex:ofTotalTileCount:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileCacheBackgroundDelegate/tileCacheDidFinishBackgroundCache:</TokenIdentifier>
+			<Abstract type="html">Sent when all tiles have completed downloading and caching.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)tileCacheDidFinishBackgroundCache:(RMTileCache *)tileCache</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileCache</Name>
+					<Abstract type="html">The tile cache.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tileCacheDidFinishBackgroundCache:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileCacheBackgroundDelegate/tileCacheDidCancelBackgroundCache:</TokenIdentifier>
+			<Abstract type="html">Sent when the cache download operation has completed cancellation and the cache object is safe to dispose of.</Abstract>
+			<DeclaredIn>RMTileCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)tileCacheDidCancelBackgroundCache:(RMTileCache *)tileCache</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileCache</Name>
+					<Abstract type="html">The tile cache.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tileCacheDidCancelBackgroundCache:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

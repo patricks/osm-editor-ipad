@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SMCalloutDrawnBackgroundView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SMCalloutDrawnBackgroundView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

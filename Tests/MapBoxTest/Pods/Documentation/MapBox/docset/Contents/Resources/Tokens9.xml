@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMMapBoxSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMMapBoxSource</TokenIdentifier>
+			<Abstract type="html">An RMMapBoxSource is used to display map tiles from a network-based map hosted on MapBox or the open source TileStream software. Maps are referenced by their MapBox map ID or by a file or URL containing TileJSON.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/initWithMapID:</TokenIdentifier>
+			<Abstract type="html">Initialize a tile source using the MapBox map ID.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapID:(NSString *)mapID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapID</Name>
+					<Abstract type="html">The MapBox map ID string, typically in the format &lt;username&gt;.map-&lt;random characters&gt;.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized MapBox tile source.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/initWithReferenceURL:</TokenIdentifier>
+			<Abstract type="html">Initialize a tile source with either a remote or local TileJSON structure.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithReferenceURL:(NSURL *)referenceURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>referenceURL</Name>
+					<Abstract type="html">A remote or local URL pointing to a TileJSON structure.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized MapBox tile source.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithReferenceURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/initWithTileJSON:</TokenIdentifier>
+			<Abstract type="html">Initialize a tile source with TileJSON.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithTileJSON:(NSString *)tileJSON</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileJSON</Name>
+					<Abstract type="html">A string containing TileJSON.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized MapBox tile source.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTileJSON:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/initWithMapID:enablingDataOnMapView:</TokenIdentifier>
+			<Abstract type="html">For TileJSON 2.1.0+ layers, initialize a tile source and automatically find and add annotations from simplestyle data.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapID:(NSString *)mapID enablingDataOnMapView:(RMMapView *)mapView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapID</Name>
+					<Abstract type="html">The MapBox map ID string, typically in the format &lt;username&gt;.map-&lt;random characters&gt;.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">A map view on which to display the annotations.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized MapBox tile source.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapID:enablingDataOnMapView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/initWithTileJSON:enablingDataOnMapView:</TokenIdentifier>
+			<Abstract type="html">For TileJSON 2.1.0+ layers, initialize a tile source and automatically find and add annotations from simplestyle data.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithTileJSON:(NSString *)tileJSON enablingDataOnMapView:(RMMapView *)mapView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileJSON</Name>
+					<Abstract type="html">A string containing TileJSON.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">A map view on which to display the annotations.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized MapBox tile source.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTileJSON:enablingDataOnMapView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/initWithReferenceURL:enablingDataOnMapView:</TokenIdentifier>
+			<Abstract type="html">For TileJSON 2.1.0+ layers, initialize a tile source and automatically find and add annotations from simplestyle data.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithReferenceURL:(NSURL *)referenceURL enablingDataOnMapView:(RMMapView *)mapView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>referenceURL</Name>
+					<Abstract type="html">A remote or local URL pointing to a TileJSON structure.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">A map view on which to display the annotations.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized MapBox tile source.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithReferenceURL:enablingDataOnMapView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/legend</TokenIdentifier>
+			<Abstract type="html">Any available HTML-formatted map legend data for the tile source, suitable for display in a UIWebView.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)legend</Declaration>
+			
+			
+			<Anchor>//api/name/legend</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/centerCoordinate</TokenIdentifier>
+			<Abstract type="html">A suggested starting center coordinate for the map layer.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>- (CLLocationCoordinate2D)centerCoordinate</Declaration>
+			
+			
+			<Anchor>//api/name/centerCoordinate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/centerZoom</TokenIdentifier>
+			<Abstract type="html">A suggested starting center zoom level for the map layer.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>- (float)centerZoom</Declaration>
+			
+			
+			<Anchor>//api/name/centerZoom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/coversFullWorld</TokenIdentifier>
+			<Abstract type="html">Returns YES if the tile source provides full-world coverage; otherwise, returns NO.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)coversFullWorld</Declaration>
+			
+			
+			<Anchor>//api/name/coversFullWorld</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/setTileJSON:</TokenIdentifier>
+			<Abstract type="html">The TileJSON for the map layer. Useful for saving locally to use in instantiating a tile source while offline.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSString *tileJSON</Declaration>
+			
+			
+			<Anchor>//api/name/tileJSON</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapBoxSource/tileJSON</TokenIdentifier>
+			<Abstract type="html">The TileJSON for the map layer. Useful for saving locally to use in instantiating a tile source while offline.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSString *tileJSON</Declaration>
+			
+			
+			<Anchor>//api/name/tileJSON</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/setTileJSONURL:</TokenIdentifier>
+			<Abstract type="html">The TileJSON URL for the map layer. Useful for retrieving TileJSON to save locally to use in instantiating a tile source while offline.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSURL *tileJSONURL</Declaration>
+			
+			
+			<Anchor>//api/name/tileJSONURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapBoxSource/tileJSONURL</TokenIdentifier>
+			<Abstract type="html">The TileJSON URL for the map layer. Useful for retrieving TileJSON to save locally to use in instantiating a tile source while offline.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSURL *tileJSONURL</Declaration>
+			
+			
+			<Anchor>//api/name/tileJSONURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/setInfoDictionary:</TokenIdentifier>
+			<Abstract type="html">The TileJSON data in dictionary format. Useful for retrieving info about the layer without having to parse TileJSON.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSDictionary *infoDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/infoDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapBoxSource/infoDictionary</TokenIdentifier>
+			<Abstract type="html">The TileJSON data in dictionary format. Useful for retrieving info about the layer without having to parse TileJSON.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSDictionary *infoDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/infoDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapBoxSource/setImageQuality:</TokenIdentifier>
+			<Abstract type="html">Image quality that is retrieved from the network. Useful for lower-bandwidth environments. The default is to provide full-quality imagery.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RMMapBoxSourceQuality imageQuality</Declaration>
+			
+			
+			<Anchor>//api/name/imageQuality</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapBoxSource/imageQuality</TokenIdentifier>
+			<Abstract type="html">Image quality that is retrieved from the network. Useful for lower-bandwidth environments. The default is to provide full-quality imagery.</Abstract>
+			<DeclaredIn>RMMapBoxSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RMMapBoxSourceQuality imageQuality</Declaration>
+			
+			
+			<Anchor>//api/name/imageQuality</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

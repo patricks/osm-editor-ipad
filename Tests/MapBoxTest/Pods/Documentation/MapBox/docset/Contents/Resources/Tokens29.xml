@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RMTileSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RMTileSource</TokenIdentifier>
+			<Abstract type="html">The RMTileSource protocol describes the general interface for map tile sources. Whether retrieved from network sources or provided locally, tile sources must provide some specific minimum properties.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/setMinZoom:</TokenIdentifier>
+			<Abstract type="html">The minimum zoom level supported by the tile source.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float minZoom</Declaration>
+			
+			
+			<Anchor>//api/name/minZoom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/RMTileSource/minZoom</TokenIdentifier>
+			<Abstract type="html">The minimum zoom level supported by the tile source.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float minZoom</Declaration>
+			
+			
+			<Anchor>//api/name/minZoom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/setMaxZoom:</TokenIdentifier>
+			<Abstract type="html">The maximum zoom level supported by the tile source.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float maxZoom</Declaration>
+			
+			
+			<Anchor>//api/name/maxZoom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/RMTileSource/maxZoom</TokenIdentifier>
+			<Abstract type="html">The maximum zoom level supported by the tile source.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float maxZoom</Declaration>
+			
+			
+			<Anchor>//api/name/maxZoom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/setCacheable:</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the tiles from this source should be cached.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isCacheable) BOOL cacheable</Declaration>
+			
+			
+			<Anchor>//api/name/cacheable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/RMTileSource/cacheable</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the tiles from this source should be cached.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isCacheable) BOOL cacheable</Declaration>
+			
+			
+			<Anchor>//api/name/cacheable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/setOpaque:</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the tiles from this source are opaque. Setting this correctly is important when using RMCompositeSource so that alpha transparency can be preserved when compositing tile images.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isOpaque) BOOL opaque</Declaration>
+			
+			
+			<Anchor>//api/name/opaque</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/RMTileSource/opaque</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the tiles from this source are opaque. Setting this correctly is important when using RMCompositeSource so that alpha transparency can be preserved when compositing tile images.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isOpaque) BOOL opaque</Declaration>
+			
+			
+			<Anchor>//api/name/opaque</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/setLatitudeLongitudeBoundingBox:</TokenIdentifier>
+			<Abstract type="html">The bounding box that the tile source provides coverage for.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RMSphericalTrapezium latitudeLongitudeBoundingBox</Declaration>
+			
+			
+			<Anchor>//api/name/latitudeLongitudeBoundingBox</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/RMTileSource/latitudeLongitudeBoundingBox</TokenIdentifier>
+			<Abstract type="html">The bounding box that the tile source provides coverage for.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RMSphericalTrapezium latitudeLongitudeBoundingBox</Declaration>
+			
+			
+			<Anchor>//api/name/latitudeLongitudeBoundingBox</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/setUniqueTilecacheKey:</TokenIdentifier>
+			<Abstract type="html">A unique string representing the tile source in the cache in order to distinguish it from other tile sources.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uniqueTilecacheKey</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueTilecacheKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/RMTileSource/uniqueTilecacheKey</TokenIdentifier>
+			<Abstract type="html">A unique string representing the tile source in the cache in order to distinguish it from other tile sources.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uniqueTilecacheKey</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueTilecacheKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/setTileSideLength:</TokenIdentifier>
+			<Abstract type="html">The number of pixels along the side of a tile image for this source.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger tileSideLength</Declaration>
+			
+			
+			<Anchor>//api/name/tileSideLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/RMTileSource/tileSideLength</TokenIdentifier>
+			<Abstract type="html">The number of pixels along the side of a tile image for this source.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger tileSideLength</Declaration>
+			
+			
+			<Anchor>//api/name/tileSideLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/setShortName:</TokenIdentifier>
+			<Abstract type="html">A short version of the tile source&apos;s name.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *shortName</Declaration>
+			
+			
+			<Anchor>//api/name/shortName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/RMTileSource/shortName</TokenIdentifier>
+			<Abstract type="html">A short version of the tile source&apos;s name.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *shortName</Declaration>
+			
+			
+			<Anchor>//api/name/shortName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/setLongDescription:</TokenIdentifier>
+			<Abstract type="html">An extended version of the tile source&apos;s description.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *longDescription</Declaration>
+			
+			
+			<Anchor>//api/name/longDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/RMTileSource/longDescription</TokenIdentifier>
+			<Abstract type="html">An extended version of the tile source&apos;s description.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *longDescription</Declaration>
+			
+			
+			<Anchor>//api/name/longDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/setShortAttribution:</TokenIdentifier>
+			<Abstract type="html">A short version of the tile source&apos;s attribution string.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *shortAttribution</Declaration>
+			
+			
+			<Anchor>//api/name/shortAttribution</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/RMTileSource/shortAttribution</TokenIdentifier>
+			<Abstract type="html">A short version of the tile source&apos;s attribution string.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *shortAttribution</Declaration>
+			
+			
+			<Anchor>//api/name/shortAttribution</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/setLongAttribution:</TokenIdentifier>
+			<Abstract type="html">An extended version of the tile source&apos;s attribution string.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *longAttribution</Declaration>
+			
+			
+			<Anchor>//api/name/longAttribution</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/RMTileSource/longAttribution</TokenIdentifier>
+			<Abstract type="html">An extended version of the tile source&apos;s attribution string.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *longAttribution</Declaration>
+			
+			
+			<Anchor>//api/name/longAttribution</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/imageForTile:inCache:</TokenIdentifier>
+			<Abstract type="html">Provide an image for a given tile location using a given cache.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>- (UIImage *)imageForTile:(RMTile)tile inCache:(RMTileCache *)tileCache</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tile</Name>
+					<Abstract type="html">The map tile in question.</Abstract>
+				</Parameter><Parameter>
+					<Name>tileCache</Name>
+					<Abstract type="html">A tile cache to check first when providing the image.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An image to display.</Abstract></ReturnValue>
+			<Anchor>//api/name/imageForTile:inCache:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RMTileSource/tileSourceHasTile:</TokenIdentifier>
+			<Abstract type="html">Check if the tile source can provide the requested tile.</Abstract>
+			<DeclaredIn>RMTileSource.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)tileSourceHasTile:(RMTile)tile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tile</Name>
+					<Abstract type="html">The map tile in question.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A Boolean value indicating whether the tile source can provide the requested tile.</Abstract></ReturnValue>
+			<Anchor>//api/name/tileSourceHasTile:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

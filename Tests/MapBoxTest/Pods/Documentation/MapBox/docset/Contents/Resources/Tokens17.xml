@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMShape.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMShape</TokenIdentifier>
+			<Abstract type="html">An RMShape object is used to represent a line, polygon, or other shape composed of two or more points connected by lines. An RMShape object changes visible size in response to map zooms in order to consistently represent coverage of the same geographic area.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/initWithView:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated shape object for the specified map view.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithView:(RMMapView *)aMapView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aMapView</Name>
+					<Abstract type="html">The map view the shape should be drawn on.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/setLineColor:</TokenIdentifier>
+			<Abstract type="html">The line color of the shape. Defaults to black.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *lineColor</Declaration>
+			
+			
+			<Anchor>//api/name/lineColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMShape/lineColor</TokenIdentifier>
+			<Abstract type="html">The line color of the shape. Defaults to black.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *lineColor</Declaration>
+			
+			
+			<Anchor>//api/name/lineColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/setFillColor:</TokenIdentifier>
+			<Abstract type="html">The fill color of the shape. Defaults to clear.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *fillColor</Declaration>
+			
+			
+			<Anchor>//api/name/fillColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMShape/fillColor</TokenIdentifier>
+			<Abstract type="html">The fill color of the shape. Defaults to clear.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *fillColor</Declaration>
+			
+			
+			<Anchor>//api/name/fillColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/setFillPatternImage:</TokenIdentifier>
+			<Abstract type="html">The fill pattern image of the shape. If set, the fillColor is set to nil.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *fillPatternImage</Declaration>
+			
+			
+			<Anchor>//api/name/fillPatternImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMShape/fillPatternImage</TokenIdentifier>
+			<Abstract type="html">The fill pattern image of the shape. If set, the fillColor is set to nil.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *fillPatternImage</Declaration>
+			
+			
+			<Anchor>//api/name/fillPatternImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/setLineWidth:</TokenIdentifier>
+			<Abstract type="html">The line width of the shape. Defaults to 2.0.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float lineWidth</Declaration>
+			
+			
+			<Anchor>//api/name/lineWidth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMShape/lineWidth</TokenIdentifier>
+			<Abstract type="html">The line width of the shape. Defaults to 2.0.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float lineWidth</Declaration>
+			
+			
+			<Anchor>//api/name/lineWidth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/setPathBoundingBox:</TokenIdentifier>
+			<Abstract type="html">The bounding box of the shape in the current viewport.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGRect pathBoundingBox</Declaration>
+			
+			
+			<Anchor>//api/name/pathBoundingBox</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMShape/pathBoundingBox</TokenIdentifier>
+			<Abstract type="html">The bounding box of the shape in the current viewport.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGRect pathBoundingBox</Declaration>
+			
+			
+			<Anchor>//api/name/pathBoundingBox</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/moveToProjectedPoint:</TokenIdentifier>
+			<Abstract type="html">Move the drawing pen to a projected point.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (void)moveToProjectedPoint:(RMProjectedPoint)projectedPoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>projectedPoint</Name>
+					<Abstract type="html">The projected point to move to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/moveToProjectedPoint:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/moveToScreenPoint:</TokenIdentifier>
+			<Abstract type="html">Move the drawing pen to a screen point.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (void)moveToScreenPoint:(CGPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The screen point to move to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/moveToScreenPoint:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/moveToCoordinate:</TokenIdentifier>
+			<Abstract type="html">Move the drawing pen to a coordinate.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (void)moveToCoordinate:(CLLocationCoordinate2D)coordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coordinate</Name>
+					<Abstract type="html">The coordinate to move to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/moveToCoordinate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/addLineToProjectedPoint:</TokenIdentifier>
+			<Abstract type="html">Draw a line from the current pen location to a projected point.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (void)addLineToProjectedPoint:(RMProjectedPoint)projectedPoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>projectedPoint</Name>
+					<Abstract type="html">The projected point to draw to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addLineToProjectedPoint:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/addLineToScreenPoint:</TokenIdentifier>
+			<Abstract type="html">Draw a line from the current pen location to a screen point.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (void)addLineToScreenPoint:(CGPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The screen point to draw to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addLineToScreenPoint:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/addLineToCoordinate:</TokenIdentifier>
+			<Abstract type="html">Draw a line from the current pen location to a coordinate.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (void)addLineToCoordinate:(CLLocationCoordinate2D)coordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coordinate</Name>
+					<Abstract type="html">The coordinate to draw to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addLineToCoordinate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/addCurveToCoordinate:controlCoordinate1:controlCoordinate2:</TokenIdentifier>
+			<Abstract type="html">Draw a curve from the current pen location to a coordinate.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (void)addCurveToCoordinate:(CLLocationCoordinate2D)coordinate controlCoordinate1:(CLLocationCoordinate2D)controlCoordinate1 controlCoordinate2:(CLLocationCoordinate2D)controlCoordinate2</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coordinate</Name>
+					<Abstract type="html">The coordinate to draw to.</Abstract>
+				</Parameter><Parameter>
+					<Name>controlCoordinate1</Name>
+					<Abstract type="html">The first control coordinate.</Abstract>
+				</Parameter><Parameter>
+					<Name>controlCoordinate2</Name>
+					<Abstract type="html">The second control coordinate.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addCurveToCoordinate:controlCoordinate1:controlCoordinate2:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/addQuadCurveToCoordinate:controlCoordinate:</TokenIdentifier>
+			<Abstract type="html">Draw a quad curve from the current pen location to a coordinate.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (void)addQuadCurveToCoordinate:(CLLocationCoordinate2D)coordinate controlCoordinate:(CLLocationCoordinate2D)controlCoordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coordinate</Name>
+					<Abstract type="html">The coordinate to draw to.</Abstract>
+				</Parameter><Parameter>
+					<Name>controlCoordinate</Name>
+					<Abstract type="html">The control coordinate.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addQuadCurveToCoordinate:controlCoordinate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/addCurveToProjectedPoint:controlProjectedPoint1:controlProjectedPoint2:</TokenIdentifier>
+			<Abstract type="html">Draw a curve from the current pen location to a projected point.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (void)addCurveToProjectedPoint:(RMProjectedPoint)projectedPoint controlProjectedPoint1:(RMProjectedPoint)controlProjectedPoint1 controlProjectedPoint2:(RMProjectedPoint)controlProjectedPoint2</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>projectedPoint</Name>
+					<Abstract type="html">The projected point to draw to.</Abstract>
+				</Parameter><Parameter>
+					<Name>controlProjectedPoint1</Name>
+					<Abstract type="html">The first control projected point.</Abstract>
+				</Parameter><Parameter>
+					<Name>controlProjectedPoint2</Name>
+					<Abstract type="html">The second control projected point.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addCurveToProjectedPoint:controlProjectedPoint1:controlProjectedPoint2:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/addQuadCurveToProjectedPoint:controlProjectedPoint:</TokenIdentifier>
+			<Abstract type="html">Draw a quad curve from the current pen location to a projected point.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (void)addQuadCurveToProjectedPoint:(RMProjectedPoint)projectedPoint controlProjectedPoint:(RMProjectedPoint)controlProjectedPoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>projectedPoint</Name>
+					<Abstract type="html">The projected point to draw to.</Abstract>
+				</Parameter><Parameter>
+					<Name>controlProjectedPoint</Name>
+					<Abstract type="html">The control projected point.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addQuadCurveToProjectedPoint:controlProjectedPoint:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/performBatchOperations:</TokenIdentifier>
+			<Abstract type="html">Alter the path without rerecalculating the geometry. Recommended for many operations in order to increase performance.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (void)performBatchOperations:(void ( ^ ) ( RMShape *aShape ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block containing the operations to perform.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/performBatchOperations:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMShape/closePath</TokenIdentifier>
+			<Abstract type="html">Closes the path, connecting the last point to the first. After this action, no further points can be added to the path.</Abstract>
+			<DeclaredIn>RMShape.h</DeclaredIn>			
+			
+			<Declaration>- (void)closePath</Declaration>
+			
+			
+			<Anchor>//api/name/closePath</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

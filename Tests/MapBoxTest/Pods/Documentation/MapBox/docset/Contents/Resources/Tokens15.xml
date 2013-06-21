@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMPolygonAnnotation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMPolygonAnnotation</TokenIdentifier>
+			<Abstract type="html">An RMPolygonAnnotation is a concrete subclass of RMShapeAnnotation that is used to represent a shape consisting of one or more points that define a closed polygon. The points are connected end-to-end in the order they are provided. The first and last points are connected to each other to create the closed shape. The annotation will automatically have a layer created when needed that displays an RMShape.</Abstract>
+			<DeclaredIn>RMPolygonAnnotation.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMPolygonAnnotation/initWithMapView:points:interiorPolygons:</TokenIdentifier>
+			<Abstract type="html">Initialize a polygon annotation.</Abstract>
+			<DeclaredIn>RMPolygonAnnotation.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMapView:(RMMapView *)aMapView points:(NSArray *)points interiorPolygons:(NSArray *)interiorPolygons</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aMapView</Name>
+					<Abstract type="html">The map view on which to place the annotation.</Abstract>
+				</Parameter><Parameter>
+					<Name>points</Name>
+					<Abstract type="html">An array of CLLocation points defining the shape. The data in this array is copied to the new object.</Abstract>
+				</Parameter><Parameter>
+					<Name>interiorPolygons</Name>
+					<Abstract type="html">An array of RMPolygonAnnotation objects that define one or more cutout regions for the receiver’s polygon.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized shape annotation object, or nil if an annotation was unable to be initialized.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapView:points:interiorPolygons:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMPolygonAnnotation/setInteriorPolygons:</TokenIdentifier>
+			<Abstract type="html">The array of polygons nested inside the receiver. (read-only)</Abstract>
+			<DeclaredIn>RMPolygonAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSArray *interiorPolygons</Declaration>
+			
+			
+			<Anchor>//api/name/interiorPolygons</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMPolygonAnnotation/interiorPolygons</TokenIdentifier>
+			<Abstract type="html">The array of polygons nested inside the receiver. (read-only)</Abstract>
+			<DeclaredIn>RMPolygonAnnotation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSArray *interiorPolygons</Declaration>
+			
+			
+			<Anchor>//api/name/interiorPolygons</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

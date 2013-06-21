@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SMCalloutBackgroundView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SMCalloutBackgroundView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMCalloutBackgroundView/setArrowPoint:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGPoint arrowPoint</Declaration>
+			
+			
+			<Anchor>//api/name/arrowPoint</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMCalloutBackgroundView/arrowPoint</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGPoint arrowPoint</Declaration>
+			
+			
+			<Anchor>//api/name/arrowPoint</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SMCalloutBackgroundView/systemBackgroundView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMCalloutView.h</DeclaredIn>			
+			
+			<Declaration>+ (SMCalloutBackgroundView *)systemBackgroundView</Declaration>
+			
+			
+			<Anchor>//api/name/systemBackgroundView</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

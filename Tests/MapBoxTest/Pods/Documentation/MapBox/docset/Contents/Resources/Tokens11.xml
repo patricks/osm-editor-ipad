@@ -1,0 +1,1449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RMMapView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RMMapView</TokenIdentifier>
+			<Abstract type="html">An RMMapView object provides an embeddable map interface, similar to the one provided by Apple&apos;s MapKit. You use this class to display map information and to manipulate the map contents from your application. You can center the map on a given coordinate, specify the size of the area you want to display, and annotate the map with custom information.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The receiver&apos;s delegate.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) IBOutlet id&lt;RMMapViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/delegate</TokenIdentifier>
+			<Abstract type="html">The receiver&apos;s delegate.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) IBOutlet id&lt;RMMapViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setDraggingEnabled:</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines whether the user may scroll around the map.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL draggingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/draggingEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/draggingEnabled</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines whether the user may scroll around the map.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL draggingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/draggingEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setBouncingEnabled:</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines whether the map view bounces past the edge of content and back again and whether it animates the content scaling when the scaling exceeds the maximum or minimum limits.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL bouncingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/bouncingEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/bouncingEnabled</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines whether the map view bounces past the edge of content and back again and whether it animates the content scaling when the scaling exceeds the maximum or minimum limits.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL bouncingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/bouncingEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setZoomingInPivotsAroundCenter:</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines whether double-tap zooms of the map always zoom on the center of the map, or whether they zoom on the center of the double-tap gesture. The default value is NO, which zooms on the gesture.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL zoomingInPivotsAroundCenter</Declaration>
+			
+			
+			<Anchor>//api/name/zoomingInPivotsAroundCenter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/zoomingInPivotsAroundCenter</TokenIdentifier>
+			<Abstract type="html">A Boolean value that determines whether double-tap zooms of the map always zoom on the center of the map, or whether they zoom on the center of the double-tap gesture. The default value is NO, which zooms on the gesture.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL zoomingInPivotsAroundCenter</Declaration>
+			
+			
+			<Anchor>//api/name/zoomingInPivotsAroundCenter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setDecelerationMode:</TokenIdentifier>
+			<Abstract type="html">A custom deceleration mode for the map view for drag operations. Set to RMMapDecelerationOff to disable map drag deceleration. The default value is RMMapDecelerationFast.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RMMapDecelerationMode decelerationMode</Declaration>
+			
+			
+			<Anchor>//api/name/decelerationMode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/decelerationMode</TokenIdentifier>
+			<Abstract type="html">A custom deceleration mode for the map view for drag operations. Set to RMMapDecelerationOff to disable map drag deceleration. The default value is RMMapDecelerationFast.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RMMapDecelerationMode decelerationMode</Declaration>
+			
+			
+			<Anchor>//api/name/decelerationMode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setAdjustTilesForRetinaDisplay:</TokenIdentifier>
+			<Abstract type="html">A Boolean value that adjusts the display of map tile images for retina-capable screens.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL adjustTilesForRetinaDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/adjustTilesForRetinaDisplay</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/adjustTilesForRetinaDisplay</TokenIdentifier>
+			<Abstract type="html">A Boolean value that adjusts the display of map tile images for retina-capable screens.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL adjustTilesForRetinaDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/adjustTilesForRetinaDisplay</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setHideAttribution:</TokenIdentifier>
+			<Abstract type="html">Whether to hide map data attribution for the map view.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL hideAttribution</Declaration>
+			
+			
+			<Anchor>//api/name/hideAttribution</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/hideAttribution</TokenIdentifier>
+			<Abstract type="html">Whether to hide map data attribution for the map view.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL hideAttribution</Declaration>
+			
+			
+			<Anchor>//api/name/hideAttribution</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setMissingTilesDepth:</TokenIdentifier>
+			<Abstract type="html">Take missing tiles from lower-numbered zoom levels, up to a given number of zoom levels. This can be used in order to increase perceived tile load performance or to allow zooming in beyond levels supported natively by a given tile source. Defaults to 1.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger missingTilesDepth</Declaration>
+			
+			
+			<Anchor>//api/name/missingTilesDepth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/missingTilesDepth</TokenIdentifier>
+			<Abstract type="html">Take missing tiles from lower-numbered zoom levels, up to a given number of zoom levels. This can be used in order to increase perceived tile load performance or to allow zooming in beyond levels supported natively by a given tile source. Defaults to 1.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger missingTilesDepth</Declaration>
+			
+			
+			<Anchor>//api/name/missingTilesDepth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setBackgroundView:</TokenIdentifier>
+			<Abstract type="html">A custom, static view to use behind the map tiles. The default behavior is to use grid imagery that moves with map panning like MapKit.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIView *backgroundView</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/backgroundView</TokenIdentifier>
+			<Abstract type="html">A custom, static view to use behind the map tiles. The default behavior is to use grid imagery that moves with map panning like MapKit.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIView *backgroundView</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setBackgroundImage:</TokenIdentifier>
+			<Abstract type="html">A custom image to use behind the map tiles. The default behavior is to show the default backgroundView and not a static image.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setBackgroundImage:(UIImage *)backgroundImage</Declaration>
+			
+			
+			<Anchor>//api/name/setBackgroundImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setDebugTiles:</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether to draw tile borders and z/x/y numbers on tile images for debugging purposes. Defaults to NO.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL debugTiles</Declaration>
+			
+			
+			<Anchor>//api/name/debugTiles</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/debugTiles</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether to draw tile borders and z/x/y numbers on tile images for debugging purposes. Defaults to NO.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL debugTiles</Declaration>
+			
+			
+			<Anchor>//api/name/debugTiles</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setShowLogoBug:</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether to show a small logo in the corner of the map view. Defaults to YES.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL showLogoBug</Declaration>
+			
+			
+			<Anchor>//api/name/showLogoBug</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/showLogoBug</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether to show a small logo in the corner of the map view. Defaults to YES.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL showLogoBug</Declaration>
+			
+			
+			<Anchor>//api/name/showLogoBug</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/initWithFrame:</TokenIdentifier>
+			<Abstract type="html">Initialize a map view with a given frame. A default watermarked MapBox map tile source will be used.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/initWithFrame:andTilesource:</TokenIdentifier>
+			<Abstract type="html">Initialize a map view with a given frame and tile source.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame andTilesource:(id&lt;RMTileSource&gt;)newTilesource</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">The frame with which to initialize the map view.</Abstract>
+				</Parameter><Parameter>
+					<Name>newTilesource</Name>
+					<Abstract type="html">The tile source to use for the map tiles.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized map view, or nil if the map view was unable to be initialized.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFrame:andTilesource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/initWithFrame:andTilesource:centerCoordinate:zoomLevel:maxZoomLevel:minZoomLevel:backgroundImage:</TokenIdentifier>
+			<Abstract type="html">Designated initializer. Initialize a map view.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame andTilesource:(id&lt;RMTileSource&gt;)newTilesource centerCoordinate:(CLLocationCoordinate2D)initialCenterCoordinate zoomLevel:(float)initialTileSourceZoomLevel maxZoomLevel:(float)initialTileSourceMaxZoomLevel minZoomLevel:(float)initialTileSourceMinZoomLevel backgroundImage:(UIImage *)backgroundImage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">The map view&apos;s frame.</Abstract>
+				</Parameter><Parameter>
+					<Name>newTilesource</Name>
+					<Abstract type="html">A tile source to use for the map tiles.</Abstract>
+				</Parameter><Parameter>
+					<Name>initialCenterCoordinate</Name>
+					<Abstract type="html">The starting map center coordinate.</Abstract>
+				</Parameter><Parameter>
+					<Name>initialTileSourceZoomLevel</Name>
+					<Abstract type="html">The starting map zoom level, clamped to the zoom levels supported by the tile source(s).</Abstract>
+				</Parameter><Parameter>
+					<Name>initialTileSourceMaxZoomLevel</Name>
+					<Abstract type="html">The maximum zoom level allowed by the map view, clamped to the zoom levels supported by the tile source(s).</Abstract>
+				</Parameter><Parameter>
+					<Name>initialTileSourceMinZoomLevel</Name>
+					<Abstract type="html">The minimum zoom level allowed by the map view, clamped to the zoom levels supported by the tile source(s).</Abstract>
+				</Parameter><Parameter>
+					<Name>backgroundImage</Name>
+					<Abstract type="html">A custom background image to use behind the map instead of the default gridded tile background that moves with the map.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized map view, or nil if a map view was unable to be initialized.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFrame:andTilesource:centerCoordinate:zoomLevel:maxZoomLevel:minZoomLevel:backgroundImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setCenterCoordinate:</TokenIdentifier>
+			<Abstract type="html">The center coordinate of the map view.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D centerCoordinate</Declaration>
+			
+			
+			<Anchor>//api/name/centerCoordinate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/centerCoordinate</TokenIdentifier>
+			<Abstract type="html">The center coordinate of the map view.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D centerCoordinate</Declaration>
+			
+			
+			<Anchor>//api/name/centerCoordinate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setCenterProjectedPoint:</TokenIdentifier>
+			<Abstract type="html">The center point of the map represented as a projected point.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RMProjectedPoint centerProjectedPoint</Declaration>
+			
+			
+			<Anchor>//api/name/centerProjectedPoint</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/centerProjectedPoint</TokenIdentifier>
+			<Abstract type="html">The center point of the map represented as a projected point.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RMProjectedPoint centerProjectedPoint</Declaration>
+			
+			
+			<Anchor>//api/name/centerProjectedPoint</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setCenterCoordinate:animated:</TokenIdentifier>
+			<Abstract type="html">Set the map center to a given coordinate.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setCenterCoordinate:(CLLocationCoordinate2D)coordinate animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coordinate</Name>
+					<Abstract type="html">A coordinate to set as the map center.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Whether to animate the change to the map center.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCenterCoordinate:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setCenterProjectedPoint:animated:</TokenIdentifier>
+			<Abstract type="html">Set the map center to a given projected point.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setCenterProjectedPoint:(RMProjectedPoint)aPoint animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aPoint</Name>
+					<Abstract type="html">A projected point to set as the map center.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Whether to animate the change to the map center.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCenterProjectedPoint:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/moveBy:</TokenIdentifier>
+			<Abstract type="html">Move the map center by a given delta.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)moveBy:(CGSize)delta</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delta</Name>
+					<Abstract type="html">A CGSize by which to move the map center.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/moveBy:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setZoom:</TokenIdentifier>
+			<Abstract type="html">The current zoom level of the map.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float zoom</Declaration>
+			
+			
+			<Anchor>//api/name/zoom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/zoom</TokenIdentifier>
+			<Abstract type="html">The current zoom level of the map.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float zoom</Declaration>
+			
+			
+			<Anchor>//api/name/zoom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setMinZoom:</TokenIdentifier>
+			<Abstract type="html">The minimum zoom level of the map, clamped to the range supported by the tile source(s).</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float minZoom</Declaration>
+			
+			
+			<Anchor>//api/name/minZoom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/minZoom</TokenIdentifier>
+			<Abstract type="html">The minimum zoom level of the map, clamped to the range supported by the tile source(s).</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float minZoom</Declaration>
+			
+			
+			<Anchor>//api/name/minZoom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setMaxZoom:</TokenIdentifier>
+			<Abstract type="html">The maximum zoom level of the map, clamped to the range supported by the tile source(s).</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float maxZoom</Declaration>
+			
+			
+			<Anchor>//api/name/maxZoom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/maxZoom</TokenIdentifier>
+			<Abstract type="html">The maximum zoom level of the map, clamped to the range supported by the tile source(s).</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float maxZoom</Declaration>
+			
+			
+			<Anchor>//api/name/maxZoom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setZoom:animated:</TokenIdentifier>
+			<Abstract type="html">Set zoom level, optionally with an animation.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setZoom:(float)newZoom animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newZoom</Name>
+					<Abstract type="html">The desired zoom level.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Whether to animate the map change.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setZoom:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setZoom:atCoordinate:animated:</TokenIdentifier>
+			<Abstract type="html">Set both zoom level and center coordinate at the same time, optionally with an animation.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setZoom:(float)newZoom atCoordinate:(CLLocationCoordinate2D)newCenter animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newZoom</Name>
+					<Abstract type="html">The desired zoom level.</Abstract>
+				</Parameter><Parameter>
+					<Name>newCenter</Name>
+					<Abstract type="html">The desired center coordinate.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Whether to animate the map change.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setZoom:atCoordinate:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/zoomByFactor:near:animated:</TokenIdentifier>
+			<Abstract type="html">Zoom the map by a given factor near a certain point.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)zoomByFactor:(float)zoomFactor near:(CGPoint)center animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>zoomFactor</Name>
+					<Abstract type="html">The factor by which to zoom the map.</Abstract>
+				</Parameter><Parameter>
+					<Name>center</Name>
+					<Abstract type="html">The point at which to zoom the map.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Whether to animate the zoom.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/zoomByFactor:near:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/zoomInToNextNativeZoomAt:animated:</TokenIdentifier>
+			<Abstract type="html">Zoom the map in at the next integral zoom level near a certain point.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)zoomInToNextNativeZoomAt:(CGPoint)pivot animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pivot</Name>
+					<Abstract type="html">The point at which to zoom the map.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Whether to animate the zoom.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/zoomInToNextNativeZoomAt:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/zoomOutToNextNativeZoomAt:animated:</TokenIdentifier>
+			<Abstract type="html">Zoom the map out at the next integral zoom level near a certain point.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)zoomOutToNextNativeZoomAt:(CGPoint)pivot animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pivot</Name>
+					<Abstract type="html">The point at which to zoom the map.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Whether to animate the zoom.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/zoomOutToNextNativeZoomAt:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/zoomWithLatitudeLongitudeBoundsSouthWest:northEast:animated:</TokenIdentifier>
+			<Abstract type="html">Zoom the map to a given latitude and longitude bounds.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)zoomWithLatitudeLongitudeBoundsSouthWest:(CLLocationCoordinate2D)southWest northEast:(CLLocationCoordinate2D)northEast animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>southWest</Name>
+					<Abstract type="html">The southwest point to zoom to.</Abstract>
+				</Parameter><Parameter>
+					<Name>northEast</Name>
+					<Abstract type="html">The northeast point to zoom to.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Whether to animate the zoom.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/zoomWithLatitudeLongitudeBoundsSouthWest:northEast:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/latitudeLongitudeBoundingBox</TokenIdentifier>
+			<Abstract type="html">The smallest bounding box containing the entire map view.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (RMSphericalTrapezium)latitudeLongitudeBoundingBox</Declaration>
+			
+			
+			<Anchor>//api/name/latitudeLongitudeBoundingBox</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/latitudeLongitudeBoundingBoxFor:</TokenIdentifier>
+			<Abstract type="html">The smallest bounding box containing a rectangular region of the map view.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (RMSphericalTrapezium)latitudeLongitudeBoundingBoxFor:(CGRect)rect</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">A rectangular region.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/latitudeLongitudeBoundingBoxFor:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setConstraintsSouthWest:northEast:</TokenIdentifier>
+			<Abstract type="html">Contrain zooming and panning of the map view to a given coordinate boundary.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setConstraintsSouthWest:(CLLocationCoordinate2D)southWest northEast:(CLLocationCoordinate2D)northEast</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>southWest</Name>
+					<Abstract type="html">The southwest point to constrain to.</Abstract>
+				</Parameter><Parameter>
+					<Name>northEast</Name>
+					<Abstract type="html">The northeast point to constrain to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setConstraintsSouthWest:northEast:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/takeSnapshot</TokenIdentifier>
+			<Abstract type="html">Take a snapshot of the map view.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (UIImage *)takeSnapshot</Declaration>
+			
+			<ReturnValue><Abstract type="html">An image depicting the map view.</Abstract></ReturnValue>
+			<Anchor>//api/name/takeSnapshot</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/takeSnapshotAndIncludeOverlay:</TokenIdentifier>
+			<Abstract type="html">Take a snapshot of the map view.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (UIImage *)takeSnapshotAndIncludeOverlay:(BOOL)includeOverlay</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>includeOverlay</Name>
+					<Abstract type="html">Whether to include the overlay containing any visible annotations.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An image depicting the map view.</Abstract></ReturnValue>
+			<Anchor>//api/name/takeSnapshotAndIncludeOverlay:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setAnnotations:</TokenIdentifier>
+			<Abstract type="html">The annotations currently added to the map. Includes user location annotations, if any.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak, readonly) NSArray *annotations</Declaration>
+			
+			
+			<Anchor>//api/name/annotations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/annotations</TokenIdentifier>
+			<Abstract type="html">The annotations currently added to the map. Includes user location annotations, if any.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak, readonly) NSArray *annotations</Declaration>
+			
+			
+			<Anchor>//api/name/annotations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setVisibleAnnotations:</TokenIdentifier>
+			<Abstract type="html">The annotations currently visible on the map. May include annotations currently shown in clusters.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak, readonly) NSArray *visibleAnnotations</Declaration>
+			
+			
+			<Anchor>//api/name/visibleAnnotations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/visibleAnnotations</TokenIdentifier>
+			<Abstract type="html">The annotations currently visible on the map. May include annotations currently shown in clusters.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak, readonly) NSArray *visibleAnnotations</Declaration>
+			
+			
+			<Anchor>//api/name/visibleAnnotations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/addAnnotation:</TokenIdentifier>
+			<Abstract type="html">Add an annotation to the map.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)addAnnotation:(RMAnnotation *)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAnnotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/addAnnotations:</TokenIdentifier>
+			<Abstract type="html">Add one or more annotations to the map.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)addAnnotations:(NSArray *)annotations</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>annotations</Name>
+					<Abstract type="html">An array containing the annotations to add to the map.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAnnotations:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/removeAnnotation:</TokenIdentifier>
+			<Abstract type="html">Remove an annotation from the map.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAnnotation:(RMAnnotation *)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeAnnotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/removeAnnotations:</TokenIdentifier>
+			<Abstract type="html">Remove one or more annotations from the map.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAnnotations:(NSArray *)annotations</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>annotations</Name>
+					<Abstract type="html">An array containing the annotations to remove from the map.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeAnnotations:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/removeAllAnnotations</TokenIdentifier>
+			<Abstract type="html">Remove all annotations from the map. This does not remove user location annotations, if any.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllAnnotations</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllAnnotations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/mapPositionForAnnotation:</TokenIdentifier>
+			<Abstract type="html">The screen position for a given annotation.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)mapPositionForAnnotation:(RMAnnotation *)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation for which to return the current screen position.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The screen position of the annotation.</Abstract></ReturnValue>
+			<Anchor>//api/name/mapPositionForAnnotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/selectAnnotation:animated:</TokenIdentifier>
+			<Abstract type="html">Selects the specified annotation and displays a callout view for it.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)selectAnnotation:(RMAnnotation *)annotation animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation object to select.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the callout view is animated into position.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/selectAnnotation:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/deselectAnnotation:animated:</TokenIdentifier>
+			<Abstract type="html">Deselects the specified annotation and hides its callout view.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)deselectAnnotation:(RMAnnotation *)annotation animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation object to deselect.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the callout view is animated offscreen.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deselectAnnotation:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setSelectedAnnotation:</TokenIdentifier>
+			<Abstract type="html">The annotation that is currently selected.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) RMAnnotation *selectedAnnotation</Declaration>
+			
+			
+			<Anchor>//api/name/selectedAnnotation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/selectedAnnotation</TokenIdentifier>
+			<Abstract type="html">The annotation that is currently selected.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) RMAnnotation *selectedAnnotation</Declaration>
+			
+			
+			<Anchor>//api/name/selectedAnnotation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setClusteringEnabled:</TokenIdentifier>
+			<Abstract type="html">Whether to enable clustering of map point annotations. Defaults to NO.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL clusteringEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/clusteringEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/clusteringEnabled</TokenIdentifier>
+			<Abstract type="html">Whether to enable clustering of map point annotations. Defaults to NO.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL clusteringEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/clusteringEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setOrderMarkersByYPosition:</TokenIdentifier>
+			<Abstract type="html">Whether to order markers on the z-axis according to increasing y-position. Defaults to YES.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL orderMarkersByYPosition</Declaration>
+			
+			
+			<Anchor>//api/name/orderMarkersByYPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/orderMarkersByYPosition</TokenIdentifier>
+			<Abstract type="html">Whether to order markers on the z-axis according to increasing y-position. Defaults to YES.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL orderMarkersByYPosition</Declaration>
+			
+			
+			<Anchor>//api/name/orderMarkersByYPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setPositionClusterMarkersAtTheGravityCenter:</TokenIdentifier>
+			<Abstract type="html">Whether to position cluster markers at the weighted center of the points they represent. If YES, position clusters in weighted fashion. If NO, position them on a rectangular grid. Defaults to YES.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL positionClusterMarkersAtTheGravityCenter</Declaration>
+			
+			
+			<Anchor>//api/name/positionClusterMarkersAtTheGravityCenter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/positionClusterMarkersAtTheGravityCenter</TokenIdentifier>
+			<Abstract type="html">Whether to position cluster markers at the weighted center of the points they represent. If YES, position clusters in weighted fashion. If NO, position them on a rectangular grid. Defaults to YES.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL positionClusterMarkersAtTheGravityCenter</Declaration>
+			
+			
+			<Anchor>//api/name/positionClusterMarkersAtTheGravityCenter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setOrderClusterMarkersAboveOthers:</TokenIdentifier>
+			<Abstract type="html">Whether to order cluster markers above non-clustered markers. Defaults to NO.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL orderClusterMarkersAboveOthers</Declaration>
+			
+			
+			<Anchor>//api/name/orderClusterMarkersAboveOthers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/orderClusterMarkersAboveOthers</TokenIdentifier>
+			<Abstract type="html">Whether to order cluster markers above non-clustered markers. Defaults to NO.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL orderClusterMarkersAboveOthers</Declaration>
+			
+			
+			<Anchor>//api/name/orderClusterMarkersAboveOthers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setTileSource:</TokenIdentifier>
+			<Abstract type="html">The first tile source of a map view, ordered from bottom to top.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) id&lt;RMTileSource&gt; tileSource</Declaration>
+			
+			
+			<Anchor>//api/name/tileSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/tileSource</TokenIdentifier>
+			<Abstract type="html">The first tile source of a map view, ordered from bottom to top.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) id&lt;RMTileSource&gt; tileSource</Declaration>
+			
+			
+			<Anchor>//api/name/tileSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setTileSources:</TokenIdentifier>
+			<Abstract type="html">All of the tile sources for a map view, ordered bottom to top.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *tileSources</Declaration>
+			
+			
+			<Anchor>//api/name/tileSources</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/tileSources</TokenIdentifier>
+			<Abstract type="html">All of the tile sources for a map view, ordered bottom to top.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *tileSources</Declaration>
+			
+			
+			<Anchor>//api/name/tileSources</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/addTileSource:</TokenIdentifier>
+			<Abstract type="html">Add a tile source to a map view above the current tile sources.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTileSource:(id&lt;RMTileSource&gt;)tileSource</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileSource</Name>
+					<Abstract type="html">The tile source to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTileSource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/addTileSource:atIndex:</TokenIdentifier>
+			<Abstract type="html">Add a tile source to a map view at a given index.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTileSource:(id&lt;RMTileSource&gt;)tileSource atIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileSource</Name>
+					<Abstract type="html">The tile source to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index at which to add the tile source. A value of zero adds the tile source below all other tile sources.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTileSource:atIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/removeTileSource:</TokenIdentifier>
+			<Abstract type="html">Remove a tile source from the map view.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeTileSource:(id&lt;RMTileSource&gt;)tileSource</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileSource</Name>
+					<Abstract type="html">The tile source to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeTileSource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/removeTileSourceAtIndex:</TokenIdentifier>
+			<Abstract type="html">Remove the tile source at a given index from the map view.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeTileSourceAtIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of the tile source to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeTileSourceAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/moveTileSourceAtIndex:toIndex:</TokenIdentifier>
+			<Abstract type="html">Move the tile source at one index to another index.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)moveTileSourceAtIndex:(NSUInteger)fromIndex toIndex:(NSUInteger)toIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fromIndex</Name>
+					<Abstract type="html">The index of the tile source to move.</Abstract>
+				</Parameter><Parameter>
+					<Name>toIndex</Name>
+					<Abstract type="html">The destination index for the tile source.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/moveTileSourceAtIndex:toIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setHidden:forTileSource:</TokenIdentifier>
+			<Abstract type="html">Hide or show a tile source.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setHidden:(BOOL)isHidden forTileSource:(id&lt;RMTileSource&gt;)tileSource</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isHidden</Name>
+					<Abstract type="html">A Boolean indicating whether to hide the tile source or not.</Abstract>
+				</Parameter><Parameter>
+					<Name>tileSource</Name>
+					<Abstract type="html">The tile source to hide or show.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setHidden:forTileSource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setHidden:forTileSourceAtIndex:</TokenIdentifier>
+			<Abstract type="html">Hide or show a tile source at a given index.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setHidden:(BOOL)isHidden forTileSourceAtIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isHidden</Name>
+					<Abstract type="html">A Boolean indicating whether to hide the tile source or not.</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of the tile source to hide or show.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setHidden:forTileSourceAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/reloadTileSource:</TokenIdentifier>
+			<Abstract type="html">Reload the tiles for a given tile source.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)reloadTileSource:(id&lt;RMTileSource&gt;)tileSource</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileSource</Name>
+					<Abstract type="html">The tile source to reload.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/reloadTileSource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/reloadTileSourceAtIndex:</TokenIdentifier>
+			<Abstract type="html">Reload the tiles for a tile source at a given index.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)reloadTileSourceAtIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of the tile source to reload.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/reloadTileSourceAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setTileCache:</TokenIdentifier>
+			<Abstract type="html">The tile cache for the map view, typically composed of both an in-memory RMMemoryCache and a disk-based RMDatabaseCache.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) RMTileCache *tileCache</Declaration>
+			
+			
+			<Anchor>//api/name/tileCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/tileCache</TokenIdentifier>
+			<Abstract type="html">The tile cache for the map view, typically composed of both an in-memory RMMemoryCache and a disk-based RMDatabaseCache.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) RMTileCache *tileCache</Declaration>
+			
+			
+			<Anchor>//api/name/tileCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/removeAllCachedImages</TokenIdentifier>
+			<Abstract type="html">Clear all tile images from the caching system.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllCachedImages</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllCachedImages</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/projectedPointToPixel:</TokenIdentifier>
+			<Abstract type="html">Convert a projected point to a screen location.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)projectedPointToPixel:(RMProjectedPoint)projectedPoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>projectedPoint</Name>
+					<Abstract type="html">The projected point to convert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The equivalent screen location.</Abstract></ReturnValue>
+			<Anchor>//api/name/projectedPointToPixel:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/coordinateToPixel:</TokenIdentifier>
+			<Abstract type="html">Convert a coordinate to a screen location.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)coordinateToPixel:(CLLocationCoordinate2D)coordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coordinate</Name>
+					<Abstract type="html">The coordinate to convert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The equivalent screen location.</Abstract></ReturnValue>
+			<Anchor>//api/name/coordinateToPixel:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/pixelToProjectedPoint:</TokenIdentifier>
+			<Abstract type="html">Convert a screen location to a projected point.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (RMProjectedPoint)pixelToProjectedPoint:(CGPoint)pixelCoordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pixelCoordinate</Name>
+					<Abstract type="html">A screen location to convert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The equivalent projected point.</Abstract></ReturnValue>
+			<Anchor>//api/name/pixelToProjectedPoint:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/pixelToCoordinate:</TokenIdentifier>
+			<Abstract type="html">Convert a screen location to a coordinate.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (CLLocationCoordinate2D)pixelToCoordinate:(CGPoint)pixelCoordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pixelCoordinate</Name>
+					<Abstract type="html">A screen location to convert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The equivalent coordinate.</Abstract></ReturnValue>
+			<Anchor>//api/name/pixelToCoordinate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/coordinateToProjectedPoint:</TokenIdentifier>
+			<Abstract type="html">Convert a coordiante to a projected point.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (RMProjectedPoint)coordinateToProjectedPoint:(CLLocationCoordinate2D)coordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coordinate</Name>
+					<Abstract type="html">A coordinate to convert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The equivalent projected point.</Abstract></ReturnValue>
+			<Anchor>//api/name/coordinateToProjectedPoint:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/projectedPointToCoordinate:</TokenIdentifier>
+			<Abstract type="html">Convert a projected point to a coordinate.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (CLLocationCoordinate2D)projectedPointToCoordinate:(RMProjectedPoint)projectedPoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>projectedPoint</Name>
+					<Abstract type="html">A projected point to convert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The equivalent coordinate.</Abstract></ReturnValue>
+			<Anchor>//api/name/projectedPointToCoordinate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/latitudeLongitudeBoundingBoxForTile:</TokenIdentifier>
+			<Abstract type="html">Return the bounding box for a given map tile.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (RMSphericalTrapezium)latitudeLongitudeBoundingBoxForTile:(RMTile)aTile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aTile</Name>
+					<Abstract type="html">A map tile.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The bounding box for the tile in the current projection.</Abstract></ReturnValue>
+			<Anchor>//api/name/latitudeLongitudeBoundingBoxForTile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setShowsUserLocation:</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the map may display the user location.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL showsUserLocation</Declaration>
+			
+			
+			<Anchor>//api/name/showsUserLocation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/showsUserLocation</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the map may display the user location.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL showsUserLocation</Declaration>
+			
+			
+			<Anchor>//api/name/showsUserLocation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setUserLocation:</TokenIdentifier>
+			<Abstract type="html">The annotation object representing the user’s current location. (read-only)</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RMUserLocation *userLocation</Declaration>
+			
+			
+			<Anchor>//api/name/userLocation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/userLocation</TokenIdentifier>
+			<Abstract type="html">The annotation object representing the user’s current location. (read-only)</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) RMUserLocation *userLocation</Declaration>
+			
+			
+			<Anchor>//api/name/userLocation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setUserLocationVisible:</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the device’s current location is visible in the map view. (read-only)</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isUserLocationVisible) BOOL userLocationVisible</Declaration>
+			
+			
+			<Anchor>//api/name/userLocationVisible</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/userLocationVisible</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the device’s current location is visible in the map view. (read-only)</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, getter=isUserLocationVisible) BOOL userLocationVisible</Declaration>
+			
+			
+			<Anchor>//api/name/userLocationVisible</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setUserTrackingMode:</TokenIdentifier>
+			<Abstract type="html">The mode used to track the user location.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RMUserTrackingMode userTrackingMode</Declaration>
+			
+			
+			<Anchor>//api/name/userTrackingMode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/userTrackingMode</TokenIdentifier>
+			<Abstract type="html">The mode used to track the user location.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) RMUserTrackingMode userTrackingMode</Declaration>
+			
+			
+			<Anchor>//api/name/userTrackingMode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setDisplayHeadingCalibration:</TokenIdentifier>
+			<Abstract type="html">Whether the map view should display a heading calibration alert when necessary. The default value is YES.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL displayHeadingCalibration</Declaration>
+			
+			
+			<Anchor>//api/name/displayHeadingCalibration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RMMapView/displayHeadingCalibration</TokenIdentifier>
+			<Abstract type="html">Whether the map view should display a heading calibration alert when necessary. The default value is YES.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL displayHeadingCalibration</Declaration>
+			
+			
+			<Anchor>//api/name/displayHeadingCalibration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RMMapView/setUserTrackingMode:animated:</TokenIdentifier>
+			<Abstract type="html">Set the mode used to track the user location.</Abstract>
+			<DeclaredIn>RMMapView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUserTrackingMode:(RMUserTrackingMode)mode animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mode</Name>
+					<Abstract type="html">The mode used to track the user location.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Whether changes to the map center or rotation should be animated when the mode is changed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setUserTrackingMode:animated:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
