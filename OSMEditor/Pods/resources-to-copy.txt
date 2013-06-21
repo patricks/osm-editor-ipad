@@ -1,0 +1,1 @@
+/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/Resources/MapBox.bundle
