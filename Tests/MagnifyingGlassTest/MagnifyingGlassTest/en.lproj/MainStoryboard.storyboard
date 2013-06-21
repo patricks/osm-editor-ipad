@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ni-W7-kac" customClass="ACMagnifyingView">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="45360.png" translatesAutoresizingMaskIntoConstraints="NO" id="CAE-Y6-FOY">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="425" id="Oxv-f4-UGp"/>
+                                            <constraint firstAttribute="width" constant="335" id="sZD-eG-LBE"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="CAE-Y6-FOY" firstAttribute="centerY" secondItem="5Ni-W7-kac" secondAttribute="centerY" type="default" id="NRm-6p-lEe"/>
+                                    <constraint firstItem="CAE-Y6-FOY" firstAttribute="leading" secondItem="5Ni-W7-kac" secondAttribute="leading" constant="8" id="Poi-Aa-Dp4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G1q-60-Rkx" customClass="PSEditingView">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="45361.png" translatesAutoresizingMaskIntoConstraints="NO" id="nhj-hz-4se">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="425" id="Bql-gF-cbW"/>
+                                            <constraint firstAttribute="width" constant="335" id="zYU-6I-26q"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="nhj-hz-4se" firstAttribute="centerX" secondItem="G1q-60-Rkx" secondAttribute="centerX" type="default" id="6rB-rh-sUY"/>
+                                    <constraint firstItem="nhj-hz-4se" firstAttribute="top" secondItem="G1q-60-Rkx" secondAttribute="top" constant="17" id="Off-5R-ka3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G1q-60-Rkx" firstAttribute="bottom" secondItem="5Ni-W7-kac" secondAttribute="bottom" type="default" id="0nv-ZJ-7qb"/>
+                            <constraint firstItem="5Ni-W7-kac" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="31" id="1el-rf-6xI"/>
+                            <constraint firstAttribute="trailing" secondItem="G1q-60-Rkx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="4EU-Fj-4FK"/>
+                            <constraint firstAttribute="bottom" secondItem="5Ni-W7-kac" secondAttribute="bottom" constant="62" id="CNY-mp-MZd"/>
+                            <constraint firstItem="5Ni-W7-kac" firstAttribute="top" secondItem="5" secondAttribute="top" constant="482" id="b43-rF-sUv"/>
+                            <constraint firstItem="G1q-60-Rkx" firstAttribute="top" secondItem="5Ni-W7-kac" secondAttribute="top" type="default" id="jhm-sc-TMZ"/>
+                            <constraint firstAttribute="trailing" secondItem="5Ni-W7-kac" secondAttribute="trailing" constant="382" id="pb0-sk-0iA"/>
+                            <constraint firstItem="G1q-60-Rkx" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="398" id="wZL-IQ-hLv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editingView" destination="G1q-60-Rkx" id="aEe-n9-KWg"/>
+                        <outlet property="magnifyingView" destination="5Ni-W7-kac" id="0bt-yp-0ky"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="45360.png" width="256" height="256"/>
+        <image name="45361.png" width="256" height="256"/>
+    </resources>
+    <classes>
+        <class className="ACMagnifyingView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ACMagnifyingView.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PSEditingView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PSEditingView.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="editingView" candidateClass="PSEditingView"/>
+                <relationship kind="outlet" name="magnifyingView" candidateClass="ACMagnifyingView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

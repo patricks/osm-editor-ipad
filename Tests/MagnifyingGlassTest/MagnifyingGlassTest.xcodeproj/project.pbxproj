@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD8508A617745C96005C25E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8508A517745C96005C25E1 /* UIKit.framework */; };
+		CD8508A817745C96005C25E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8508A717745C96005C25E1 /* Foundation.framework */; };
+		CD8508AA17745C96005C25E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8508A917745C96005C25E1 /* CoreGraphics.framework */; };
+		CD8508B017745C96005C25E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD8508AE17745C96005C25E1 /* InfoPlist.strings */; };
+		CD8508B217745C96005C25E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8508B117745C96005C25E1 /* main.m */; };
+		CD8508B617745C96005C25E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8508B517745C96005C25E1 /* AppDelegate.m */; };
+		CD8508B817745C96005C25E1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8508B717745C96005C25E1 /* Default.png */; };
+		CD8508BA17745C96005C25E1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8508B917745C96005C25E1 /* Default@2x.png */; };
+		CD8508BC17745C96005C25E1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8508BB17745C96005C25E1 /* Default-568h@2x.png */; };
+		CD8508BF17745C96005C25E1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8508BD17745C96005C25E1 /* MainStoryboard.storyboard */; };
+		CD8508C217745C96005C25E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8508C117745C96005C25E1 /* ViewController.m */; };
+		CD8508D017745D13005C25E1 /* ACLoupe.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8508C917745D13005C25E1 /* ACLoupe.m */; };
+		CD8508D117745D13005C25E1 /* ACMagnifyingGlass.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8508CB17745D13005C25E1 /* ACMagnifyingGlass.m */; };
+		CD8508D217745D13005C25E1 /* ACMagnifyingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8508CD17745D13005C25E1 /* ACMagnifyingView.m */; };
+		CD8508D317745D13005C25E1 /* kb-loupe-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8508CF17745D13005C25E1 /* kb-loupe-hi.png */; };
+		CD8782401774934700211C75 /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = CD87823F1774934700211C75 /* crosshair.png */; };
+		CDA0185C1774609A0009B3DF /* 45361.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA0185A1774609A0009B3DF /* 45361.png */; };
+		CDA0185D1774609A0009B3DF /* 45360.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA0185B1774609A0009B3DF /* 45360.png */; };
+		CDA01860177471D50009B3DF /* PSEditingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA0185F177471D50009B3DF /* PSEditingTool.m */; };
+		CDA01863177473190009B3DF /* PSEditingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA01862177473190009B3DF /* PSEditingView.m */; };
+		CDA01866177485EB0009B3DF /* PSOSMEditingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA01865177485EB0009B3DF /* PSOSMEditingTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD8508A217745C96005C25E1 /* MagnifyingGlassTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnifyingGlassTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8508A517745C96005C25E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD8508A717745C96005C25E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD8508A917745C96005C25E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CD8508AD17745C96005C25E1 /* MagnifyingGlassTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagnifyingGlassTest-Info.plist"; sourceTree = "<group>"; };
+		CD8508AF17745C96005C25E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD8508B117745C96005C25E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD8508B317745C96005C25E1 /* MagnifyingGlassTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagnifyingGlassTest-Prefix.pch"; sourceTree = "<group>"; };
+		CD8508B417745C96005C25E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD8508B517745C96005C25E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD8508B717745C96005C25E1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CD8508B917745C96005C25E1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CD8508BB17745C96005C25E1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CD8508BE17745C96005C25E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		CD8508C017745C96005C25E1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD8508C117745C96005C25E1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD8508C817745D13005C25E1 /* ACLoupe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACLoupe.h; sourceTree = "<group>"; };
+		CD8508C917745D13005C25E1 /* ACLoupe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACLoupe.m; sourceTree = "<group>"; };
+		CD8508CA17745D13005C25E1 /* ACMagnifyingGlass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMagnifyingGlass.h; sourceTree = "<group>"; };
+		CD8508CB17745D13005C25E1 /* ACMagnifyingGlass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMagnifyingGlass.m; sourceTree = "<group>"; };
+		CD8508CC17745D13005C25E1 /* ACMagnifyingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMagnifyingView.h; sourceTree = "<group>"; };
+		CD8508CD17745D13005C25E1 /* ACMagnifyingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMagnifyingView.m; sourceTree = "<group>"; };
+		CD8508CF17745D13005C25E1 /* kb-loupe-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kb-loupe-hi.png"; sourceTree = "<group>"; };
+		CD87823F1774934700211C75 /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crosshair.png; path = MagnifyingGlassTest/crosshair.png; sourceTree = SOURCE_ROOT; };
+		CDA0185A1774609A0009B3DF /* 45361.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 45361.png; sourceTree = "<group>"; };
+		CDA0185B1774609A0009B3DF /* 45360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 45360.png; sourceTree = "<group>"; };
+		CDA0185E177471D50009B3DF /* PSEditingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSEditingTool.h; sourceTree = "<group>"; };
+		CDA0185F177471D50009B3DF /* PSEditingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSEditingTool.m; sourceTree = "<group>"; };
+		CDA01861177473190009B3DF /* PSEditingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSEditingView.h; sourceTree = "<group>"; };
+		CDA01862177473190009B3DF /* PSEditingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSEditingView.m; sourceTree = "<group>"; };
+		CDA01864177485EA0009B3DF /* PSOSMEditingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSOSMEditingTool.h; sourceTree = "<group>"; };
+		CDA01865177485EB0009B3DF /* PSOSMEditingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSOSMEditingTool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD85089F17745C96005C25E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8508A617745C96005C25E1 /* UIKit.framework in Frameworks */,
+				CD8508A817745C96005C25E1 /* Foundation.framework in Frameworks */,
+				CD8508AA17745C96005C25E1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD85089917745C96005C25E1 = {
+			isa = PBXGroup;
+			children = (
+				CD8508AB17745C96005C25E1 /* MagnifyingGlassTest */,
+				CD8508A417745C96005C25E1 /* Frameworks */,
+				CD8508A317745C96005C25E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD8508A317745C96005C25E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD8508A217745C96005C25E1 /* MagnifyingGlassTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD8508A417745C96005C25E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD8508A517745C96005C25E1 /* UIKit.framework */,
+				CD8508A717745C96005C25E1 /* Foundation.framework */,
+				CD8508A917745C96005C25E1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD8508AB17745C96005C25E1 /* MagnifyingGlassTest */ = {
+			isa = PBXGroup;
+			children = (
+				CDA0185A1774609A0009B3DF /* 45361.png */,
+				CDA0185B1774609A0009B3DF /* 45360.png */,
+				CD8508C817745D13005C25E1 /* ACLoupe.h */,
+				CD8508C917745D13005C25E1 /* ACLoupe.m */,
+				CD8508CA17745D13005C25E1 /* ACMagnifyingGlass.h */,
+				CD8508CB17745D13005C25E1 /* ACMagnifyingGlass.m */,
+				CD8508CC17745D13005C25E1 /* ACMagnifyingView.h */,
+				CD8508CD17745D13005C25E1 /* ACMagnifyingView.m */,
+				CD8508CE17745D13005C25E1 /* Resources */,
+				CD8508B417745C96005C25E1 /* AppDelegate.h */,
+				CD8508B517745C96005C25E1 /* AppDelegate.m */,
+				CD8508BD17745C96005C25E1 /* MainStoryboard.storyboard */,
+				CD8508C017745C96005C25E1 /* ViewController.h */,
+				CD8508C117745C96005C25E1 /* ViewController.m */,
+				CD8508AC17745C96005C25E1 /* Supporting Files */,
+				CDA01861177473190009B3DF /* PSEditingView.h */,
+				CDA01862177473190009B3DF /* PSEditingView.m */,
+				CDA0185E177471D50009B3DF /* PSEditingTool.h */,
+				CDA0185F177471D50009B3DF /* PSEditingTool.m */,
+				CDA01864177485EA0009B3DF /* PSOSMEditingTool.h */,
+				CDA01865177485EB0009B3DF /* PSOSMEditingTool.m */,
+			);
+			path = MagnifyingGlassTest;
+			sourceTree = "<group>";
+		};
+		CD8508AC17745C96005C25E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD8508AD17745C96005C25E1 /* MagnifyingGlassTest-Info.plist */,
+				CD8508AE17745C96005C25E1 /* InfoPlist.strings */,
+				CD8508B117745C96005C25E1 /* main.m */,
+				CD8508B317745C96005C25E1 /* MagnifyingGlassTest-Prefix.pch */,
+				CD8508B717745C96005C25E1 /* Default.png */,
+				CD8508B917745C96005C25E1 /* Default@2x.png */,
+				CD8508BB17745C96005C25E1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD8508CE17745D13005C25E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD87823F1774934700211C75 /* crosshair.png */,
+				CD8508CF17745D13005C25E1 /* kb-loupe-hi.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD8508A117745C96005C25E1 /* MagnifyingGlassTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8508C517745C96005C25E1 /* Build configuration list for PBXNativeTarget "MagnifyingGlassTest" */;
+			buildPhases = (
+				CD85089E17745C96005C25E1 /* Sources */,
+				CD85089F17745C96005C25E1 /* Frameworks */,
+				CD8508A017745C96005C25E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagnifyingGlassTest;
+			productName = MagnifyingGlassTest;
+			productReference = CD8508A217745C96005C25E1 /* MagnifyingGlassTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD85089A17745C96005C25E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Patrick Steiner";
+			};
+			buildConfigurationList = CD85089D17745C96005C25E1 /* Build configuration list for PBXProject "MagnifyingGlassTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD85089917745C96005C25E1;
+			productRefGroup = CD8508A317745C96005C25E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD8508A117745C96005C25E1 /* MagnifyingGlassTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD8508A017745C96005C25E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8508B017745C96005C25E1 /* InfoPlist.strings in Resources */,
+				CD8508B817745C96005C25E1 /* Default.png in Resources */,
+				CD8508BA17745C96005C25E1 /* Default@2x.png in Resources */,
+				CD8508BC17745C96005C25E1 /* Default-568h@2x.png in Resources */,
+				CD8508BF17745C96005C25E1 /* MainStoryboard.storyboard in Resources */,
+				CD8508D317745D13005C25E1 /* kb-loupe-hi.png in Resources */,
+				CDA0185C1774609A0009B3DF /* 45361.png in Resources */,
+				CDA0185D1774609A0009B3DF /* 45360.png in Resources */,
+				CD8782401774934700211C75 /* crosshair.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD85089E17745C96005C25E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8508B217745C96005C25E1 /* main.m in Sources */,
+				CD8508B617745C96005C25E1 /* AppDelegate.m in Sources */,
+				CD8508C217745C96005C25E1 /* ViewController.m in Sources */,
+				CD8508D017745D13005C25E1 /* ACLoupe.m in Sources */,
+				CD8508D117745D13005C25E1 /* ACMagnifyingGlass.m in Sources */,
+				CD8508D217745D13005C25E1 /* ACMagnifyingView.m in Sources */,
+				CDA01860177471D50009B3DF /* PSEditingTool.m in Sources */,
+				CDA01863177473190009B3DF /* PSEditingView.m in Sources */,
+				CDA01866177485EB0009B3DF /* PSOSMEditingTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD8508AE17745C96005C25E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD8508AF17745C96005C25E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD8508BD17745C96005C25E1 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD8508BE17745C96005C25E1 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD8508C317745C96005C25E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		CD8508C417745C96005C25E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD8508C617745C96005C25E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagnifyingGlassTest/MagnifyingGlassTest-Prefix.pch";
+				INFOPLIST_FILE = "MagnifyingGlassTest/MagnifyingGlassTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD8508C717745C96005C25E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagnifyingGlassTest/MagnifyingGlassTest-Prefix.pch";
+				INFOPLIST_FILE = "MagnifyingGlassTest/MagnifyingGlassTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD85089D17745C96005C25E1 /* Build configuration list for PBXProject "MagnifyingGlassTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8508C317745C96005C25E1 /* Debug */,
+				CD8508C417745C96005C25E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8508C517745C96005C25E1 /* Build configuration list for PBXNativeTarget "MagnifyingGlassTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8508C617745C96005C25E1 /* Debug */,
+				CD8508C717745C96005C25E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD85089A17745C96005C25E1 /* Project object */;
+}
