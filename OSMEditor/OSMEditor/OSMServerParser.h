@@ -7,10 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface OSMServerParser : NSObject
+@protocol OSMServerParserDelegate;
 
-- (id)initWithURL:(NSURL *)serverURL;
-- (void)requestDataFromServer;
+@interface OSMServerParser : NSObject <NSXMLParserDelegate>
+
+@property (nonatomic, retain) NSMutableArray *locations;
+@property (nonatomic, strong) id <OSMServerParserDelegate> delegate;
+
+- (id)initWithURL:(NSString *)serverURL;
+- (void)requestDataFromServerWithBoundsOfSouthWest:(CLLocationCoordinate2D)southWest andNorthEast:(CLLocationCoordinate2D)northEast;
+
+@end
+
+@protocol OSMServerParserDelegate
+
+-(void)didFinishedParsingWithLocations:(NSArray*)locations;
 
 @end

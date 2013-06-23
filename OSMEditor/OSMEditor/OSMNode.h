@@ -12,5 +12,6 @@
 @interface OSMNode : NSObject
 
 @property (readwrite, assign) CLLocationCoordinate2D location;
+@property (nonatomic, retain) NSString *name;
 
 @end

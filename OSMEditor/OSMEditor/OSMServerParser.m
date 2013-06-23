@@ -10,23 +10,30 @@
 #import "OSMServerParser.h"
 #import "OSMNode.h"
 
-@interface OSMServerParser ( ) <NSXMLParserDelegate> {
-    NSMutableArray *locations;
-}
+@interface OSMServerParser ( )
 
-@property (readwrite, copy) NSURL *serverURL;
+@property (nonatomic, retain) NSString *serverURL;
 
 @end
 
 @implementation OSMServerParser
 
-- (id)initWithURL:(NSURL *)initServerURL
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self = [self initWithURL:@"http://api.openstreetmap.org"];
+    }
+    return self;
+}
+
+- (id)initWithURL:(NSString *)initServerURL
 {
     self = [super init];
     
     if (nil != self) {
-        locations = [[NSMutableArray alloc] init];
-        [self setServerURL:initServerURL];
+        _locations = [[NSMutableArray alloc] init];
+        _serverURL = initServerURL;
         //[self setCache:[[OSPMap alloc] init]];
         //[self setRequestedTiles:[[OSPTileArray alloc] init]];
         //[self setCurrentConnections:[[NSMutableArray alloc] initWithCapacity:OSPMapServerMaxSimultaneousConnections]];
@@ -36,9 +43,13 @@
     return self;
 }
 
-- (void)requestDataFromServer
+- (void)requestDataFromServerWithBoundsOfSouthWest:(CLLocationCoordinate2D)southWest andNorthEast:(CLLocationCoordinate2D)northEast
 {
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.openstreetmap.org/api/0.6/map?bbox=14.50969,48.36803,14.51907,48.37329"]];
+    NSString *apiURL = @"/api/0.6/map?bbox=";
+    NSString *bboxURL = [NSString stringWithFormat:@"%f,%f,%f,%f", southWest.longitude, southWest.latitude, northEast.longitude, northEast.latitude];
+    NSString *requestURL = [NSString stringWithFormat:@"%@%@%@", _serverURL, apiURL, bboxURL];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:requestURL]];
     AFXMLRequestOperation *operation = [AFXMLRequestOperation XMLParserRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, NSXMLParser *XMLParser) {
         XMLParser.delegate = self;
         [XMLParser parse];
@@ -48,21 +59,21 @@
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
 {
-    NSLog(@"Start parsing: %@", elementName);
+    //NSLog(@"Start parsing: %@", elementName);
     
     if ([elementName isEqualToString:@"node"]) {
-        NSLog(@"Found node: lat: %@ lon: %@", attributeDict[@"lat"], attributeDict[@"lon"]);
+        //NSLog(@"Found node: lat: %@ lon: %@", attributeDict[@"lat"], attributeDict[@"lon"]);
         
         OSMNode *node = [[OSMNode alloc] init];
         node.location = CLLocationCoordinate2DMake([attributeDict[@"lat"] doubleValue], [attributeDict[@"lon"] doubleValue]);
         
-        [locations addObject:node];
+        [_locations addObject:node];
     }
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
-    NSLog(@"Stop parsing: %@", elementName);
+    //NSLog(@"Stop parsing: %@", elementName);
 }
 
 - (void)parserDidStartDocument:(NSXMLParser *)parser
@@ -73,6 +84,7 @@
 - (void)parserDidEndDocument:(NSXMLParser *)parser
 {
     NSLog(@"Stop parsing document");
+    [_delegate didFinishedParsingWithLocations:[NSArray arrayWithArray:_locations]];
 }
 
 - (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError

@@ -10,6 +10,4 @@
 
 @implementation OSMNode
 
-@synthesize location;
-
 @end

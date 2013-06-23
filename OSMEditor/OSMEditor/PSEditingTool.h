@@ -8,11 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol PSEditingToolDelegate;
+
 @interface PSEditingTool : UIView
 
 @property (nonatomic, assign) CGFloat scale;
 @property (nonatomic, assign) BOOL scaleAtTouchPoint;
-@property (nonatomic, retain) UIView *viewToEdit;
+@property (nonatomic, strong) UIView *viewToEdit;
 @property (nonatomic, assign) CGPoint touchPoint;
 
+@property (nonatomic, strong) id <PSEditingToolDelegate> delegate;
+
+@end
+
+@protocol PSEditingToolDelegate
+- (void)addPOIButtonClicked;
 @end

@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "PSEditingView.h"
 #import "MapBox.h"
+#import "OSMServerParser.h"
 
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <PSEditingToolDelegate, OSMServerParserDelegate>
+
+- (IBAction)downloadOSMClicked:(id)sender;
 
 @end

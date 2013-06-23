@@ -11,6 +11,7 @@
 
 @interface PSEditingView : UIView
 
-@property (nonatomic, retain) PSEditingTool *editingTool;
+@property CGPoint currentPosition;
+@property (nonatomic, strong) PSEditingTool *editingTool;
 
 @end

@@ -8,12 +8,6 @@
 
 #import "PSEditingView.h"
 
-@interface PSEditingTool ()
-
-@property (nonatomic, retain) PSEditingTool *editingTool;
-
-@end
-
 @implementation PSEditingView
 
 - (void)addEditingTool:(CGPoint)point
@@ -48,12 +42,15 @@
 {
     UITouch *touch = [touches anyObject];
     [self addEditingTool:[touch locationInView:self]];
+    _currentPosition = [touch locationInView:self];
+    
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
     [self updateEditingTool:[touch locationInView:self]];
+    _currentPosition = [touch locationInView:self];
 }
 
 @end
