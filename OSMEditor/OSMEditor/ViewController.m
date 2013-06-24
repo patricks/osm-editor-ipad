@@ -8,13 +8,14 @@
 
 #import "ViewController.h"
 #import "OSMNode.h"
+#import "MBProgressHUD.h"
 
 @interface ViewController ()
 
-@property (nonatomic, retain) RMMapView *mapView;;
-@property (nonatomic, retain) PSEditingView *editingView;
-@property (nonatomic, retain) PSEditingTool *editingTool;
-@property (nonatomic, retain) OSMServerParser *parser;
+@property (nonatomic, readwrite) RMMapView *mapView;;
+@property (nonatomic, readwrite) PSEditingView *editingView;
+@property (nonatomic, readwrite) PSEditingTool *editingTool;
+@property (nonatomic, readwrite) OSMServerParser *parser;
 
 @end
 
@@ -69,6 +70,9 @@
 
 - (IBAction)downloadOSMClicked:(id)sender
 {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Downloading";
+    
     RMSphericalTrapezium currentBounds = [_mapView latitudeLongitudeBoundingBox];
     [_parser requestDataFromServerWithBoundsOfSouthWest:currentBounds.southWest andNorthEast:currentBounds.northEast];
 }
@@ -110,12 +114,30 @@
 
 -(void)didFinishedParsingWithLocations:(NSArray*)locations
 {
+    // hide download hud
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
     NSLog(@"DBG: DOWNLOAD IS FINISHED with %i items", [locations count]);
     
-    for (OSMNode *node in locations) {
-        RMPointAnnotation *newAnnotation = [[RMPointAnnotation alloc] initWithMapView:_mapView coordinate:node.location andTitle:node.name];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Parsing";
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    dispatch_async(queue, ^(void) {
+    
+        for (OSMNode *node in locations) {
+            RMPointAnnotation *newAnnotation = [[RMPointAnnotation alloc] initWithMapView:_mapView coordinate:node.location andTitle:node.name];
+            
+            [_mapView addAnnotation:newAnnotation];
+        }
         
-        [_mapView addAnnotation:newAnnotation];
-    }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //TODO: is this requrired?
+            sleep(1);
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+            [self.view setNeedsDisplay];
+        });
+    });
 }
+
 @end

@@ -13,5 +13,6 @@
 
 @property (readwrite, assign) CLLocationCoordinate2D location;
 @property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSNumber *identifier;
 
 @end

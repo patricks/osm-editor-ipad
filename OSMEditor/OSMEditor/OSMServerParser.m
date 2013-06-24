@@ -9,9 +9,11 @@
 #import <AFNetworking.h>
 #import "OSMServerParser.h"
 #import "OSMNode.h"
+#import "OSMWay.h"
 
 @interface OSMServerParser ( )
 
+BOOL wayNodeOpen = false;
 @property (nonatomic, retain) NSString *serverURL;
 
 @end
@@ -32,7 +34,7 @@
     self = [super init];
     
     if (nil != self) {
-        _locations = [[NSMutableArray alloc] init];
+        _nodes = [[NSMutableArray alloc] init];
         _serverURL = initServerURL;
         //[self setCache:[[OSPMap alloc] init]];
         //[self setRequestedTiles:[[OSPTileArray alloc] init]];
@@ -48,6 +50,8 @@
     NSString *apiURL = @"/api/0.6/map?bbox=";
     NSString *bboxURL = [NSString stringWithFormat:@"%f,%f,%f,%f", southWest.longitude, southWest.latitude, northEast.longitude, northEast.latitude];
     NSString *requestURL = [NSString stringWithFormat:@"%@%@%@", _serverURL, apiURL, bboxURL];
+    
+    NSLog(@"DBG: parsing url: %@", requestURL);
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:requestURL]];
     AFXMLRequestOperation *operation = [AFXMLRequestOperation XMLParserRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, NSXMLParser *XMLParser) {
@@ -66,8 +70,13 @@
         
         OSMNode *node = [[OSMNode alloc] init];
         node.location = CLLocationCoordinate2DMake([attributeDict[@"lat"] doubleValue], [attributeDict[@"lon"] doubleValue]);
+        node.identifier = [NSNumber numberWithDouble:[attributeDict[@"id"]doubleValue]];
         
-        [_locations addObject:node];
+        [_nodes addObject:node];
+    } else if ([elementName isEqualToString:@"way"]) {
+        wayNodeOpen = true;
+        OSMWay *way = [[OSMWay alloc] init];
+        way.identifier = [NSNumber numberWithDouble:[attributeDict[@"id"]doubleValue]];
     }
 }
 
@@ -84,7 +93,7 @@
 - (void)parserDidEndDocument:(NSXMLParser *)parser
 {
     NSLog(@"Stop parsing document");
-    [_delegate didFinishedParsingWithLocations:[NSArray arrayWithArray:_locations]];
+    [_delegate didFinishedParsingWithLocations:[NSArray arrayWithArray:_nodes]];
 }
 
 - (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError

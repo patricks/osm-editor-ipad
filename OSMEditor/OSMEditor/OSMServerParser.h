@@ -13,7 +13,8 @@
 
 @interface OSMServerParser : NSObject <NSXMLParserDelegate>
 
-@property (nonatomic, retain) NSMutableArray *locations;
+@property (nonatomic, retain) NSMutableArray *nodes;
+@property (nonatomic, retain) NSMutableArray *ways;
 @property (nonatomic, strong) id <OSMServerParserDelegate> delegate;
 
 - (id)initWithURL:(NSString *)serverURL;

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A93FB611A1C242A0BF289CAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B42B5DB59C3443BB696002B /* libPods.a */; };
+		CDC69F781777589100DC8B44 /* OSMWay.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC69F771777589100DC8B44 /* OSMWay.m */; };
 		CDD542831774F8EE00314C59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD542821774F8EE00314C59 /* UIKit.framework */; };
 		CDD542851774F8EE00314C59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD542841774F8EE00314C59 /* Foundation.framework */; };
 		CDD542871774F8EE00314C59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD542861774F8EE00314C59 /* CoreGraphics.framework */; };
@@ -30,6 +31,8 @@
 /* Begin PBXFileReference section */
 		1B42B5DB59C3443BB696002B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		727A0660E4714992816C882B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		CDC69F761777589100DC8B44 /* OSMWay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMWay.h; sourceTree = "<group>"; };
+		CDC69F771777589100DC8B44 /* OSMWay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMWay.m; sourceTree = "<group>"; };
 		CDD5427F1774F8EE00314C59 /* OSMEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSMEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD542821774F8EE00314C59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CDD542841774F8EE00314C59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -150,6 +153,8 @@
 			children = (
 				CDE3406C1774FF5900BA15AE /* OSMNode.h */,
 				CDE3406D1774FF5900BA15AE /* OSMNode.m */,
+				CDC69F761777589100DC8B44 /* OSMWay.h */,
+				CDC69F771777589100DC8B44 /* OSMWay.m */,
 				CDE3406E1774FF5900BA15AE /* OSMServerParser.h */,
 				CDE3406F1774FF5900BA15AE /* OSMServerParser.m */,
 			);
@@ -271,6 +276,7 @@
 				CDE340681774FDBA00BA15AE /* PSEditingTool.m in Sources */,
 				CDE340701774FF5900BA15AE /* OSMNode.m in Sources */,
 				CDE340711774FF5900BA15AE /* OSMServerParser.m in Sources */,
+				CDC69F781777589100DC8B44 /* OSMWay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
