@@ -99,7 +99,6 @@ static CGFloat const kDefaultScale = 1.5;
 
 - (void)poiButtonClicked
 {
-    NSLog(@"DBG: POI Button clicked.");
     [_delegate addPOIButtonClicked];
 }
 

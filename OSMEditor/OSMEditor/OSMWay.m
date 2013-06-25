@@ -10,4 +10,13 @@
 
 @implementation OSMWay
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _nodes = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
 @end

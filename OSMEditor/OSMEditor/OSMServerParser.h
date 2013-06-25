@@ -24,6 +24,6 @@
 
 @protocol OSMServerParserDelegate
 
--(void)didFinishedParsingWithLocations:(NSArray*)locations;
+-(void)didFinishedParsingWithNodes:(NSArray*)nodes andWays:(NSArray*)ways;
 
 @end

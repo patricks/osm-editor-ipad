@@ -34,6 +34,11 @@
                                 <action selector="downloadOSMClicked:" destination="2" id="dNg-wi-IJy"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Edit Mode" id="xvk-Dx-IdD">
+                            <connections>
+                                <action selector="editModeClicked:" destination="2" id="8nX-j9-8Ek"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>

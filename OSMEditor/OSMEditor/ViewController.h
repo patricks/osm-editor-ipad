@@ -12,8 +12,9 @@
 #import "OSMServerParser.h"
 
 
-@interface ViewController : UIViewController <PSEditingToolDelegate, OSMServerParserDelegate>
+@interface ViewController : UIViewController <PSEditingToolDelegate, OSMServerParserDelegate, RMMapViewDelegate>
 
 - (IBAction)downloadOSMClicked:(id)sender;
+- (IBAction)editModeClicked:(id)sender;
 
 @end

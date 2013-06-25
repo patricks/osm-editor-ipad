@@ -11,9 +11,12 @@
 #import "OSMNode.h"
 #import "OSMWay.h"
 
-@interface OSMServerParser ( )
+@interface OSMServerParser ()
+{
+    BOOL wayNodeOpen;
+}
 
-BOOL wayNodeOpen = false;
+@property (nonatomic, strong) OSMWay *way;
 @property (nonatomic, retain) NSString *serverURL;
 
 @end
@@ -35,6 +38,7 @@ BOOL wayNodeOpen = false;
     
     if (nil != self) {
         _nodes = [[NSMutableArray alloc] init];
+        _ways = [[NSMutableArray alloc] init];
         _serverURL = initServerURL;
         //[self setCache:[[OSPMap alloc] init]];
         //[self setRequestedTiles:[[OSPTileArray alloc] init]];
@@ -70,19 +74,28 @@ BOOL wayNodeOpen = false;
         
         OSMNode *node = [[OSMNode alloc] init];
         node.location = CLLocationCoordinate2DMake([attributeDict[@"lat"] doubleValue], [attributeDict[@"lon"] doubleValue]);
-        node.identifier = [NSNumber numberWithDouble:[attributeDict[@"id"]doubleValue]];
+        node.identifier = [NSNumber numberWithDouble:[attributeDict[@"id"] doubleValue]];
         
         [_nodes addObject:node];
     } else if ([elementName isEqualToString:@"way"]) {
         wayNodeOpen = true;
-        OSMWay *way = [[OSMWay alloc] init];
-        way.identifier = [NSNumber numberWithDouble:[attributeDict[@"id"]doubleValue]];
+        _way = [[OSMWay alloc] init];
+        _way.identifier = [NSNumber numberWithDouble:[attributeDict[@"id"] doubleValue]];
+    } else if ([elementName isEqualToString:@"nd"]) {
+        if (wayNodeOpen) {
+            [_way.nodes addObject:[NSNumber numberWithDouble:[attributeDict[@"ref"] doubleValue]]];
+        }
     }
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
     //NSLog(@"Stop parsing: %@", elementName);
+    
+    if ([elementName isEqualToString:@"way"]) {
+        wayNodeOpen = false;
+        [_ways addObject: _way];
+    }
 }
 
 - (void)parserDidStartDocument:(NSXMLParser *)parser
@@ -93,7 +106,7 @@ BOOL wayNodeOpen = false;
 - (void)parserDidEndDocument:(NSXMLParser *)parser
 {
     NSLog(@"Stop parsing document");
-    [_delegate didFinishedParsingWithLocations:[NSArray arrayWithArray:_nodes]];
+    [_delegate didFinishedParsingWithNodes:[NSArray arrayWithArray:_nodes] andWays:[NSArray arrayWithArray:_ways]];
 }
 
 - (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError
