@@ -13,10 +13,12 @@
 
 @interface OSMServerParser ()
 {
-    BOOL wayNodeOpen;
+    BOOL wayItemOpen;
+    BOOL nodeItemOpen;
 }
 
 @property (nonatomic, strong) OSMWay *way;
+@property (nonatomic, strong) OSMNode *node;
 @property (nonatomic, retain) NSString *serverURL;
 
 @end
@@ -37,8 +39,6 @@
     self = [super init];
     
     if (nil != self) {
-        _nodes = [[NSMutableArray alloc] init];
-        _ways = [[NSMutableArray alloc] init];
         _serverURL = initServerURL;
         //[self setCache:[[OSPMap alloc] init]];
         //[self setRequestedTiles:[[OSPTileArray alloc] init]];
@@ -71,19 +71,21 @@
     
     if ([elementName isEqualToString:@"node"]) {
         //NSLog(@"Found node: lat: %@ lon: %@", attributeDict[@"lat"], attributeDict[@"lon"]);
-        
-        OSMNode *node = [[OSMNode alloc] init];
-        node.location = CLLocationCoordinate2DMake([attributeDict[@"lat"] doubleValue], [attributeDict[@"lon"] doubleValue]);
-        node.identifier = [NSNumber numberWithDouble:[attributeDict[@"id"] doubleValue]];
-        
-        [_nodes addObject:node];
+        nodeItemOpen = YES;
+        _node = [[OSMNode alloc] init];
+        _node.location = CLLocationCoordinate2DMake([attributeDict[@"lat"] doubleValue], [attributeDict[@"lon"] doubleValue]);
+        _node.identifier = [NSNumber numberWithDouble:[attributeDict[@"id"] doubleValue]];
     } else if ([elementName isEqualToString:@"way"]) {
-        wayNodeOpen = true;
+        wayItemOpen = YES;
         _way = [[OSMWay alloc] init];
         _way.identifier = [NSNumber numberWithDouble:[attributeDict[@"id"] doubleValue]];
     } else if ([elementName isEqualToString:@"nd"]) {
-        if (wayNodeOpen) {
+        if (wayItemOpen) {
             [_way.nodes addObject:[NSNumber numberWithDouble:[attributeDict[@"ref"] doubleValue]]];
+        }
+    } else if ([elementName isEqualToString:@"tag"]) {
+        if (nodeItemOpen) {
+            [_node.tags setObject:attributeDict[@"v"] forKey:attributeDict[@"k"]];
         }
     }
 }
@@ -91,16 +93,21 @@
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
     //NSLog(@"Stop parsing: %@", elementName);
-    
-    if ([elementName isEqualToString:@"way"]) {
-        wayNodeOpen = false;
-        [_ways addObject: _way];
+    if ([elementName isEqualToString:@"node"]) {
+        nodeItemOpen = NO;
+        [_nodes addObject:_node];
+    } else if ([elementName isEqualToString:@"way"]) {
+        wayItemOpen = NO;
+        [_ways addObject:_way];
     }
 }
 
 - (void)parserDidStartDocument:(NSXMLParser *)parser
 {
     NSLog(@"Start parsing document");
+    // INFO if you init in the constructor old _nodes / _ways are saved
+    _nodes = [[NSMutableArray alloc] init];
+    _ways = [[NSMutableArray alloc] init];
 }
 
 - (void)parserDidEndDocument:(NSXMLParser *)parser

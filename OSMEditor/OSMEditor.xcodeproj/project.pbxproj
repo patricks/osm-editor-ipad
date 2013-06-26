@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A93FB611A1C242A0BF289CAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B42B5DB59C3443BB696002B /* libPods.a */; };
+		CD0B21C9177A5E24009AD0D9 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = CD0B21C8177A5E24009AD0D9 /* point.png */; };
 		CDC69F781777589100DC8B44 /* OSMWay.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC69F771777589100DC8B44 /* OSMWay.m */; };
 		CDD542831774F8EE00314C59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD542821774F8EE00314C59 /* UIKit.framework */; };
 		CDD542851774F8EE00314C59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD542841774F8EE00314C59 /* Foundation.framework */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		1B42B5DB59C3443BB696002B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		727A0660E4714992816C882B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		CD0B21C8177A5E24009AD0D9 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
 		CDC69F761777589100DC8B44 /* OSMWay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMWay.h; sourceTree = "<group>"; };
 		CDC69F771777589100DC8B44 /* OSMWay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMWay.m; sourceTree = "<group>"; };
 		CDD5427F1774F8EE00314C59 /* OSMEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSMEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 		CDE340751775041200BA15AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CD0B21C8177A5E24009AD0D9 /* point.png */,
 				CDE340731775040A00BA15AE /* crosshair.png */,
 			);
 			name = Resources;
@@ -228,6 +231,7 @@
 				CDD542991774F8EE00314C59 /* Default-568h@2x.png in Resources */,
 				CDD5429C1774F8EE00314C59 /* MainStoryboard.storyboard in Resources */,
 				CDE340741775040A00BA15AE /* crosshair.png in Resources */,
+				CD0B21C9177A5E24009AD0D9 /* point.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

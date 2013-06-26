@@ -10,4 +10,13 @@
 
 @implementation OSMNode
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _tags = [[NSMutableDictionary alloc] init];
+    }
+    return self;
+}
+
 @end

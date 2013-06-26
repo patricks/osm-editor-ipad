@@ -161,15 +161,29 @@
         //NSLog(@"DBG: way locations %i", [wayLocations count]);
         
         
-        RMAnnotation *annotation = [[RMAnnotation alloc] initWithMapView:_mapView
-                                                              coordinate:((CLLocation *)[wayLocations objectAtIndex:0]).coordinate
-                                                                andTitle:@"TEST"];
+        RMAnnotation *wayAnnotation = [[RMAnnotation alloc] initWithMapView:_mapView
+                                                                 coordinate:((CLLocation *)[wayLocations objectAtIndex:0]).coordinate
+                                                                   andTitle:@"WAY"];
         
-        annotation.userInfo = wayLocations;
-        [annotation setBoundingBoxFromLocations:wayLocations];
-        [_mapView addAnnotation:annotation];
+        wayAnnotation.userInfo = wayLocations;
+        [wayAnnotation setBoundingBoxFromLocations:wayLocations];
+        [_mapView addAnnotation:wayAnnotation];
         
     }
+    
+    /*
+    for (OSMNode *node in nodes) {
+        for (id key in node.tags) {
+            if ([key isEqualToString:@"natural"]) {
+                RMAnnotation *nodeAnnotation = [[RMAnnotation alloc] initWithMapView:_mapView
+                                                                          coordinate:node.location
+                                                                            andTitle:@"NODE"];
+                
+                [_mapView addAnnotation:nodeAnnotation];
+            }
+        }
+    }
+     */
     
     
     /*
@@ -204,10 +218,12 @@
     RMShape *shape = [[RMShape alloc] initWithView:mapView];
     
     shape.lineColor = [UIColor orangeColor];
-    shape.lineWidth = 5.0;
+    shape.lineWidth = 3.0;
     
-    for (CLLocation *location in (NSArray *)annotation.userInfo)
+    for (CLLocation *location in (NSArray *)annotation.userInfo) {
         [shape addLineToCoordinate:location.coordinate];
+    }
+    
     
     return shape;
 }
