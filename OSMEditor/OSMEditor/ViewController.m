@@ -112,7 +112,7 @@
     
     RMPointAnnotation *newAnnotation = [[RMPointAnnotation alloc] initWithMapView:_mapView
                                                                     coordinate:newCoordinate
-                                                                      andTitle:@"Node"];
+                                                                      andTitle:@"CUSTOMNODE"];
     
     [_mapView addAnnotation:newAnnotation];
     [_editingTool setNeedsDisplay];
@@ -171,19 +171,21 @@
         
     }
     
-    /*
     for (OSMNode *node in nodes) {
         for (id key in node.tags) {
             if ([key isEqualToString:@"natural"]) {
+                NSLog(@"DBG: Addding tree at lat: %f lon: %f", node.location.latitude, node.location.longitude);
+                // FIXME:
+                /*
                 RMAnnotation *nodeAnnotation = [[RMAnnotation alloc] initWithMapView:_mapView
                                                                           coordinate:node.location
                                                                             andTitle:@"NODE"];
                 
                 [_mapView addAnnotation:nodeAnnotation];
+                 */
             }
         }
     }
-     */
     
     
     /*
