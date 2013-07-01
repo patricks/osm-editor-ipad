@@ -27,34 +27,69 @@
     
     sections = [[NSArray alloc] initWithObjects: infoSection, tagsSection, nil];
     
-    [infoSection addObject:@"test-info"];
+    [infoSection addObject:@"info-id"];
+    [infoSection addObject:@"info-lat"];
+    [infoSection addObject:@"info-lon"];
     
-    [tagsSection addObject:@"test-tag"];
-    [tagsSection addObject:@"test-tag"];
+    NSDictionary *tags = _detailsNode.tags;
+    
+    for (NSString *key in [tags allKeys]) {
+        [tagsSection addObject:[NSString stringWithFormat:@"%@ = %@", key, [tags objectForKey:key]]];
+    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    NSLog(@"DBG asdf %i", [sections count]);
     return [sections count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"DBG: sec %i", [sections[section] count]);
     return [sections[section] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /*
+    NSArray *current = [NSArray arrayWithArray:[sections objectAtIndex:indexPath.section]];
+    NSDictionary *currentD = [NSDictionary dictionaryWithDictionary:current[indexPath.row]];
+     */
+    
     static NSString *CellIdentifier = @"InfoCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = @"Foo";
+    // handle static rows in section 0
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            cell.textLabel.text = [NSString stringWithFormat:@"ID: %@", [_detailsNode.identifier stringValue]];
+        } else if (indexPath.row == 1) {
+            cell.textLabel.text = [NSString stringWithFormat:@"Latitude: %f ", _detailsNode.location.latitude];
+        } else if (indexPath.row == 2) {
+            cell.textLabel.text = [NSString stringWithFormat:@"Longitude: %f ", _detailsNode.location.longitude];
+        }
+    } else if (indexPath.section == 1) { // dynamic rows in section 1
+        cell.textLabel.text = tagsSection[indexPath.row];
+    }
     
-    // Configure the cell...
+    
+    /*
+    for(NSString *key in [currentD allKeys]) {
+        NSLog(@"dbg: key: %@ value: %@", key, [[currentD objectForKey:key] stringValue]);
+    }
+     */
     
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) {
+        return @"Informations";
+    } else if (section == 1) {
+        return @"Tags";
+    }
+    
+    return nil;
 }
 
 @end

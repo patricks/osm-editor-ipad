@@ -127,9 +127,9 @@
 				CDD5429A1774F8EE00314C59 /* MainStoryboard.storyboard */,
 				CDD5429D1774F8EE00314C59 /* ViewController.h */,
 				CDD5429E1774F8EE00314C59 /* ViewController.m */,
-				CDD542891774F8EE00314C59 /* Supporting Files */,
 				CD65731517817F46001F8905 /* DetailsViewController.h */,
 				CD65731617817F46001F8905 /* DetailsViewController.m */,
+				CDD542891774F8EE00314C59 /* Supporting Files */,
 			);
 			path = OSMEditor;
 			sourceTree = "<group>";
