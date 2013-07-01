@@ -16,5 +16,6 @@
 
 - (IBAction)downloadOSMClicked:(id)sender;
 - (IBAction)editModeClicked:(id)sender;
+- (IBAction)aboutClicked:(id)sender;
 
 @end

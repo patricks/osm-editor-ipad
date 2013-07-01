@@ -25,87 +25,87 @@ cCpResource Map/../Map/Resources/examples.map-zswgei2n.json ../../Resources/MapB
 cTouch /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle
-t1372708382
+t1371849647
 s748
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png
-t1372708382
+t1371849647
 s3239
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png
-t1372708382
+t1371849647
 s7191
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png
-t1372708382
+t1371849647
 s2366
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png
-t1372708382
+t1371849647
 s5257
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png
-t1372708382
+t1371849647
 s2254
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png
-t1372708382
+t1371849647
 s4986
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png
-t1372708382
+t1371849647
 s1906
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png
-t1372708382
+t1371849647
 s733
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png
-t1372708382
+t1371849647
 s849
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png
-t1372708382
+t1371849647
 s2480
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png
-t1372708382
+t1371849647
 s15224
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png
-t1372708382
+t1371849647
 s32226
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png
-t1372708382
+t1371849647
 s1110
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png
-t1372708382
+t1371849647
 s3093
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png
-t1372708382
+t1371849647
 s356
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png
-t1372708382
+t1371849647
 s593
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-z2effxa8.json
-t1372708382
+t1371849647
 s729
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-zswgei2n.json
-t1372708382
+t1371849647
 s738
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png
-t1372708382
+t1371849647
 s1879
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png
-t1372708382
+t1371849647
 s3976
 
 N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge.png
@@ -210,7 +210,7 @@ s5089
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesbf9ce1a81782b741^a9deeaa81782b741^---0#1#0#--18"Check dependencies36"960C2201-DF2F-4DC4-BA69-8409698BF37B-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa0512a9e1582b741^8a1f3b9e1582b741^---0#1#0#--18"Check dependencies36"D65F0020-E0B3-4335-BC37-1DE3320BA358-
 
 CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png
 s394401182.751679

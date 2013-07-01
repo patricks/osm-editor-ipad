@@ -107,6 +107,10 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
     [self enableEditMode:enableEditView];
 }
 
+- (IBAction)aboutClicked:(id)sender {
+    [self performSegueWithIdentifier:@"showAboutView" sender:self];
+}
+
 
 #pragma MapBox stuff
 
