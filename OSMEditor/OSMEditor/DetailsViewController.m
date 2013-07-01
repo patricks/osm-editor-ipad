@@ -10,6 +10,8 @@
 
 @interface DetailsViewController () {
     NSArray *sections;
+    NSMutableArray *infoSection;
+    NSMutableArray *tagsSection;
 }
 
 @end
@@ -20,31 +22,39 @@
 {
     [super viewDidLoad];
     
-    sections = [[NSArray alloc] initWithObjects:@"Infos", @"Tags", nil];
+    infoSection = [[NSMutableArray alloc] init];
+    tagsSection = [[NSMutableArray alloc] init];
     
-    _lblOsmNodeID.text = [NSString stringWithFormat:@"ID: %@", [_detailsNode.identifier stringValue]];
-    _lblOsmNodeLocation.text = [NSString stringWithFormat:@"Latitude: %f Longitude: %f", _detailsNode.location.latitude, _detailsNode.location.longitude];
+    sections = [[NSArray alloc] initWithObjects: infoSection, tagsSection, nil];
     
-    NSMutableArray *tmpArray = [[NSMutableArray alloc] init];
+    [infoSection addObject:@"test-info"];
     
-    for (id key in _detailsNode.tags) {
-        id value = [_detailsNode.tags valueForKey:key];
-        [tmpArray addObject:[NSString stringWithFormat:@"%@ = %@",key, value]];
-    }
-    
-    NSArray *propArray = [[NSArray alloc] initWithObjects:_lblProp1, _lblProp2, _lblProp3, _lblProp4, _lblProp5, _lblProp6, _lblProp7, _lblProp8, _lblProp9, _lblProp10, nil];
-    
+    [tagsSection addObject:@"test-tag"];
+    [tagsSection addObject:@"test-tag"];
+}
 
-    NSUInteger i = 0;
-    for (UILabel *label in propArray) {
-        if (i < [tmpArray count]) {
-            label.text = tmpArray[i];
-        } else {
-            label.text = @"";
-        }
-        
-        i++;
-    }
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    NSLog(@"DBG asdf %i", [sections count]);
+    return [sections count];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    NSLog(@"DBG: sec %i", [sections[section] count]);
+    return [sections[section] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"InfoCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    cell.textLabel.text = @"Foo";
+    
+    // Configure the cell...
+    
+    return cell;
 }
 
 @end
