@@ -8,7 +8,9 @@
 
 #import "DetailsViewController.h"
 
-@interface DetailsViewController ()
+@interface DetailsViewController () {
+    NSArray *sections;
+}
 
 @end
 
@@ -18,7 +20,9 @@
 {
     [super viewDidLoad];
     
-    _lblOsmNodeID.text = [_detailsNode.identifier stringValue];
+    sections = [[NSArray alloc] initWithObjects:@"Infos", @"Tags", nil];
+    
+    _lblOsmNodeID.text = [NSString stringWithFormat:@"ID: %@", [_detailsNode.identifier stringValue]];
     _lblOsmNodeLocation.text = [NSString stringWithFormat:@"Latitude: %f Longitude: %f", _detailsNode.location.latitude, _detailsNode.location.longitude];
     
     NSMutableArray *tmpArray = [[NSMutableArray alloc] init];
