@@ -25,7 +25,7 @@
     infoSection = [[NSMutableArray alloc] init];
     tagsSection = [[NSMutableArray alloc] init];
     
-    sections = [[NSArray alloc] initWithObjects: infoSection, tagsSection, nil];
+    sections = @[infoSection, tagsSection];
     
     [infoSection addObject:@"info-id"];
     [infoSection addObject:@"info-lat"];
@@ -34,7 +34,7 @@
     NSDictionary *tags = _detailsNode.tags;
     
     for (NSString *key in [tags allKeys]) {
-        [tagsSection addObject:[NSString stringWithFormat:@"%@ = %@", key, [tags objectForKey:key]]];
+        [tagsSection addObject:[NSString stringWithFormat:@"%@ = %@", key, tags[key]]];
     }
 }
 

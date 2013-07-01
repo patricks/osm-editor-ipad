@@ -74,20 +74,20 @@
         nodeItemOpen = YES;
         _node = [[OSMNode alloc] init];
         _node.location = CLLocationCoordinate2DMake([attributeDict[@"lat"] doubleValue], [attributeDict[@"lon"] doubleValue]);
-        _node.identifier = [NSNumber numberWithDouble:[attributeDict[@"id"] doubleValue]];
+        _node.identifier = @([attributeDict[@"id"] doubleValue]);
     } else if ([elementName isEqualToString:@"way"]) {
         wayItemOpen = YES;
         _way = [[OSMWay alloc] init];
-        _way.identifier = [NSNumber numberWithDouble:[attributeDict[@"id"] doubleValue]];
+        _way.identifier = @([attributeDict[@"id"] doubleValue]);
     } else if ([elementName isEqualToString:@"nd"]) {
         if (wayItemOpen) {
-            [_way.nodes addObject:[NSNumber numberWithDouble:[attributeDict[@"ref"] doubleValue]]];
+            [_way.nodes addObject:@([attributeDict[@"ref"] doubleValue])];
         }
     } else if ([elementName isEqualToString:@"tag"]) {
         if (nodeItemOpen) {
-            [_node.tags setObject:attributeDict[@"v"] forKey:attributeDict[@"k"]];
+            (_node.tags)[attributeDict[@"k"]] = attributeDict[@"v"];
         } else if (wayItemOpen) {
-            [_way.tags setObject:attributeDict[@"v"] forKey:attributeDict[@"k"]];
+            (_way.tags)[attributeDict[@"k"]] = attributeDict[@"v"];
         }
     }
 }

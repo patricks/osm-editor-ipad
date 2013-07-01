@@ -173,7 +173,7 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
         }
         
         RMAnnotation *wayAnnotation = [[RMAnnotation alloc] initWithMapView:_mapView
-                                                                 coordinate:((CLLocation *)[wayLocations objectAtIndex:0]).coordinate
+                                                                 coordinate:((CLLocation *)wayLocations[0]).coordinate
                                                                    andTitle:[way.identifier stringValue]];
         
         //wayAnnotation.userInfo = wayLocations;
