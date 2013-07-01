@@ -26,6 +26,10 @@
 
 @implementation ViewController
 
+static NSString *kMapID = @"patricks.map-4jjcq070";
+static NSString *kAnnotationTypeNode = @"OSMNODE";
+static NSString *kAnnotationTypeWay = @"OSMWAY";
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -166,6 +170,7 @@
                                                                    andTitle:@"WAY"];
         
         wayAnnotation.userInfo = wayLocations;
+        wayAnnotation.annotationType = kAnnotationTypeWay;
         [wayAnnotation setBoundingBoxFromLocations:wayLocations];
         [_mapView addAnnotation:wayAnnotation];
         
@@ -176,13 +181,13 @@
             if ([key isEqualToString:@"natural"]) {
                 NSLog(@"DBG: Addding tree at lat: %f lon: %f", node.location.latitude, node.location.longitude);
                 // FIXME:
-                /*
                 RMAnnotation *nodeAnnotation = [[RMAnnotation alloc] initWithMapView:_mapView
                                                                           coordinate:node.location
                                                                             andTitle:@"NODE"];
                 
+                nodeAnnotation.annotationType = kAnnotationTypeNode;
+                
                 [_mapView addAnnotation:nodeAnnotation];
-                 */
             }
         }
     }
@@ -217,17 +222,26 @@
         return nil;
     }
     
-    RMShape *shape = [[RMShape alloc] initWithView:mapView];
-    
-    shape.lineColor = [UIColor orangeColor];
-    shape.lineWidth = 3.0;
-    
-    for (CLLocation *location in (NSArray *)annotation.userInfo) {
-        [shape addLineToCoordinate:location.coordinate];
+    if (annotation.annotationType == kAnnotationTypeNode) {
+        RMMarker *marker = [[RMMarker alloc] initWithUIImage:[UIImage imageNamed:@"osm_tree"]];
+        
+        return marker;
+        
+    } else if (annotation.annotationType == kAnnotationTypeWay) {
+        RMShape *shape = [[RMShape alloc] initWithView:mapView];
+        
+        shape.lineColor = [UIColor orangeColor];
+        shape.lineWidth = 3.0;
+        
+        for (CLLocation *location in (NSArray *)annotation.userInfo) {
+            [shape addLineToCoordinate:location.coordinate];
+        }
+        
+        
+        return shape;
     }
     
-    
-    return shape;
+    return nil;
 }
 
 @end

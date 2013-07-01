@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A93FB611A1C242A0BF289CAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B42B5DB59C3443BB696002B /* libPods.a */; };
-		CD0B21C9177A5E24009AD0D9 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = CD0B21C8177A5E24009AD0D9 /* point.png */; };
+		CD6572DD178172F9001F8905 /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6572DA178172F9001F8905 /* crosshair.png */; };
+		CD6572DE178172F9001F8905 /* osm_tree.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6572DB178172F9001F8905 /* osm_tree.png */; };
+		CD6572DF178172F9001F8905 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6572DC178172F9001F8905 /* point.png */; };
 		CDC69F781777589100DC8B44 /* OSMWay.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC69F771777589100DC8B44 /* OSMWay.m */; };
 		CDD542831774F8EE00314C59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD542821774F8EE00314C59 /* UIKit.framework */; };
 		CDD542851774F8EE00314C59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD542841774F8EE00314C59 /* Foundation.framework */; };
@@ -26,13 +28,14 @@
 		CDE3406B1774FF3A00BA15AE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3406A1774FF3A00BA15AE /* CoreLocation.framework */; };
 		CDE340701774FF5900BA15AE /* OSMNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE3406D1774FF5900BA15AE /* OSMNode.m */; };
 		CDE340711774FF5900BA15AE /* OSMServerParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE3406F1774FF5900BA15AE /* OSMServerParser.m */; };
-		CDE340741775040A00BA15AE /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE340731775040A00BA15AE /* crosshair.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B42B5DB59C3443BB696002B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		727A0660E4714992816C882B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		CD0B21C8177A5E24009AD0D9 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
+		CD6572DA178172F9001F8905 /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crosshair.png; path = Images/crosshair.png; sourceTree = "<group>"; };
+		CD6572DB178172F9001F8905 /* osm_tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = osm_tree.png; path = Images/osm_tree.png; sourceTree = "<group>"; };
+		CD6572DC178172F9001F8905 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = point.png; path = Images/point.png; sourceTree = "<group>"; };
 		CDC69F761777589100DC8B44 /* OSMWay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMWay.h; sourceTree = "<group>"; };
 		CDC69F771777589100DC8B44 /* OSMWay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMWay.m; sourceTree = "<group>"; };
 		CDD5427F1774F8EE00314C59 /* OSMEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSMEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +63,6 @@
 		CDE3406D1774FF5900BA15AE /* OSMNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMNode.m; sourceTree = "<group>"; };
 		CDE3406E1774FF5900BA15AE /* OSMServerParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMServerParser.h; sourceTree = "<group>"; };
 		CDE3406F1774FF5900BA15AE /* OSMServerParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMServerParser.m; sourceTree = "<group>"; };
-		CDE340731775040A00BA15AE /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +168,9 @@
 		CDE340751775041200BA15AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CD0B21C8177A5E24009AD0D9 /* point.png */,
-				CDE340731775040A00BA15AE /* crosshair.png */,
+				CD6572DA178172F9001F8905 /* crosshair.png */,
+				CD6572DB178172F9001F8905 /* osm_tree.png */,
+				CD6572DC178172F9001F8905 /* point.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -230,8 +233,9 @@
 				CDD542971774F8EE00314C59 /* Default@2x.png in Resources */,
 				CDD542991774F8EE00314C59 /* Default-568h@2x.png in Resources */,
 				CDD5429C1774F8EE00314C59 /* MainStoryboard.storyboard in Resources */,
-				CDE340741775040A00BA15AE /* crosshair.png in Resources */,
-				CD0B21C9177A5E24009AD0D9 /* point.png in Resources */,
+				CD6572DD178172F9001F8905 /* crosshair.png in Resources */,
+				CD6572DE178172F9001F8905 /* osm_tree.png in Resources */,
+				CD6572DF178172F9001F8905 /* point.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
