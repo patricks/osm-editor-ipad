@@ -11,6 +11,7 @@
 #import "OSMWay.h"
 #import "MBProgressHUD.h"
 #import "DetailsViewController.h"
+#import "ShapeItem.h"
 
 @interface ViewController ()
 {
@@ -147,36 +148,39 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
     // hide download hud
     [MBProgressHUD hideHUDForView:self.view animated:YES];
     NSLog(@"DBG: Download finished with %i nodes and %i ways", [nodes count], [ways count]);
-    
-    //MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    //hud.labelText = @"Parsing";
-    
-    
-    
+
+    // handle ways
     for (OSMWay *way in ways) {
         NSMutableArray *wayLocations = [[NSMutableArray alloc] init];
+        NSMutableArray *shapes = [[NSMutableArray alloc] init];
         for (NSNumber *ref in way.nodes) {
             for (OSMNode *node in nodes) {
                 if ([node.identifier doubleValue] == [ref doubleValue]) {
                     [wayLocations addObject:[[CLLocation alloc] initWithLatitude:node.location.latitude longitude:node.location.longitude]];
+                    
+                    ShapeItem *shapeItem = [[ShapeItem alloc] init];
+                    shapeItem.location = node.location;
+                    shapeItem.shapeColor = [way getWayColor];
+                    shapeItem.fillShape = [way fillShape];
+                    
+                    [shapes addObject:shapeItem];
                 }
             }
         }
         
-        //NSLog(@"DBG: way locations %i", [wayLocations count]);
-        
-        
         RMAnnotation *wayAnnotation = [[RMAnnotation alloc] initWithMapView:_mapView
                                                                  coordinate:((CLLocation *)[wayLocations objectAtIndex:0]).coordinate
-                                                                   andTitle:@"WAY"];
+                                                                   andTitle:[way.identifier stringValue]];
         
-        wayAnnotation.userInfo = wayLocations;
+        //wayAnnotation.userInfo = wayLocations;
+        wayAnnotation.userInfo = [NSArray arrayWithArray:shapes];
         wayAnnotation.annotationType = kAnnotationTypeWay;
         [wayAnnotation setBoundingBoxFromLocations:wayLocations];
         [_mapView addAnnotation:wayAnnotation];
         
     }
     
+    // handle nodes
     for (OSMNode *node in nodes) {
         for (id key in node.tags) {
             // filter nodes
@@ -192,7 +196,6 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
             }
         }
     }
-    
     
     /*
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
@@ -213,8 +216,6 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
         });
     });
      */
-    
-    
 }
 
 - (RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation
@@ -223,8 +224,8 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
         return nil;
     }
     
+    // handle nodes
     if (annotation.annotationType == kAnnotationTypeNode) {
-        
         OSMNode *node = annotation.userInfo;
 
         RMMarker *marker = [[RMMarker alloc] initWithUIImage:node.getNodeIcon];
@@ -233,16 +234,22 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
         
         return marker;
         
+    // handle ways
     } else if (annotation.annotationType == kAnnotationTypeWay) {
         RMShape *shape = [[RMShape alloc] initWithView:mapView];
+        ShapeItem *firstItem = annotation.userInfo[0];
         
-        shape.lineColor = [UIColor orangeColor];
-        shape.lineWidth = 3.0;
+        shape.lineColor = firstItem.shapeColor;
         
-        for (CLLocation *location in (NSArray *)annotation.userInfo) {
-            [shape addLineToCoordinate:location.coordinate];
+        if (firstItem.fillShape) {
+            shape.fillColor = firstItem.shapeColor;
         }
         
+        shape.lineWidth = 3.0;
+        
+        for (ShapeItem *item in (NSArray *)annotation.userInfo) {
+            [shape addLineToCoordinate:item.location];
+        }
         
         return shape;
     }

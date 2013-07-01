@@ -27,7 +27,7 @@
         return [UIImage imageNamed:@"osm_restaurant"];
     }
     
-    return [UIImage imageNamed:@"point"];
+    return [UIImage imageNamed:@"osm_point"];
 }
 
 @end

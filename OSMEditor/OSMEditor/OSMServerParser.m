@@ -86,6 +86,8 @@
     } else if ([elementName isEqualToString:@"tag"]) {
         if (nodeItemOpen) {
             [_node.tags setObject:attributeDict[@"v"] forKey:attributeDict[@"k"]];
+        } else if (wayItemOpen) {
+            [_way.tags setObject:attributeDict[@"v"] forKey:attributeDict[@"k"]];
         }
     }
 }

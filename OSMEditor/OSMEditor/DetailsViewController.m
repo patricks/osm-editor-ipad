@@ -50,11 +50,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*
-    NSArray *current = [NSArray arrayWithArray:[sections objectAtIndex:indexPath.section]];
-    NSDictionary *currentD = [NSDictionary dictionaryWithDictionary:current[indexPath.row]];
-     */
-    
     static NSString *CellIdentifier = @"InfoCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
@@ -70,13 +65,6 @@
     } else if (indexPath.section == 1) { // dynamic rows in section 1
         cell.textLabel.text = tagsSection[indexPath.row];
     }
-    
-    
-    /*
-    for(NSString *key in [currentD allKeys]) {
-        NSLog(@"dbg: key: %@ value: %@", key, [[currentD objectForKey:key] stringValue]);
-    }
-     */
     
     return cell;
 }

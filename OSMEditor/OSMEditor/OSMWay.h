@@ -12,5 +12,9 @@
 
 @property (nonatomic, retain) NSNumber *identifier;
 @property (nonatomic, retain) NSMutableArray *nodes;
+@property (nonatomic, retain) NSMutableDictionary *tags;
+
+- (UIColor *)getWayColor;
+- (BOOL)fillShape;
 
 @end
