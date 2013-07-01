@@ -1,0 +1,277 @@
+TResources
+v5
+r1
+cCheck dependencies
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png Map/../Map/Resources/mapbox@2x.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png Map/../Map/Resources/mapbox.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png Map/../Map/Resources/HeadingAngleSmall.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png Map/../Map/Resources/HeadingAngleSmall@2x.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png Map/../Map/Resources/LoadingTile.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png Map/../Map/Resources/LoadingTileZoom.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png Map/../Map/Resources/TrackingDot.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png Map/../Map/Resources/TrackingDot@2x.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png Map/../Map/Resources/TrackingDotHalo.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png Map/../Map/Resources/TrackingDotHalo@2x.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png Map/../Map/Resources/TrackingHeading.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png Map/../Map/Resources/TrackingHeading@2x.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png Map/../Map/Resources/TrackingLocation.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png Map/../Map/Resources/TrackingLocation@2x.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png Map/../Map/Resources/HeadingAngleLarge@2x.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png Map/../Map/Resources/HeadingAngleMedium.png
+cCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png Map/../Map/Resources/HeadingAngleMedium@2x.png
+cCpResource Map/../Map/Resources/examples.map-z2effxa8.json ../../Resources/MapBox.bundle/examples.map-z2effxa8.json
+cCpResource Map/../Map/Resources/examples.map-zswgei2n.json ../../Resources/MapBox.bundle/examples.map-zswgei2n.json
+cTouch /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle
+t1371849647
+s748
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png
+t1371849647
+s3239
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png
+t1371849647
+s7191
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png
+t1371849647
+s2366
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png
+t1371849647
+s5257
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png
+t1371849647
+s2254
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png
+t1371849647
+s4986
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png
+t1371849647
+s1906
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png
+t1371849647
+s733
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png
+t1371849647
+s849
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png
+t1371849647
+s2480
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png
+t1371849647
+s15224
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png
+t1371849647
+s32226
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png
+t1371849647
+s1110
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png
+t1371849647
+s3093
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png
+t1371849647
+s356
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png
+t1371849647
+s593
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-z2effxa8.json
+t1371849647
+s729
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/examples.map-zswgei2n.json
+t1371849647
+s738
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png
+t1371849647
+s1879
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png
+t1371849647
+s3976
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge.png
+c0000000051C4C3A80000000000000E2C
+t1371849640
+s3628
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleLarge@2x.png
+c0000000051C4C3A80000000000002784
+t1371849640
+s10116
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium.png
+c0000000051C4C3A800000000000009DA
+t1371849640
+s2522
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleMedium@2x.png
+c0000000051C4C3A80000000000001AA5
+t1371849640
+s6821
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall.png
+c0000000051C4C3A80000000000000AA7
+t1371849640
+s2727
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/HeadingAngleSmall@2x.png
+c0000000051C4C3A80000000000001F1F
+t1371849640
+s7967
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTile.png
+c0000000051C4C3A80000000000000B44
+t1371849640
+s2884
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/LoadingTileZoom.png
+c0000000051C4C3A800000000000002D3
+t1371849640
+s723
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot.png
+c0000000051C4C3A8000000000000035C
+t1371849640
+s860
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDot@2x.png
+c0000000051C4C3A80000000000000953
+t1371849640
+s2387
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo.png
+c0000000051C4C3A80000000000002F07
+t1371849640
+s12039
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/TrackingDotHalo@2x.png
+c0000000051C4C3A80000000000006991
+t1371849640
+s27025
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading.png
+c0000000051C4C3A800000000000002B3
+t1371849640
+s691
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/TrackingHeading@2x.png
+c0000000051C4C3A80000000000000664
+t1371849640
+s1636
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation.png
+c0000000051C4C3A8000000000000019E
+t1371849640
+s414
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/TrackingLocation@2x.png
+c0000000051C4C3A80000000000000358
+t1371849640
+s856
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/examples.map-z2effxa8.json
+c0000000051C4C3A800000000000002D9
+t1371849640
+s729
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/examples.map-zswgei2n.json
+c0000000051C4C3A800000000000002E2
+t1371849640
+s738
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/mapbox.png
+c0000000051C4C3A8000000000000087B
+t1371849640
+s2171
+
+N/Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/Map/../Map/Resources/mapbox@2x.png
+c0000000051C4C3A800000000000013E1
+t1371849640
+s5089
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies931d0bce6a81b741^fda313ce6a81b741^---0#1#0#--18"Check dependencies36"1FF64044-35C3-45EC-8847-E2DF369D46EC-
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge@2x.png Map/../Map/Resources/HeadingAngleLarge@2x.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium.png Map/../Map/Resources/HeadingAngleMedium.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleMedium@2x.png Map/../Map/Resources/HeadingAngleMedium@2x.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall.png Map/../Map/Resources/HeadingAngleSmall.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleSmall@2x.png Map/../Map/Resources/HeadingAngleSmall@2x.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTile.png Map/../Map/Resources/LoadingTile.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/LoadingTileZoom.png Map/../Map/Resources/LoadingTileZoom.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot.png Map/../Map/Resources/TrackingDot.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDot@2x.png Map/../Map/Resources/TrackingDot@2x.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo.png Map/../Map/Resources/TrackingDotHalo.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingDotHalo@2x.png Map/../Map/Resources/TrackingDotHalo@2x.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading.png Map/../Map/Resources/TrackingHeading.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingHeading@2x.png Map/../Map/Resources/TrackingHeading@2x.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation.png Map/../Map/Resources/TrackingLocation.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/TrackingLocation@2x.png Map/../Map/Resources/TrackingLocation@2x.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox.png Map/../Map/Resources/mapbox.png
+r0
+
+CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/mapbox@2x.png Map/../Map/Resources/mapbox@2x.png
+r0
+
+CCpResource Map/../Map/Resources/examples.map-z2effxa8.json ../../Resources/MapBox.bundle/examples.map-z2effxa8.json
+r0
+
+CCpResource Map/../Map/Resources/examples.map-zswgei2n.json ../../Resources/MapBox.bundle/examples.map-zswgei2n.json
+r0
+
+CTouch /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle
+r0
+
