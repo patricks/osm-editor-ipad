@@ -19,4 +19,15 @@
     return self;
 }
 
+- (UIImage *)getNodeIcon
+{
+    if ([_tags[@"natural"] isEqualToString:@"tree"]) { // tree
+        return [UIImage imageNamed:@"osm_tree"];
+    } else if ([_tags[@"amenity"] isEqualToString:@"restaurant"]) { // restaurant
+        return [UIImage imageNamed:@"osm_restaurant"];
+    }
+    
+    return [UIImage imageNamed:@"point"];
+}
+
 @end

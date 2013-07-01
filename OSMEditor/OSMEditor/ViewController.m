@@ -10,6 +10,7 @@
 #import "OSMNode.h"
 #import "OSMWay.h"
 #import "MBProgressHUD.h"
+#import "DetailsViewController.h"
 
 @interface ViewController ()
 {
@@ -43,7 +44,7 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
 - (void)setupMapBoxView
 {
     // MapBox View
-    _tileSource = [[RMMapBoxSource alloc] initWithMapID:@"patricks.map-4jjcq070"];
+    _tileSource = [[RMMapBoxSource alloc] initWithMapID:kMapID];
     _mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:_tileSource];
     _mapView.showLogoBug = NO;
     _mapView.delegate = self;
@@ -178,14 +179,14 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
     
     for (OSMNode *node in nodes) {
         for (id key in node.tags) {
-            if ([key isEqualToString:@"natural"]) {
-                NSLog(@"DBG: Addding tree at lat: %f lon: %f", node.location.latitude, node.location.longitude);
-                // FIXME:
+            // filter nodes
+            if ([key isEqualToString:@"natural"] || [key isEqualToString:@"amenity"]) {
                 RMAnnotation *nodeAnnotation = [[RMAnnotation alloc] initWithMapView:_mapView
                                                                           coordinate:node.location
-                                                                            andTitle:@"NODE"];
+                                                                            andTitle:[node.identifier stringValue]];
                 
                 nodeAnnotation.annotationType = kAnnotationTypeNode;
+                nodeAnnotation.userInfo = node;
                 
                 [_mapView addAnnotation:nodeAnnotation];
             }
@@ -223,7 +224,12 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
     }
     
     if (annotation.annotationType == kAnnotationTypeNode) {
-        RMMarker *marker = [[RMMarker alloc] initWithUIImage:[UIImage imageNamed:@"osm_tree"]];
+        
+        OSMNode *node = annotation.userInfo;
+
+        RMMarker *marker = [[RMMarker alloc] initWithUIImage:node.getNodeIcon];
+        marker.canShowCallout = YES;
+        marker.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         
         return marker;
         
@@ -242,6 +248,21 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
     }
     
     return nil;
+}
+
+- (void)tapOnCalloutAccessoryControl:(UIControl *)control forAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map
+{
+    [self performSegueWithIdentifier:@"showDetailsView" sender:annotation];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    RMAnnotation *detailsAnnotation = sender;
+    
+    if ([[segue identifier] isEqualToString:@"showDetailsView"]) {
+        DetailsViewController *detailsViewController = segue.destinationViewController;
+        detailsViewController.detailsNode = detailsAnnotation.userInfo;
+    }
 }
 
 @end
