@@ -86,11 +86,14 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
         
         // scale of the editing tool
         _editingTool.scale = 2;
+        
+        // set delegate
         _editingTool.delegate = self;
         
+        // connect editingTool with editingView
         _editingView.editingTool = _editingTool;
         
-        
+        // add another view to the editing view
         [_editingView addSubview:_mapView];
         
         [self.view addSubview:_editingView];
