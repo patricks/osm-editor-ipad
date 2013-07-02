@@ -28,8 +28,13 @@
 
 @implementation ViewController
 
+/** MapID from the MapBox server. */
 static NSString *kMapID = @"patricks.map-4jjcq070";
+
+/** OpenStreetMap node type. */
 static NSString *kAnnotationTypeNode = @"OSMNODE";
+
+/** OpenStreetMap way type. */
 static NSString *kAnnotationTypeWay = @"OSMWAY";
 
 - (void)viewDidLoad
@@ -50,6 +55,7 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
     _mapView.showLogoBug = NO;
     _mapView.delegate = self;
     
+    // set center coordintes to hagenberg
     CLLocationCoordinate2D homeCoordinate;
     homeCoordinate.latitude =48.36861;
     homeCoordinate.longitude = 14.51277;
@@ -58,19 +64,27 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
     
     enableEditView = NO;
     [self enableEditMode:enableEditView];
-    
 }
 
+/** Enable or disable edit mode.
+ * @param enable YES if the edit mode should be enabled, else NO.
+ */
 - (void)enableEditMode:(BOOL)enable
 {
     if (enable) {
+        // disable interaction with the mapbox view
         [_mapView setUserInteractionEnabled:NO];
+        
+        // disable tile view from mapbox
         [_mapView setHidden:YES forTileSource:_tileSource];
         
         _editingView = [[PSEditingView alloc] initWithFrame:self.view.bounds];
         _editingView.backgroundColor = [UIColor blueColor];
         
+        // size of the editing tool
         _editingTool = [[PSEditingTool alloc] initWithFrame:CGRectMake(0, 0, 120, 120)];
+        
+        // scale of the editing tool
         _editingTool.scale = 2;
         _editingTool.delegate = self;
         
@@ -81,7 +95,10 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
         
         [self.view addSubview:_editingView];
     } else {
+        // enable interaction with the mapbox view
         [_mapView setUserInteractionEnabled:YES];
+        
+        // enable tile view from mapbox
         [_mapView setHidden:NO forTileSource:_tileSource];
         [self.view addSubview:_mapView];
     }
@@ -139,6 +156,12 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
 #pragma PSEditingTool delegate methods
 
 - (void)addPOIButtonClicked
+{
+    CGPoint current = [_editingView currentPosition];
+    [self addPOIToMap:current];
+}
+
+- (void)addLineButtonClicked
 {
     CGPoint current = [_editingView currentPosition];
     [self addPOIToMap:current];

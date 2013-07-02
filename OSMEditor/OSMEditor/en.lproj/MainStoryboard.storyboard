@@ -42,7 +42,7 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="OpenStreetMap Editor" id="KZe-nn-sd0">
-                        <barButtonItem key="rightBarButtonItem" title="About" style="plain" id="Clf-ga-obd">
+                        <barButtonItem key="rightBarButtonItem" title="About" id="Clf-ga-obd">
                             <connections>
                                 <action selector="aboutClicked:" destination="2" id="X60-6s-JOj"/>
                                 <segue destination="NoX-Ca-39p" kind="push" identifier="showAboutView" id="x2e-RB-ag8"/>

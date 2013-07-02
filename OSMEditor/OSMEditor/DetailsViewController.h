@@ -9,8 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "OSMNode.h"
 
+/** The detail view controller showes detailed infos about a selected node.
+ *
+ * In future versions of this controller there will be also support for ways.
+ */
 @interface DetailsViewController : UITableViewController
 
+/** The selected node to show.
+ *
+ * This node have to be set from the parent view controller.
+ */
 @property (nonatomic, strong) OSMNode *detailsNode;
 
 @end

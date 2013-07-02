@@ -27,6 +27,7 @@
     
     sections = @[infoSection, tagsSection];
     
+    // setup the static rows
     [infoSection addObject:@"info-id"];
     [infoSection addObject:@"info-lat"];
     [infoSection addObject:@"info-lon"];
@@ -71,6 +72,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
+    // setup the sections headers
     if (section == 0) {
         return @"Informations";
     } else if (section == 1) {

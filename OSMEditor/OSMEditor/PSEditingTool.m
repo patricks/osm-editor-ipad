@@ -104,7 +104,7 @@ static CGFloat const kDefaultScale = 1.5;
 
 - (void)lineButtonClicked
 {
-    NSLog(@"DBG: Line Button clicked.");
+    [_delegate addLineButtonClicked];
 }
 
 

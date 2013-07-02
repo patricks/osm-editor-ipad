@@ -9,13 +9,22 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+/** Representation of a OpenStreetMap node. */
 @interface OSMNode : NSObject
 
-/** Location of the Node */
+/** Location of the node. */
 @property (readwrite, assign) CLLocationCoordinate2D location;
+
+/** ID of the node. */
 @property (nonatomic, retain) NSNumber *identifier;
+
+/** Tags of the node. */
 @property (nonatomic, retain) NSMutableDictionary *tags;
 
+
+/** Returns the icon image of the node.
+ * @return The icon as UIImage.
+ */
 - (UIImage *)getNodeIcon;
 
 @end
