@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>--project-name</key>
+	<string>OpenStreetMap Editor for iPad</string>
+	<key>--project-company</key>
+	<string>Mobile Computing</string>
+	<key>--company-id</key>
+	<string>at.fhooe.mc.steiner</string>
+	<key>--create-html</key>
+	<true/>
+	<key>--create-docset</key>
+	<false/>
+	<key>--install-docset</key>
+	<false/>
+	<key>--verbose</key>
+	<integer>4</integer>
+	<key>--output</key>
+	<string>Help</string>
+	<key>--logformat</key>
+	<integer>1</integer>
+	<key>--input</key>
+	<array>
+		<string>OSMEditor/</string>
+	</array>
+	<key>--ignore</key>
+	<array>
+		<string>Pods</string>
+		<string>Tests</string>
+	</array>
+</dict>
+</plist>

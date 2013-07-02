@@ -11,6 +11,7 @@
 
 @interface OSMNode : NSObject
 
+/** Location of the Node */
 @property (readwrite, assign) CLLocationCoordinate2D location;
 @property (nonatomic, retain) NSNumber *identifier;
 @property (nonatomic, retain) NSMutableDictionary *tags;

@@ -210,7 +210,7 @@ s5089
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesbf9ce1a81782b741^a9deeaa81782b741^---0#1#0#--18"Check dependencies36"960C2201-DF2F-4DC4-BA69-8409698BF37B-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies6154e2ba1982b741^3f19ebba1982b741^---0#1#0#--18"Check dependencies36"2E1678D2-0FBC-4691-A63F-842194D4FD60-
 
 CCopyPNGFile /Users/patrick/Documents/Development/iOS/osm-editor-ipad/OSMEditor/Pods/MapBox/MapView/../../Resources/MapBox.bundle/HeadingAngleLarge.png Map/../Map/Resources/HeadingAngleLarge.png
 s394401182.751679
