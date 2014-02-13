@@ -1,4 +1,4 @@
 osm-editor-ipad
 ===============
 
-OSM Editor for iOS
+OpenStreetMap Editor for iPad

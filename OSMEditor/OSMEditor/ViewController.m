@@ -19,7 +19,7 @@
 }
 
 @property (nonatomic, strong) RMMapView *mapView;
-@property (nonatomic, strong) RMMapBoxSource *tileSource;
+@property (nonatomic, strong) RMMapboxSource *tileSource;
 @property (nonatomic, strong) PSEditingView *editingView;
 @property (nonatomic, strong) PSEditingTool *editingTool;
 @property (nonatomic, strong) OSMServerParser *parser;
@@ -50,7 +50,7 @@ static NSString *kAnnotationTypeWay = @"OSMWAY";
 - (void)setupMapBoxView
 {
     // MapBox View
-    _tileSource = [[RMMapBoxSource alloc] initWithMapID:kMapID];
+    _tileSource = [[RMMapboxSource alloc] initWithMapID:kMapID];
     _mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:_tileSource];
     _mapView.showLogoBug = NO;
     _mapView.delegate = self;

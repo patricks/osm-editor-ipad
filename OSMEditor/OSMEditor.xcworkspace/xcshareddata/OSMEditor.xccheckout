@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BB4B0A19-9C95-46B9-B7DE-0E5F97DA9FD4</string>
+	<string>CDB95B6D-0717-4529-B0A7-245CEBB26856</string>
 	<key>IDESourceControlProjectName</key>
 	<string>OSMEditor</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
